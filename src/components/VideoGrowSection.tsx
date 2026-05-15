@@ -7,12 +7,12 @@ export default function VideoGrowSection() {
     target: ref,
     offset: ["start end", "end start"],
   });
-  const width = useTransform(scrollYProgress, [0.1, 0.6], ["40%", "100%"]);
-  const height = useTransform(scrollYProgress, [0.1, 0.6], ["56vh", "100vh"]);
-  const borderRadius = useTransform(scrollYProgress, [0.1, 0.6], [24, 0]);
+  const width = useTransform(scrollYProgress, [0.1, 0.55], ["40%", "100%"]);
+  const height = useTransform(scrollYProgress, [0.1, 0.55], ["56vh", "100vh"]);
+  const borderRadius = useTransform(scrollYProgress, [0.1, 0.55], [24, 0]);
 
   return (
-    <section ref={ref} className="h-[250vh] relative bg-white">
+    <section ref={ref} className="h-[180vh] relative bg-white">
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
         <motion.video
           style={{ width, height, borderRadius }}
