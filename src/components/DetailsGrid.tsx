@@ -40,19 +40,19 @@ function ParallaxCard({ image, text, index }: { image: string; text: string; ind
           className="w-full h-[110%] -mt-[5%] bg-cover bg-center will-change-transform"
         />
       </div>
-      <p className="text-[#142643] font-light text-[20px] leading-[1.5]">{text}</p>
+      <p className="text-black font-light text-[20px] leading-[1.5]">{text}</p>
     </motion.div>
   );
 }
 
 export default function DetailsGrid() {
   return (
-    <section className="bg-[#fafafa] py-[100px] md:py-[200px] px-6">
+    <section className="bg-white py-[100px] md:py-[200px] px-6">
       <div className="max-w-[1300px] mx-auto">
         <div className="text-center mb-20">
           <ScrollReveal
             as="h2"
-            className="font-light text-[#142643] tracking-[0.05em]"
+            className="font-light text-black tracking-[0.05em]"
           >
             O EXTRAORDINÁRIO RESIDE NOS DETALHES
           </ScrollReveal>
