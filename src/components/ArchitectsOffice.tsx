@@ -3,7 +3,7 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function ArchitectsOffice() {
   return (
-    <section className="bg-[#000000] text-white">
+    <section className="bg-[#142643] text-white">
       {/* Tela 1 */}
       <div className="min-h-screen flex items-center px-6 md:px-16 py-[100px]">
         <div className="max-w-[1200px] mx-auto">

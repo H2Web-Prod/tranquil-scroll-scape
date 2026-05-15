@@ -25,7 +25,7 @@ function SocialIcon({ children, href, label }: { children: React.ReactNode; href
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="w-10 h-10 rounded-full bg-[#000000] text-white flex items-center justify-center hover:opacity-80 transition"
+      className="w-10 h-10 rounded-full bg-[#142643] text-white flex items-center justify-center hover:opacity-80 transition"
     >
       {children}
     </a>
@@ -34,7 +34,7 @@ function SocialIcon({ children, href, label }: { children: React.ReactNode; href
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-[#000000]">
+    <footer className="bg-white text-[#142643]">
       <div className="px-6 md:px-16 py-[80px] md:py-[100px]">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-3 gap-16">
           {/* Col 1 */}
@@ -94,7 +94,7 @@ export default function Footer() {
               loading="lazy"
             />
             <div className="flex items-start gap-3 text-[15px]">
-              <span className="text-[#000000] mt-1">📍</span>
+              <span className="text-[#142643] mt-1">📍</span>
               <span>Av. Osvaldo Reis, 3281 - sala 26 - Praia Brava, Itajaí - SC, 88306-001</span>
             </div>
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[15px] hover:opacity-70">
@@ -111,7 +111,7 @@ export default function Footer() {
 
       {/* Sub-footer */}
       <div className="border-t border-[#E5E5E5] px-6 md:px-16 py-6">
-        <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between gap-3 text-[13px] text-[#000000]">
+        <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between gap-3 text-[13px] text-[#142643]">
           <p>Copyright © 2026 Todos os Direitos Reservados – Blue Heaven – CNPJ: 19.515.552/0001-60</p>
           <p>
             <a href="https://h2web.com.br/" target="_blank" rel="noopener noreferrer" className="underline">
@@ -123,7 +123,7 @@ export default function Footer() {
       </div>
 
       {/* Faixa gigante */}
-      <div className="bg-[#000000] h-[120px] md:h-[280px] overflow-hidden">
+      <div className="bg-[#142643] h-[120px] md:h-[280px] overflow-hidden">
         <img
           src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/BLUEHEAVEN-2048x276-1.webp"
           alt="Blue Heaven"

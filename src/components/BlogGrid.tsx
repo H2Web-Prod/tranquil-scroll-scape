@@ -30,7 +30,7 @@ export default function BlogGrid() {
           <p className="text-[#b85c3c] font-medium text-[13px] tracking-[0.3em] uppercase mb-8">
             — Diário Blue Heaven
           </p>
-          <ScrollReveal as="h2" className="font-light text-[#000000] text-[clamp(36px,5vw,56px)]">
+          <ScrollReveal as="h2" className="font-light text-[#142643] text-[clamp(36px,5vw,56px)]">
             Nosso Blog
           </ScrollReveal>
         </div>
@@ -55,8 +55,8 @@ export default function BlogGrid() {
                   className="w-full h-full object-cover transition-transform duration-[600ms] group-hover:scale-105"
                 />
               </div>
-              <h3 className="font-normal text-[22px] text-[#000000] leading-[1.35]">{p.title}</h3>
-              <p className="text-[14px] text-[#000000] opacity-60 mt-4">{p.date}</p>
+              <h3 className="font-normal text-[22px] text-[#142643] leading-[1.35]">{p.title}</h3>
+              <p className="text-[14px] text-[#142643] opacity-60 mt-4">{p.date}</p>
             </motion.a>
           ))}
         </div>
