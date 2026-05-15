@@ -9,7 +9,7 @@ export default function Manifesto() {
         </p>
         <ScrollReveal
           as="h2"
-          className="font-light text-[#142643] leading-[1.2] mb-12"
+          className="font-light text-black leading-[1.2] mb-12"
         >
           {`Blue Heaven Building with Nature`}
         </ScrollReveal>

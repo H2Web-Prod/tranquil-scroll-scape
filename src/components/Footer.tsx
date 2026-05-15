@@ -34,7 +34,7 @@ function SocialIcon({ children, href, label }: { children: React.ReactNode; href
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-[#142643]">
+    <footer className="bg-white text-black">
       <div className="px-6 md:px-16 py-[80px] md:py-[100px]">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-3 gap-16">
           {/* Col 1 */}
@@ -94,7 +94,7 @@ export default function Footer() {
               loading="lazy"
             />
             <div className="flex items-start gap-3 text-[15px]">
-              <span className="text-[#142643] mt-1">📍</span>
+              <span className="text-black mt-1">📍</span>
               <span>Av. Osvaldo Reis, 3281 - sala 26 - Praia Brava, Itajaí - SC, 88306-001</span>
             </div>
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[15px] hover:opacity-70">
@@ -111,7 +111,7 @@ export default function Footer() {
 
       {/* Sub-footer */}
       <div className="border-t border-[#E5E5E5] px-6 md:px-16 py-6">
-        <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between gap-3 text-[13px] text-[#142643]">
+        <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between gap-3 text-[13px] text-black">
           <p>Copyright © 2026 Todos os Direitos Reservados – Blue Heaven – CNPJ: 19.515.552/0001-60</p>
           <p>
             <a href="https://h2web.com.br/" target="_blank" rel="noopener noreferrer" className="underline">
