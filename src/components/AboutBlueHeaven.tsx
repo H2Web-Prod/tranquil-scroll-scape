@@ -14,13 +14,13 @@ export default function AboutBlueHeaven() {
           <p className="text-[#b85c3c] font-medium text-[13px] tracking-[0.3em] uppercase mb-8">
             — A Blue Heaven
           </p>
-          <ScrollReveal as="h2" className="font-light text-black mb-12">
+          <ScrollReveal as="h2" className="font-light text-[#142643] mb-12">
             Construímos com a natureza, não contra ela.
           </ScrollReveal>
           <style>{`
             section h2 { font-size: clamp(36px, 4.5vw, 64px); line-height: 1.15; }
           `}</style>
-          <div className="text-black mb-12" style={{ fontSize: "18px", lineHeight: 1.8 }}>
+          <div className="text-[#142643] mb-12" style={{ fontSize: "18px", lineHeight: 1.8 }}>
             <ScrollReveal as="p" className="font-light">
               Somos a Blue Heaven, construtora de imóveis exclusivos, criadora da filosofia Building With Nature. Utilizamos nossa inteligência construtiva e tecnologia para desenvolver empreendimentos que se tornam obras de arte esculpidas a partir de uma abordagem artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a modernidade concebida pela vida humana.
             </ScrollReveal>

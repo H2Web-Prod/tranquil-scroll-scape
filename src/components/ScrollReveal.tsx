@@ -10,8 +10,8 @@ interface ScrollRevealProps {
 
 const Word = ({ children, progress, range, light }: { children: string; progress: MotionValue<number>; range: [number, number]; light?: boolean }) => {
   const opacity = useTransform(progress, range, [0.15, 1]);
-  const baseClass = light ? "text-white/20" : "text-black/15";
-  const liveClass = light ? "text-white" : "text-black";
+  const baseClass = light ? "text-white/20" : "text-[#142643]/15";
+  const liveClass = light ? "text-white" : "text-[#142643]";
   return (
     <span className="relative mr-[0.25em] inline-block">
       <span className={baseClass}>{children}</span>
