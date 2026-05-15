@@ -18,7 +18,7 @@ export default function Hero() {
           background: "linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.5))",
         }}
       />
-      <!--<div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -36,12 +36,12 @@ export default function Hero() {
           transition={{ duration: 1.4, delay: 1, ease: [0.16, 1, 0.3, 1] }}
           className="text-white font-light text-[18px] max-w-[720px] leading-[1.7] mt-8"
         >
-          Com a filosofia "Building With Nature", colocamos nossa inteligência construtiva e
-          tecnologia a serviço do equilíbrio da vida, desenvolvendo empreendimentos que se tornam
-          obras de artes esculpidas com uma abordagem artesanal e única, transformando espaços em
-          ambientes que enaltecem a natureza e a modernidade concebida pela vida humana.
+          Com a filosofia "Building With Nature", colocamos nossa inteligência construtiva e tecnologia a serviço do
+          equilíbrio da vida, desenvolvendo empreendimentos que se tornam obras de artes esculpidas com uma abordagem
+          artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a modernidade concebida pela
+          vida humana.
         </motion.p>
-      </div>-->
+      </div>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.6 }}
