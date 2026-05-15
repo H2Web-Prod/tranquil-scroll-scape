@@ -47,7 +47,7 @@ function ParallaxCard({ image, text, index }: { image: string; text: string; ind
 
 export default function DetailsGrid() {
   return (
-    <section className="bg-[#fafafa] py-[100px] md:py-[200px] px-6">
+    <section className="bg-white py-[100px] md:py-[200px] px-6">
       <div className="max-w-[1300px] mx-auto">
         <div className="text-center mb-20">
           <ScrollReveal
