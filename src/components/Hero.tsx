@@ -18,7 +18,7 @@ export default function Hero() {
           background: "linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.5))",
         }}
       />
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+      <!--<div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export default function Hero() {
           obras de artes esculpidas com uma abordagem artesanal e única, transformando espaços em
           ambientes que enaltecem a natureza e a modernidade concebida pela vida humana.
         </motion.p>
-      </div>
+      </div>-->
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.6 }}
