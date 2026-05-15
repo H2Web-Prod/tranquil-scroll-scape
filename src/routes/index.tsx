@@ -1,26 +1,54 @@
 import { createFileRoute } from "@tanstack/react-router";
+import useLenis from "@/hooks/useLenis";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Manifesto from "@/components/Manifesto";
+import VideoGrowSection from "@/components/VideoGrowSection";
+import Empreendimentos from "@/components/Empreendimentos";
+import ArchitectsOffice from "@/components/ArchitectsOffice";
+import DetailsGrid from "@/components/DetailsGrid";
+import AboutBlueHeaven from "@/components/AboutBlueHeaven";
+import BlogGrid from "@/components/BlogGrid";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Blue Heaven — Building with Nature" },
+      {
+        name: "description",
+        content:
+          "Construtora de imóveis exclusivos em Itajaí. Empreendimentos esculpidos com a filosofia Building With Nature.",
+      },
+      { property: "og:title", content: "Blue Heaven — Building with Nature" },
+      {
+        property: "og:description",
+        content:
+          "Empreendimentos exclusivos com a filosofia Building With Nature em Santa Catarina.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
+  useLenis();
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="bg-white">
+      <Header />
+      <main>
+        <Hero />
+        <Manifesto />
+        <VideoGrowSection />
+        <Empreendimentos />
+        <ArchitectsOffice />
+        <DetailsGrid />
+        <AboutBlueHeaven />
+        <BlogGrid />
+        <FinalCTA />
+      </main>
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
