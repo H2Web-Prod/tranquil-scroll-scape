@@ -10,9 +10,9 @@
   --font-roboto: 'Roboto', sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-bh-blue: #142643;
+  --color-bh-blue: #000000;
   --color-bh-white: #ffffff;
-  --color-bh-offwhite: #fafafa;
+  --color-bh-offwhite: #ffffff;
   --color-bh-terra: #b85c3c;
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
