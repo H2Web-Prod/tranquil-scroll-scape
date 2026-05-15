@@ -31,7 +31,7 @@ export default function Empreendimentos() {
           — Nossos Empreendimentos
         </p>
         <div className="max-w-[1200px] mx-auto">
-          <ScrollReveal as="h2" className="font-light text-[#142643]">
+          <ScrollReveal as="h2" className="font-light text-[#000000]">
             Obras esculpidas para serem vividas.
           </ScrollReveal>
           <style>{`
