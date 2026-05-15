@@ -86,7 +86,7 @@ export default function Header() {
             </AnimatePresence>
           </div>
           {navLinks.slice(1).map((l) => (
-            <a key={l.name} href={l.href} className="hover:opacity-70 transition">
+            <a key={l.name} href={l.href} className="nav-link">
               {l.name}
             </a>
           ))}
