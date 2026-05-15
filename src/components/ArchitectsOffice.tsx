@@ -3,14 +3,14 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function ArchitectsOffice() {
   return (
-    <section className="bg-[#142643] text-white">
+    <section className="bg-white text-black">
       {/* Tela 1 */}
       <div className="min-h-screen flex items-center px-6 md:px-16 py-[100px]">
         <div className="max-w-[1200px] mx-auto">
           <p className="text-[#b85c3c] font-medium text-[13px] tracking-[0.3em] uppercase mb-8">
             — Assinatura Internacional na Arquitetura
           </p>
-          <ScrollReveal as="h2" light className="font-light leading-[1.15]">
+          <ScrollReveal as="h2" className="font-light leading-[1.15]">
             Desafiamos o inalcançável, esculpindo o extraordinário.
           </ScrollReveal>
           <style>{`
@@ -22,11 +22,11 @@ export default function ArchitectsOffice() {
       {/* Tela 2 */}
       <div className="min-h-screen flex items-center px-6 md:px-16 py-[100px]">
         <div className="max-w-[1100px] mx-auto">
-          <ScrollReveal as="h3" light className="font-light text-[clamp(32px,4vw,56px)] mb-12">
+          <ScrollReveal as="h3" className="font-light text-[clamp(32px,4vw,56px)] mb-12">
             Conectando o humano ao ambiente.
           </ScrollReveal>
-          <div className="text-white/90" style={{ fontSize: "20px", lineHeight: 1.7 }}>
-            <ScrollReveal as="p" light className="font-light">
+          <div className="text-black" style={{ fontSize: "20px", lineHeight: 1.7 }}>
+            <ScrollReveal as="p" className="font-light">
               A Architects Office combina o global e o local, o orgânico e o mineral, com uma atenção detalhada à escala humana e ao meio ambiente, trazendo abordagens únicas para cada projeto.
             </ScrollReveal>
           </div>
@@ -51,13 +51,11 @@ export default function ArchitectsOffice() {
             />
           </motion.div>
           <div>
-            <h4 className="font-light text-[clamp(32px,3vw,48px)] mb-6 text-white">Greg Bousquet</h4>
-            <p className="text-white/80 font-light text-[18px] leading-[1.7]">
+            <h4 className="font-light text-[clamp(32px,3vw,48px)] mb-6 text-black">Greg Bousquet</h4>
+            <p className="text-black font-light text-[18px] leading-[1.7]">
               Fundador do Architects Office e Triptyque Architecture. Sócio fundador do Architects Office LX.
             </p>
           </div>
         </div>
       </div>
     </section>
-  );
-}
