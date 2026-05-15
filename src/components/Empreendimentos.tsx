@@ -26,7 +26,7 @@ const items = [
 export default function Empreendimentos() {
   return (
     <>
-      <section className="bg-white py-[100px] md:py-[180px] px-6 text-center">
+      <section className="bg-white pt-[20px] md:pt-[40px] pb-[100px] md:pb-[180px] px-6 text-center">
         <p className="text-[#b85c3c] font-medium text-[13px] tracking-[0.3em] uppercase mb-8">
           — Nossos Empreendimentos
         </p>
