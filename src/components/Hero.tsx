@@ -25,22 +25,13 @@ export default function Hero() {
           transition={{ duration: 1.4, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="text-white font-light leading-[1.1] tracking-[-0.02em]"
           style={{ fontSize: "clamp(48px, 6vw, 88px)" }}
-        >
-          Blue Heaven
-          <br />
-          Building with Nature
-        </motion.h1>
+        ></motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.4, delay: 1, ease: [0.16, 1, 0.3, 1] }}
           className="text-white font-light text-[18px] max-w-[720px] leading-[1.7] mt-8"
-        >
-          Com a filosofia "Building With Nature", colocamos nossa inteligência construtiva e tecnologia a serviço do
-          equilíbrio da vida, desenvolvendo empreendimentos que se tornam obras de artes esculpidas com uma abordagem
-          artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a modernidade concebida pela
-          vida humana.
-        </motion.p>
+        ></motion.p>
       </div>
       <motion.div
         initial={{ opacity: 0 }}
