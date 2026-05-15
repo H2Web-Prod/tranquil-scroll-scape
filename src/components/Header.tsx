@@ -75,7 +75,7 @@ export default function Header() {
                       <a
                         key={e.name}
                         href={e.url}
-                        className="text-[16px] font-normal text-[#142643] hover:opacity-60 px-3 py-2 rounded transition"
+                        className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2 rounded transition"
                       >
                         {e.name}
                       </a>
@@ -96,7 +96,7 @@ export default function Header() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden lg:inline-block font-manrope text-[18px] font-medium text-[#142643] bg-white rounded-full px-[30px] py-[15px] hover:bg-[#142643] hover:text-white transition-colors duration-300"
+          className="hidden lg:inline-block font-manrope text-[18px] font-medium text-black bg-white rounded-full px-[30px] py-[15px] hover:bg-[#142643] hover:text-white transition-colors duration-300"
         >
           Fale Conosco
         </a>
@@ -157,7 +157,7 @@ export default function Header() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-auto text-center font-manrope text-[18px] font-medium text-[#142643] bg-white rounded-full px-[30px] py-[15px]"
+              className="mt-auto text-center font-manrope text-[18px] font-medium text-black bg-white rounded-full px-[30px] py-[15px]"
             >
               Fale Conosco
             </a>
