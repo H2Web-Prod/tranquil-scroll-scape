@@ -59,3 +59,5 @@ export default function ArchitectsOffice() {
         </div>
       </div>
     </section>
+  );
+}
