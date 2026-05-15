@@ -46,14 +46,14 @@ export default function Header() {
           />
         </a>
 
-        <nav className="hidden lg:flex items-center gap-10 font-manrope font-light text-[18px] text-white">
-          <a href="#manifesto" className="hover:opacity-70 transition">Blue Heaven</a>
+        <nav className="hidden lg:flex items-center gap-10 font-manrope font-light text-[18px] text-white nav-links">
+          <a href="#manifesto" className="nav-link">Blue Heaven</a>
           <div
             className="relative"
             onMouseEnter={() => setEmpOpen(true)}
             onMouseLeave={() => setEmpOpen(false)}
           >
-            <button className="hover:opacity-70 transition">Empreendimentos</button>
+            <button className="nav-link">Empreendimentos</button>
             <AnimatePresence>
               {empOpen && (
                 <motion.div
