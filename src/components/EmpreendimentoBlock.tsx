@@ -43,13 +43,13 @@ export default function EmpreendimentoBlock({ image, title, headline, body, link
       <section className="bg-white py-[100px] md:py-[200px] px-6">
         <div className="max-w-[880px] mx-auto">
           {headline && (
-            <div className="mb-8 text-[#142643]" style={{ fontSize: "28px", lineHeight: 1.4 }}>
+            <div className="mb-8 text-[#000000]" style={{ fontSize: "28px", lineHeight: 1.4 }}>
               <ScrollReveal as="p" className="font-normal">
                 {headline}
               </ScrollReveal>
             </div>
           )}
-          <div className="text-[#142643] mb-12" style={{ fontSize: "19px", lineHeight: 1.8 }}>
+          <div className="text-[#000000] mb-12" style={{ fontSize: "19px", lineHeight: 1.8 }}>
             <ScrollReveal as="p" className="font-light">
               {body}
             </ScrollReveal>

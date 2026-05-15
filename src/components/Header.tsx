@@ -75,7 +75,7 @@ export default function Header() {
                       <a
                         key={e.name}
                         href={e.url}
-                        className="text-[16px] font-normal text-[#142643] hover:opacity-60 px-3 py-2 rounded transition"
+                        className="text-[16px] font-normal text-[#000000] hover:opacity-60 px-3 py-2 rounded transition"
                       >
                         {e.name}
                       </a>
@@ -96,7 +96,7 @@ export default function Header() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden lg:inline-block font-manrope text-[18px] font-medium text-[#142643] bg-white rounded-full px-[30px] py-[15px] hover:bg-[#142643] hover:text-white transition-colors duration-300"
+          className="hidden lg:inline-block font-manrope text-[18px] font-medium text-[#000000] bg-white rounded-full px-[30px] py-[15px] hover:bg-[#000000] hover:text-white transition-colors duration-300"
         >
           Fale Conosco
         </a>
@@ -120,7 +120,7 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
-            className="fixed inset-0 z-50 bg-[#142643] flex flex-col px-6 py-8"
+            className="fixed inset-0 z-50 bg-[#000000] flex flex-col px-6 py-8"
           >
             <div className="flex justify-between items-center mb-12">
               <img
@@ -157,7 +157,7 @@ export default function Header() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-auto text-center font-manrope text-[18px] font-medium text-[#142643] bg-white rounded-full px-[30px] py-[15px]"
+              className="mt-auto text-center font-manrope text-[18px] font-medium text-[#000000] bg-white rounded-full px-[30px] py-[15px]"
             >
               Fale Conosco
             </a>
