@@ -23,7 +23,9 @@ export default function FinalCTA() {
             color: "#000000",
           }}
         >
-          Descubra como é viver em um lugar que conecta natureza, conforto e modernidade. Fale conosco e agende sua visita.
+          Descubra como é viver em um lugar que conecta natureza, conforto e modernidade.
+          <br />
+          Fale conosco e agende sua visita.
         </p>
         <div style={{ marginTop: "48px", textAlign: "left" }}>
           <a

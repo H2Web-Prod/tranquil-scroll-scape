@@ -3,6 +3,11 @@ const whatsappUrl =
 
 const base = "https://projetos.h2web.com.br/blueheaven";
 
+const ARROW = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/arrow.jpg";
+const PIN = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/pin.jpg";
+const WPP = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/whatsapp.jpg";
+const MAIL = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/envelope.jpg";
+
 const institucional = [
   { label: "Blue Heaven", href: `${base}/quem-somos/` },
   { label: "Empreendimentos", href: `${base}/imoveis-exclusivos-blue-heaven/` },
@@ -18,6 +23,15 @@ const empreendimentos = [
   { label: "Monolyt", href: `${base}/imoveis-exclusivos-blue-heaven/monolyt/` },
 ];
 
+const colTitleClass =
+  "font-sans font-semibold text-[16px] text-black uppercase tracking-[0.1em] mb-6";
+const bodyText: React.CSSProperties = {
+  fontFamily: "'Public Sans', sans-serif",
+  fontWeight: 400,
+  fontSize: "16px",
+  color: "#000000",
+};
+
 function SocialIcon({ children, href, label }: { children: React.ReactNode; href: string; label: string }) {
   return (
     <a
@@ -32,22 +46,50 @@ function SocialIcon({ children, href, label }: { children: React.ReactNode; href
   );
 }
 
+function LinkList({ items }: { items: { label: string; href: string }[] }) {
+  return (
+    <ul>
+      {items.map((l) => (
+        <li key={l.label} className="border-b border-[#E5E5E5]">
+          <a
+            href={l.href}
+            className="flex items-center py-3 hover:opacity-70 transition"
+            style={bodyText}
+          >
+            <img src={ARROW} alt="" className="w-[16px] h-auto mr-3" />
+            <span>{l.label}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function Footer() {
   return (
     <footer className="bg-white text-black">
-      <div className="px-6 md:px-16 py-[80px] md:py-[100px]">
-        <div className="max-w-[1400px] mx-auto grid md:grid-cols-3 gap-16">
+      <div className="px-6 md:px-10 py-[80px] md:py-[100px]">
+        <div className="grid md:grid-cols-3 gap-16">
           {/* Col 1 */}
           <div>
-            <p className="font-semibold text-[28px] tracking-[0.15em] mb-8">BLUE HEAVEN</p>
-            <p className="font-light text-[15px] leading-[1.7] mb-8">
+            <img
+              src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/logo-blue-heaven-1.svg"
+              alt="Blue Heaven"
+              style={{ width: "268px", height: "auto" }}
+              className="mb-8"
+            />
+            <p style={{ ...bodyText, lineHeight: 1.7 }} className="mb-8">
               Com a filosofia Building With Nature, colocamos nossa inteligência construtiva e tecnologia a serviço do equilíbrio da vida, desenvolvendo empreendimentos que se tornam obras de arte esculpidas a partir de uma abordagem artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a modernidade concebida pela vida humana.
             </p>
-            <div className="border-t border-[#E5E5E5] pt-6 mb-8 flex gap-6 text-sm">
-              <a href={`${base}/politica-de-privacidade/`} className="hover:opacity-70">› Política de Privacidade</a>
-              <a href={`${base}/termos-de-uso/`} className="hover:opacity-70">› Termos de Uso</a>
+            <div className="border-t border-[#E5E5E5] pt-6 mb-8 flex flex-wrap gap-x-8 gap-y-3">
+              <a href={`${base}/politica-de-privacidade/`} className="flex items-center hover:opacity-70" style={bodyText}>
+                <img src={ARROW} alt="" className="w-[16px] h-auto mr-3" />Política de Privacidade
+              </a>
+              <a href={`${base}/termos-de-uso/`} className="flex items-center hover:opacity-70" style={bodyText}>
+                <img src={ARROW} alt="" className="w-[16px] h-auto mr-3" />Termos de Uso
+              </a>
             </div>
-            <p className="font-semibold tracking-[0.15em] text-[13px] mb-4">SIGA A BLUE HEAVEN</p>
+            <p className={colTitleClass}>Siga a Blue Heaven</p>
             <div className="flex gap-3">
               <SocialIcon href="https://www.facebook.com/blueheavenemp" label="Facebook">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
@@ -62,27 +104,11 @@ export default function Footer() {
           </div>
 
           {/* Col 2 */}
-          <div className="grid grid-cols-1 gap-10">
-            <div>
-              <p className="font-semibold tracking-[0.15em] text-[13px] mb-4 uppercase">Institucional</p>
-              <ul>
-                {institucional.map((l) => (
-                  <li key={l.label} className="border-b border-[#E5E5E5]">
-                    <a href={l.href} className="block py-3 text-[15px] hover:opacity-70 transition">› {l.label}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold tracking-[0.15em] text-[13px] mb-4 uppercase">Empreendimentos</p>
-              <ul>
-                {empreendimentos.map((l) => (
-                  <li key={l.label} className="border-b border-[#E5E5E5]">
-                    <a href={l.href} className="block py-3 text-[15px] hover:opacity-70 transition">› {l.label}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div>
+            <p className={colTitleClass}>Institucional</p>
+            <LinkList items={institucional} />
+            <p className={colTitleClass} style={{ marginTop: "48px" }}>Empreendimentos</p>
+            <LinkList items={empreendimentos} />
           </div>
 
           {/* Col 3 */}
@@ -93,16 +119,16 @@ export default function Footer() {
               className="w-full h-[240px] rounded-md border-0"
               loading="lazy"
             />
-            <div className="flex items-start gap-3 text-[15px]">
-              <span className="text-black mt-1">📍</span>
+            <div className="flex items-start" style={bodyText}>
+              <img src={PIN} alt="" className="w-[18px] h-auto mr-3 mt-1" />
               <span>Av. Osvaldo Reis, 3281 - sala 26 - Praia Brava, Itajaí - SC, 88306-001</span>
             </div>
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[15px] hover:opacity-70">
-              <span>💬</span>
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center hover:opacity-70" style={bodyText}>
+              <img src={WPP} alt="" className="w-[18px] h-auto mr-3" />
               <span>(47) 99762-5209</span>
             </a>
-            <a href="mailto:contato@blueheaven.com.br" className="flex items-center gap-3 text-[15px] hover:opacity-70">
-              <span>✉️</span>
+            <a href="mailto:contato@blueheaven.com.br" className="flex items-center hover:opacity-70" style={bodyText}>
+              <img src={MAIL} alt="" className="w-[18px] h-auto mr-3" />
               <span>contato@blueheaven.com.br</span>
             </a>
           </div>
@@ -110,8 +136,8 @@ export default function Footer() {
       </div>
 
       {/* Sub-footer */}
-      <div className="border-t border-[#E5E5E5] px-6 md:px-16 py-6">
-        <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between gap-3 text-[13px] text-black">
+      <div className="border-t border-[#E5E5E5] px-6 md:px-10 py-6">
+        <div className="flex flex-col md:flex-row justify-between gap-3" style={{ fontFamily: "'Public Sans', sans-serif", fontWeight: 400, fontSize: "14px", color: "#000000" }}>
           <p>Copyright © 2026 Todos os Direitos Reservados – Blue Heaven – CNPJ: 19.515.552/0001-60</p>
           <p>
             <a href="https://h2web.com.br/" target="_blank" rel="noopener noreferrer" className="underline">
@@ -123,11 +149,11 @@ export default function Footer() {
       </div>
 
       {/* Faixa gigante */}
-      <div className="bg-[#142643] h-[120px] md:h-[280px] overflow-hidden">
+      <div style={{ background: "#142643" }}>
         <img
           src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/BLUEHEAVEN-2048x276-1.webp"
           alt="Blue Heaven"
-          className="w-full h-full object-cover object-center"
+          style={{ width: "100%", height: "auto", objectFit: "contain", display: "block" }}
         />
       </div>
     </footer>
