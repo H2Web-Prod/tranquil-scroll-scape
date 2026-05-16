@@ -25,11 +25,9 @@ export default function ArchitectsOffice() {
           <ScrollReveal as="h3" className="font-light text-[clamp(32px,4vw,56px)] mb-12">
             Conectando o humano ao ambiente.
           </ScrollReveal>
-          <div className="text-black" style={{ fontSize: "20px", lineHeight: 1.7 }}>
-            <ScrollReveal as="p" className="font-light">
-              A Architects Office combina o global e o local, o orgânico e o mineral, com uma atenção detalhada à escala humana e ao meio ambiente, trazendo abordagens únicas para cada projeto.
-            </ScrollReveal>
-          </div>
+          <p className="padrao-p">
+            A Architects Office combina o global e o local, o orgânico e o mineral, com uma atenção detalhada à escala humana e ao meio ambiente, trazendo abordagens únicas para cada projeto.
+          </p>
         </div>
       </div>
 
