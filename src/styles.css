@@ -5,9 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: "Public Sans", sans-serif;
-  --font-manrope: "Manrope", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
+  --font-sans: 'Public Sans', sans-serif;
+  --font-manrope: 'Manrope', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-bh-blue: #142643;
@@ -33,49 +33,26 @@
 }
 
 @layer base {
-  * {
-    border-color: var(--color-border);
-  }
-  html,
-  body {
+  * { border-color: var(--color-border); }
+  html, body {
     background-color: #ffffff;
     color: #000000;
-    font-family: "Public Sans", sans-serif;
+    font-family: 'Public Sans', sans-serif;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
     max-width: 100vw;
   }
-
-  body {
-    overflow-x: clip;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: "Public Sans", sans-serif;
-    font-weight: 300;
-    letter-spacing: -0.02em;
-  }
+  h1, h2, h3, h4, h5 { font-family: 'Public Sans', sans-serif; font-weight: 300; letter-spacing: -0.02em; }
 }
 
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-.lenis.lenis-stopped {
-  overflow: clip;
-}
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
 
 .padrao-p {
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Public Sans', sans-serif;
   font-weight: 400;
   font-size: clamp(18px, 1.6vw, 24px);
   color: #000000;
@@ -97,9 +74,7 @@ html.lenis body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
