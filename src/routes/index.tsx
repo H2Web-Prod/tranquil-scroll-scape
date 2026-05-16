@@ -43,8 +43,6 @@ function Index() {
         <VideoGrowSection />
         <Empreendimentos />
         <ArchitectsOffice />
-        <DetailsGrid />
-        <AboutBlueHeaven />
         <BlogGrid />
         <FinalCTA />
       </main>
