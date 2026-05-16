@@ -6,8 +6,6 @@ import Manifesto from "@/components/Manifesto";
 import VideoGrowSection from "@/components/VideoGrowSection";
 import Empreendimentos from "@/components/Empreendimentos";
 import ArchitectsOffice from "@/components/ArchitectsOffice";
-import DetailsGrid from "@/components/DetailsGrid";
-import AboutBlueHeaven from "@/components/AboutBlueHeaven";
 import BlogGrid from "@/components/BlogGrid";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -43,8 +41,6 @@ function Index() {
         <VideoGrowSection />
         <Empreendimentos />
         <ArchitectsOffice />
-        <DetailsGrid />
-        <AboutBlueHeaven />
         <BlogGrid />
         <FinalCTA />
       </main>
