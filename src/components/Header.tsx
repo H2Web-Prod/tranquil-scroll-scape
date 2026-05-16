@@ -1,10 +1,11 @@
 import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "@tanstack/react-router";
 
 const empreendimentos = [
-  { name: "Infinitá Treehouse", url: "https://projetos.h2web.com.br/blueheaven/imoveis-exclusivos-blue-heaven/infinita-treehouse/" },
-  { name: "Aquos", url: "https://projetos.h2web.com.br/blueheaven/imoveis-exclusivos-blue-heaven/aquos-oasis-home/" },
-  { name: "Monolyt", url: "https://projetos.h2web.com.br/blueheaven/imoveis-exclusivos-blue-heaven/monolyt/" },
+  { name: "Infinitá Treehouse", url: "/infinita-treehouse", internal: true },
+  { name: "Aquos", url: "https://projetos.h2web.com.br/blueheaven/imoveis-exclusivos-blue-heaven/aquos-oasis-home/", internal: false },
+  { name: "Monolyt", url: "https://projetos.h2web.com.br/blueheaven/imoveis-exclusivos-blue-heaven/monolyt/", internal: false },
 ];
 
 const navLinks = [
@@ -17,12 +18,22 @@ const navLinks = [
 const whatsappUrl =
   "https://api.whatsapp.com/send/?phone=5547997625209&text=Olá+vim+pelo+site+Blue+Heaven+e+gostaria+de+mais+informações!";
 
-export default function Header() {
+const LOGO_LIGHT =
+  "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/construtora-imobiliaria-blue-heaven.png";
+const LOGO_DARK =
+  "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/logo-blue-heaven-1.svg";
+
+export default function Header({ theme = "light" }: { theme?: "light" | "dark" }) {
   const [empOpen, setEmpOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [submenuLeft, setSubmenuLeft] = useState(0);
   const headerRef = useRef<HTMLElement>(null);
   const empRef = useRef<HTMLDivElement>(null);
+
+  const isDark = theme === "dark";
+  const navClass = `nav-link${isDark ? " dark" : ""}`;
+  const borderClass = isDark ? "border-black" : "border-white";
+  const iconColor = isDark ? "text-black" : "text-white";
 
   const openEmpreendimentos = () => {
     if (headerRef.current && empRef.current) {
@@ -30,7 +41,6 @@ export default function Header() {
       const empRect = empRef.current.getBoundingClientRect();
       setSubmenuLeft(empRect.left - headerRect.left);
     }
-
     setEmpOpen(true);
   };
 
@@ -41,29 +51,32 @@ export default function Header() {
       onMouseLeave={() => setEmpOpen(false)}
     >
       <div className="px-6 md:px-10">
-        <div className="py-5 flex items-center justify-between border-b-2 border-white">
-        <a href="/" className="flex-shrink-0">
+        <div className={`py-5 flex items-center justify-between border-b-2 ${borderClass}`}>
+        <Link to="/" className="flex-shrink-0">
           <img
-            src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/construtora-imobiliaria-blue-heaven.png"
+            src={isDark ? LOGO_DARK : LOGO_LIGHT}
             alt="Blue Heaven"
             className="w-[160px] md:w-[248px] h-auto"
           />
-        </a>
+        </Link>
 
-        <nav className="hidden lg:flex items-stretch gap-10 ml-auto mr-8 font-manrope font-light text-[18px] text-white nav-links">
-          <a href="#manifesto" className="nav-link flex items-center">Blue Heaven</a>
+        <nav className={`hidden lg:flex items-stretch gap-10 ml-auto mr-8 font-manrope font-light text-[18px] nav-links ${isDark ? "text-black" : "text-white"}`}>
+          <a href={isDark ? "/#manifesto" : "#manifesto"} className={`${navClass} flex items-center`}>Blue Heaven</a>
           <div
             ref={empRef}
             className="flex items-center py-5 -my-5"
             onMouseEnter={openEmpreendimentos}
           >
-            <button className="nav-link">Empreendimentos</button>
+            <button className={navClass}>Empreendimentos</button>
           </div>
-          {navLinks.slice(1).map((l) => (
-            <a key={l.name} href={l.href} className="nav-link">
-              {l.name}
-            </a>
-          ))}
+          {navLinks.slice(1).map((l) => {
+            const href = isDark && l.href.startsWith("#") ? `/${l.href}` : l.href;
+            return (
+              <a key={l.name} href={href} className={navClass}>
+                {l.name}
+              </a>
+            );
+          })}
         </nav>
 
         <a
@@ -76,7 +89,7 @@ export default function Header() {
         </a>
 
         <button
-          className="lg:hidden text-white p-2"
+          className={`lg:hidden p-2 ${iconColor}`}
           aria-label="Abrir menu"
           onClick={() => setMobileOpen(true)}
         >
@@ -109,15 +122,25 @@ export default function Header() {
               WebkitBackdropFilter: "blur(20px)",
             }}
           >
-            {empreendimentos.map((e) => (
-              <a
-                key={e.name}
-                href={e.url}
-                className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2"
-              >
-                {e.name}
-              </a>
-            ))}
+            {empreendimentos.map((e) =>
+              e.internal ? (
+                <Link
+                  key={e.name}
+                  to={e.url}
+                  className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2"
+                >
+                  {e.name}
+                </Link>
+              ) : (
+                <a
+                  key={e.name}
+                  href={e.url}
+                  className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2"
+                >
+                  {e.name}
+                </a>
+              )
+            )}
           </div>
         </div>
       )}
@@ -133,7 +156,7 @@ export default function Header() {
           >
             <div className="flex justify-between items-center mb-12">
               <img
-                src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/construtora-imobiliaria-blue-heaven.png"
+                src={LOGO_LIGHT}
                 alt="Blue Heaven"
                 className="w-[160px]"
               />
@@ -149,18 +172,25 @@ export default function Header() {
               </button>
             </div>
             <nav className="flex flex-col gap-6 font-manrope text-2xl text-white font-light">
-              <a href="#manifesto" onClick={() => setMobileOpen(false)}>Blue Heaven</a>
+              <a href={isDark ? "/#manifesto" : "#manifesto"} onClick={() => setMobileOpen(false)}>Blue Heaven</a>
               <div className="flex flex-col gap-3">
                 <span>Empreendimentos</span>
                 <div className="flex flex-col gap-3 pl-4 text-lg opacity-80">
-                  {empreendimentos.map((e) => (
-                    <a key={e.name} href={e.url}>{e.name}</a>
-                  ))}
+                  {empreendimentos.map((e) =>
+                    e.internal ? (
+                      <Link key={e.name} to={e.url} onClick={() => setMobileOpen(false)}>{e.name}</Link>
+                    ) : (
+                      <a key={e.name} href={e.url}>{e.name}</a>
+                    )
+                  )}
                 </div>
               </div>
-              {navLinks.slice(1).map((l) => (
-                <a key={l.name} href={l.href} onClick={() => setMobileOpen(false)}>{l.name}</a>
-              ))}
+              {navLinks.slice(1).map((l) => {
+                const href = isDark && l.href.startsWith("#") ? `/${l.href}` : l.href;
+                return (
+                  <a key={l.name} href={href} onClick={() => setMobileOpen(false)}>{l.name}</a>
+                );
+              })}
             </nav>
             <a
               href={whatsappUrl}
