@@ -72,6 +72,14 @@ html.lenis, html.lenis body { height: auto; }
   border: none !important;
   cursor: pointer;
 }
+.nav-link.dark,
+.nav-link.dark:link,
+.nav-link.dark:visited,
+.nav-link.dark:hover,
+.nav-link.dark:focus,
+.nav-link.dark:active {
+  color: #000000 !important;
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
