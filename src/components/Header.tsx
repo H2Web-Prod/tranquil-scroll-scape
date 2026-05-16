@@ -56,7 +56,7 @@ export default function Header() {
           >
             <button className="nav-link">Empreendimentos</button>
             {empOpen && (
-              <div className="absolute top-full left-0 pt-4 min-w-[240px]">
+              <div className="absolute top-full left-0 min-w-[240px]" style={{ paddingTop: "calc(1.25rem + 2px)" }}>
                 <div
                   className="p-4 flex flex-col gap-2"
                   style={{
