@@ -5,7 +5,8 @@ import Hero from "@/components/Hero";
 import Manifesto from "@/components/Manifesto";
 import VideoGrowSection from "@/components/VideoGrowSection";
 import Empreendimentos from "@/components/Empreendimentos";
-import ArchitectsOffice from "@/components/ArchitectsOffice";
+import ArchitectsOffice, { ConnectingHumans } from "@/components/ArchitectsOffice";
+import HorizontalCarousel from "@/components/HorizontalCarousel";
 import DetailsGrid from "@/components/DetailsGrid";
 import AboutBlueHeaven from "@/components/AboutBlueHeaven";
 import BlogGrid from "@/components/BlogGrid";
@@ -43,6 +44,8 @@ function Index() {
         <VideoGrowSection />
         <Empreendimentos />
         <ArchitectsOffice />
+        <HorizontalCarousel />
+        <ConnectingHumans />
         <DetailsGrid />
         <AboutBlueHeaven />
         <BlogGrid />
