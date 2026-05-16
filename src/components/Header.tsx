@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const empreendimentos = [
@@ -18,25 +18,11 @@ const whatsappUrl =
   "https://api.whatsapp.com/send/?phone=5547997625209&text=Olá+vim+pelo+site+Blue+Heaven+e+gostaria+de+mais+informações!";
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [empOpen, setEmpOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <header
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
-      style={{
-        background: scrolled ? "rgba(20, 38, 67, 0.7)" : "transparent",
-        backdropFilter: scrolled ? "blur(12px)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
-      }}
-    >
+    <header className="relative w-full">
       <div className="px-6 md:px-10">
         <div className="py-5 flex items-center justify-between border-b-2 border-white">
         <a href="/" className="flex-shrink-0">
@@ -47,16 +33,16 @@ export default function Header() {
           />
         </a>
 
-        <nav className="hidden lg:flex items-center gap-10 ml-auto mr-8 font-manrope font-light text-[18px] text-white nav-links">
-          <a href="#manifesto" className="nav-link">Blue Heaven</a>
+        <nav className="hidden lg:flex items-stretch gap-10 ml-auto mr-8 font-manrope font-light text-[18px] text-white nav-links">
+          <a href="#manifesto" className="nav-link flex items-center">Blue Heaven</a>
           <div
-            className="relative"
+            className="relative flex items-center py-5 -my-5"
             onMouseEnter={() => setEmpOpen(true)}
             onMouseLeave={() => setEmpOpen(false)}
           >
             <button className="nav-link">Empreendimentos</button>
             {empOpen && (
-              <div className="absolute top-full left-0 min-w-[240px]" style={{ paddingTop: "calc(1.25rem + 2px)" }}>
+              <div className="absolute top-full left-0 min-w-[240px]">
                 <div
                   className="p-4 flex flex-col gap-2"
                   style={{
