@@ -24,7 +24,7 @@ const empreendimentos = [
 ];
 
 const colTitleClass =
-  "font-sans font-semibold text-[16px] text-black uppercase tracking-[0.1em] mb-6";
+  "font-sans font-semibold text-[16px] text-black uppercase tracking-[0.1em] mb-[10px]";
 const bodyText: React.CSSProperties = {
   fontFamily: "'Public Sans', sans-serif",
   fontWeight: 400,
@@ -53,10 +53,10 @@ function LinkList({ items }: { items: { label: string; href: string }[] }) {
         <li key={l.label} className="border-b border-[#E5E5E5]">
           <a
             href={l.href}
-            className="flex items-center py-3 hover:opacity-70 transition"
+            className="flex items-center pt-2 pb-2 hover:opacity-70 transition"
             style={bodyText}
           >
-            <img src={ARROW} alt="" className="w-[16px] h-auto mr-3" />
+            <img src={ARROW} alt="" className="w-[8px] h-auto mr-3" />
             <span>{l.label}</span>
           </a>
         </li>
