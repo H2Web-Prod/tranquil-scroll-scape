@@ -43,17 +43,13 @@ export default function EmpreendimentoBlock({ image, title, headline, body, link
       <section className="bg-white py-[100px] md:py-[200px] px-6">
         <div className="max-w-[880px] mx-auto">
           {headline && (
-            <div className="mb-8 text-black" style={{ fontSize: "28px", lineHeight: 1.4 }}>
-              <ScrollReveal as="p" className="font-normal">
-                {headline}
-              </ScrollReveal>
-            </div>
+            <p className="padrao-p mb-8" style={{ fontWeight: 500 }}>
+              {headline}
+            </p>
           )}
-          <div className="text-black mb-12" style={{ fontSize: "19px", lineHeight: 1.8 }}>
-            <ScrollReveal as="p" className="font-light">
-              {body}
-            </ScrollReveal>
-          </div>
+          <p className="padrao-p mb-12">
+            {body}
+          </p>
           <motion.a
             href={link}
             target="_blank"
