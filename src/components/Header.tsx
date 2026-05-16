@@ -37,7 +37,8 @@ export default function Header() {
         WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
       }}
     >
-      <div className="px-6 md:px-16 py-5 flex items-center justify-between border-b border-white/30">
+      <div className="px-6 md:px-10">
+        <div className="py-5 flex items-center justify-between border-b-2 border-white">
         <a href="/" className="flex-shrink-0">
           <img
             src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/construtora-imobiliaria-blue-heaven.png"
@@ -46,7 +47,7 @@ export default function Header() {
           />
         </a>
 
-        <nav className="hidden lg:flex items-center gap-10 font-manrope font-light text-[18px] text-white nav-links">
+        <nav className="hidden lg:flex items-center gap-10 ml-auto mr-8 font-manrope font-light text-[18px] text-white nav-links">
           <a href="#manifesto" className="nav-link">Blue Heaven</a>
           <div
             className="relative"
@@ -54,36 +55,28 @@ export default function Header() {
             onMouseLeave={() => setEmpOpen(false)}
           >
             <button className="nav-link">Empreendimentos</button>
-            <AnimatePresence>
-              {empOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 8 }}
-                  transition={{ duration: 0.25 }}
-                  className="absolute top-full left-0 pt-4 min-w-[240px]"
+            {empOpen && (
+              <div className="absolute top-full left-0 pt-4 min-w-[240px]">
+                <div
+                  className="p-4 flex flex-col gap-2"
+                  style={{
+                    background: "rgba(255,255,255,0.92)",
+                    backdropFilter: "blur(20px)",
+                    WebkitBackdropFilter: "blur(20px)",
+                  }}
                 >
-                  <div
-                    className="rounded-lg p-4 flex flex-col gap-2"
-                    style={{
-                      background: "rgba(255,255,255,0.92)",
-                      backdropFilter: "blur(20px)",
-                      WebkitBackdropFilter: "blur(20px)",
-                    }}
-                  >
-                    {empreendimentos.map((e) => (
-                      <a
-                        key={e.name}
-                        href={e.url}
-                        className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2 rounded transition"
-                      >
-                        {e.name}
-                      </a>
-                    ))}
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+                  {empreendimentos.map((e) => (
+                    <a
+                      key={e.name}
+                      href={e.url}
+                      className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2"
+                    >
+                      {e.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
           {navLinks.slice(1).map((l) => (
             <a key={l.name} href={l.href} className="nav-link">
@@ -111,6 +104,7 @@ export default function Header() {
             <line x1="3" y1="16" x2="21" y2="16" />
           </svg>
         </button>
+        </div>
       </div>
 
       <AnimatePresence>
