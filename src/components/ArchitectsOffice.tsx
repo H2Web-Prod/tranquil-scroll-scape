@@ -50,7 +50,7 @@ export default function ArchitectsOffice() {
           </motion.div>
           <div>
             <h4 className="font-light text-[clamp(32px,3vw,48px)] mb-6 text-black">Greg Bousquet</h4>
-            <p className="text-black font-light text-[18px] leading-[1.7]">
+            <p className="padrao-p">
               Fundador do Architects Office e Triptyque Architecture. Sócio fundador do Architects Office LX.
             </p>
           </div>
