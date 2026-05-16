@@ -20,11 +20,9 @@ export default function AboutBlueHeaven() {
           <style>{`
             section h2 { font-size: clamp(36px, 4.5vw, 64px); line-height: 1.15; }
           `}</style>
-          <div className="text-black mb-12" style={{ fontSize: "18px", lineHeight: 1.8 }}>
-            <ScrollReveal as="p" className="font-light">
-              Somos a Blue Heaven, construtora de imóveis exclusivos, criadora da filosofia Building With Nature. Utilizamos nossa inteligência construtiva e tecnologia para desenvolver empreendimentos que se tornam obras de arte esculpidas a partir de uma abordagem artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a modernidade concebida pela vida humana.
-            </ScrollReveal>
-          </div>
+          <p className="padrao-p mb-12">
+            Somos a Blue Heaven, construtora de imóveis exclusivos, criadora da filosofia Building With Nature. Utilizamos nossa inteligência construtiva e tecnologia para desenvolver empreendimentos que se tornam obras de arte esculpidas a partir de uma abordagem artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a modernidade concebida pela vida humana.
+          </p>
           <motion.a
             href="https://projetos.h2web.com.br/blueheaven/quem-somos/"
             target="_blank"
