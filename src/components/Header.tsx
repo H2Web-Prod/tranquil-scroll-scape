@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const empreendimentos = [
@@ -20,9 +20,26 @@ const whatsappUrl =
 export default function Header() {
   const [empOpen, setEmpOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [submenuLeft, setSubmenuLeft] = useState(0);
+  const headerRef = useRef<HTMLElement>(null);
+  const empRef = useRef<HTMLDivElement>(null);
+
+  const openEmpreendimentos = () => {
+    if (headerRef.current && empRef.current) {
+      const headerRect = headerRef.current.getBoundingClientRect();
+      const empRect = empRef.current.getBoundingClientRect();
+      setSubmenuLeft(empRect.left - headerRect.left);
+    }
+
+    setEmpOpen(true);
+  };
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 w-full bg-transparent">
+    <header
+      ref={headerRef}
+      className="absolute top-0 left-0 right-0 z-50 w-full bg-transparent"
+      onMouseLeave={() => setEmpOpen(false)}
+    >
       <div className="px-6 md:px-10">
         <div className="py-5 flex items-center justify-between border-b-2 border-white">
         <a href="/" className="flex-shrink-0">
@@ -36,33 +53,11 @@ export default function Header() {
         <nav className="hidden lg:flex items-stretch gap-10 ml-auto mr-8 font-manrope font-light text-[18px] text-white nav-links">
           <a href="#manifesto" className="nav-link flex items-center">Blue Heaven</a>
           <div
-            className="relative flex items-center py-5 -my-5"
-            onMouseEnter={() => setEmpOpen(true)}
-            onMouseLeave={() => setEmpOpen(false)}
+            ref={empRef}
+            className="flex items-center py-5 -my-5"
+            onMouseEnter={openEmpreendimentos}
           >
             <button className="nav-link">Empreendimentos</button>
-            {empOpen && (
-              <div className="absolute top-full left-0 min-w-[240px]">
-                <div
-                  className="p-4 flex flex-col gap-2"
-                  style={{
-                    background: "rgba(255,255,255,0.92)",
-                    backdropFilter: "blur(20px)",
-                    WebkitBackdropFilter: "blur(20px)",
-                  }}
-                >
-                  {empreendimentos.map((e) => (
-                    <a
-                      key={e.name}
-                      href={e.url}
-                      className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2"
-                    >
-                      {e.name}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
           {navLinks.slice(1).map((l) => (
             <a key={l.name} href={l.href} className="nav-link">
@@ -92,6 +87,40 @@ export default function Header() {
         </button>
         </div>
       </div>
+
+      {empOpen && (
+        <div
+          className="absolute min-w-[240px]"
+          onMouseEnter={openEmpreendimentos}
+          style={{
+            top: "100%",
+            left: `${submenuLeft}px`,
+            margin: 0,
+            marginTop: 0,
+            paddingTop: 0,
+            transform: "none",
+          }}
+        >
+          <div
+            className="p-4 flex flex-col gap-2"
+            style={{
+              background: "rgba(255,255,255,0.92)",
+              backdropFilter: "blur(20px)",
+              WebkitBackdropFilter: "blur(20px)",
+            }}
+          >
+            {empreendimentos.map((e) => (
+              <a
+                key={e.name}
+                href={e.url}
+                className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2"
+              >
+                {e.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
 
       <AnimatePresence>
         {mobileOpen && (
