@@ -37,7 +37,8 @@ export default function Header() {
         WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
       }}
     >
-      <div className="px-6 md:px-16 py-5 flex items-center justify-between border-b border-white/30">
+      <div className="px-6 md:px-10">
+        <div className="py-5 flex items-center justify-between border-b-2 border-white">
         <a href="/" className="flex-shrink-0">
           <img
             src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/construtora-imobiliaria-blue-heaven.png"
