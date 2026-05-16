@@ -9,7 +9,7 @@ export default function FinalCTA() {
       <div className="max-w-[1300px] mx-auto text-left">
         <ScrollReveal
           as="h2"
-          className="font-light text-black"
+          className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1200px]"
         >
           Seu novo estilo de vida começa aqui
         </ScrollReveal>
