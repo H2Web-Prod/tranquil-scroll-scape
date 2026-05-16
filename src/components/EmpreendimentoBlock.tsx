@@ -80,9 +80,7 @@ export default function EmpreendimentoBlock({ image, eyebrow, title, subtitle, b
         </div>
       </section>
 
-      <section className="bg-white px-6" style={{ paddingTop: "160px", paddingBottom: "200px" }}>
-        <style>{`@media (min-width: 768px) { .empreendimento-text-block { padding-top: 280px !important; padding-bottom: 380px !important; } }`}</style>
-        <div className="empreendimento-text-block" style={{ display: "contents" }}>
+      <section className="bg-white px-6 pt-[160px] pb-[200px] md:pt-[280px] md:pb-[380px]">
         <div className="max-w-[1200px] mx-auto">
           {subtitle && (
             <p
