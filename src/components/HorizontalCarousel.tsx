@@ -15,7 +15,7 @@ export default function HorizontalCarousel() {
     target: ref,
     offset: ["start start", "end end"],
   });
-  const x = useTransform(scrollYProgress, [0, 1], ["0vw", "-120vw"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0vw", "-180vw"]);
 
   return (
     <section ref={ref} className="h-[400vh] relative bg-white w-full overflow-hidden">
@@ -37,7 +37,7 @@ export default function HorizontalCarousel() {
 
         <motion.div
           style={{ x }}
-          className="absolute bottom-[80px] left-0 flex gap-6 h-[65vh] pl-[80px]"
+          className="absolute bottom-[60px] left-0 flex gap-6 h-[70vh] pl-[80px]"
         >
           {images.map((src, i) => (
             <img
