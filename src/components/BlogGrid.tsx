@@ -27,9 +27,6 @@ export default function BlogGrid() {
     <section id="blog" className="bg-white py-[100px] md:py-[200px] px-6">
       <div className="max-w-[1300px] mx-auto">
         <div className="mb-20">
-          <p className="text-[#b85c3c] font-medium text-[13px] tracking-[0.3em] uppercase mb-8">
-            — Diário Blue Heaven
-          </p>
           <ScrollReveal as="h2" className="font-light text-black text-[clamp(36px,5vw,56px)]">
             Nosso Blog
           </ScrollReveal>
