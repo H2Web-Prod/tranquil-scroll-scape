@@ -36,28 +36,31 @@ export default function BlogGrid() {
         </div>
         <div className="grid md:grid-cols-3 gap-12 md:gap-10">
           {posts.map((p, i) => (
-            <motion.a
+            <motion.div
               key={p.link}
-              href={p.link}
-              target="_blank"
-              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 1.1, delay: i * 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="group block"
+              className="block"
             >
-              <div className="overflow-hidden mb-6" style={{ aspectRatio: "4/3" }}>
-                <img
-                  src={p.image}
-                  alt={p.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-[600ms] group-hover:scale-105"
-                />
-              </div>
-              <h3 className="font-normal text-[22px] text-black leading-[1.35]">{p.title}</h3>
+              <a href={p.link} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                <div className="overflow-hidden mb-6" style={{ aspectRatio: "4/3" }}>
+                  <img src={p.image} alt={p.title} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+                <h3 className="font-normal text-[22px] text-black leading-[1.35]">{p.title}</h3>
+              </a>
               <p className="text-[14px] text-black opacity-60 mt-4">{p.date}</p>
-            </motion.a>
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginTop: "24px" }}
+                className="inline-block font-roboto font-medium text-[14px] text-black bg-white border border-black rounded-full px-[22px] py-[10px] hover:bg-black hover:text-white transition-all duration-400"
+              >
+                Ler matéria
+              </a>
+            </motion.div>
           ))}
         </div>
         <div className="text-center mt-20">
