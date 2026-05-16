@@ -56,20 +56,6 @@ export default function EmpreendimentoBlock({ image, eyebrow, title, subtitle, b
         <div className="absolute inset-0 bg-gradient-to-b from-black/15 to-black/55" />
         <div className="absolute inset-0 flex">
           <div className="mt-auto pl-8 pb-8 md:pl-[80px] md:pb-[80px] pr-6 max-w-full">
-            <p
-              style={{
-                fontFamily: "'Public Sans', sans-serif",
-                color: "#FFFFFF",
-                opacity: 0.7,
-                fontSize: "13px",
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                fontWeight: 500,
-                marginBottom: "24px",
-              }}
-            >
-              {eyebrow}
-            </p>
             <h2
               ref={titleRef}
               style={{
