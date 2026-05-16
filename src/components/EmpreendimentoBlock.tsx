@@ -76,28 +76,28 @@ export default function EmpreendimentoBlock({ image, eyebrow, title, subtitle, b
                 );
               })}
             </h2>
-            {subtitle && (
-              <p
-                style={{
-                  color: "#FFFFFF",
-                  fontFamily: "'Public Sans', sans-serif",
-                  fontSize: "20px",
-                  fontWeight: 400,
-                  lineHeight: 1.5,
-                  marginTop: "24px",
-                  maxWidth: "480px",
-                }}
-              >
-                {subtitle}
-              </p>
-            )}
           </div>
         </div>
       </section>
 
       <section className="bg-white py-[160px] md:py-[280px] px-6">
-        <div className="max-w-[880px] mx-auto">
-          <p className="padrao-p" style={{ maxWidth: "720px", lineHeight: 1.9 }}>
+        <div className="max-w-[1200px] mx-auto">
+          {subtitle && (
+            <p
+              style={{
+                fontFamily: "'Public Sans', sans-serif",
+                fontWeight: 400,
+                fontSize: "28px",
+                color: "#000000",
+                lineHeight: 1.4,
+                maxWidth: "1200px",
+                marginBottom: "40px",
+              }}
+            >
+              {subtitle}
+            </p>
+          )}
+          <p className="padrao-p" style={{ maxWidth: "1200px", lineHeight: 1.9 }}>
             {body}
           </p>
           <div style={{ marginTop: "64px" }}>
