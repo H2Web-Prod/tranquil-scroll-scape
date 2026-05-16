@@ -2,7 +2,7 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function Manifesto() {
   return (
-    <section id="manifesto" className="bg-white py-[100px] md:py-[200px] px-6">
+    <section id="manifesto" className="bg-white py-[120px] md:py-[220px] px-6">
       <div className="max-w-[1100px] mx-auto">
         <ScrollReveal
           as="h2"
