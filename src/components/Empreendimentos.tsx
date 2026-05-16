@@ -8,7 +8,7 @@ const items = [
     title: "Infinitá Treehouse",
     subtitle: "Um refúgio suspenso entre a arquitetura e a natureza.",
     body: "O Infinitá Treehouse nasce em Itajaí como uma interpretação sensível do habitar contemporâneo, onde a arquitetura não se impõe ao entorno, mas dialoga com ele. Inserido em um território marcado pela presença da água, da vegetação e da escala humana, o empreendimento traduz a proposta da Blue Heaven de criar obras que respeitam a região e permanecem relevantes ao longo do tempo.",
-    link: "https://projetos.h2web.com.br/blueheaven/imoveis-exclusivos-blue-heaven/infinita-treehouse/",
+    link: "/infinita-treehouse",
   },
   {
     image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/empreendimento-aquos-oasis-home.jpg",

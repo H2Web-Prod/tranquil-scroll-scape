@@ -18,7 +18,7 @@ const institucional = [
 ];
 
 const empreendimentos = [
-  { label: "Infinitá Treehouse", href: `${base}/imoveis-exclusivos-blue-heaven/infinita-treehouse/` },
+  { label: "Infinitá Treehouse", href: `/infinita-treehouse` },
   { label: "Aquos", href: `${base}/imoveis-exclusivos-blue-heaven/aquos-oasis-home/` },
   { label: "Monolyt", href: `${base}/imoveis-exclusivos-blue-heaven/monolyt/` },
 ];
