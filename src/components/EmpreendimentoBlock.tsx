@@ -80,7 +80,7 @@ export default function EmpreendimentoBlock({ image, eyebrow, title, subtitle, b
         </div>
       </section>
 
-      <section className="bg-white py-[160px] md:py-[280px] px-6">
+      <section className="bg-white px-6 pt-[160px] pb-[200px] md:pt-[280px] md:pb-[380px]">
         <div className="max-w-[1200px] mx-auto">
           {subtitle && (
             <p
