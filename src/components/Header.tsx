@@ -22,7 +22,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="relative w-full">
+    <header className="absolute top-0 left-0 right-0 z-50 w-full bg-transparent">
       <div className="px-6 md:px-10">
         <div className="py-5 flex items-center justify-between border-b-2 border-white">
         <a href="/" className="flex-shrink-0">
