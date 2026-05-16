@@ -5,7 +5,8 @@ import Hero from "@/components/Hero";
 import Manifesto from "@/components/Manifesto";
 import VideoGrowSection from "@/components/VideoGrowSection";
 import Empreendimentos from "@/components/Empreendimentos";
-import ArchitectsOffice from "@/components/ArchitectsOffice";
+import { ChallengeSection, ConnectingSection } from "@/components/ArchitectsOffice";
+import ImageGrowSection from "@/components/ImageGrowSection";
 import BlogGrid from "@/components/BlogGrid";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -40,7 +41,9 @@ function Index() {
         <Manifesto />
         <VideoGrowSection />
         <Empreendimentos />
-        <ArchitectsOffice />
+        <ChallengeSection />
+        <ImageGrowSection />
+        <ConnectingSection />
         <BlogGrid />
         <FinalCTA />
       </main>
