@@ -9,13 +9,10 @@ export default function TituloUnico({ children }: { children: string }) {
       <div className="max-w-[1300px] mx-auto w-full text-left">
         <ScrollReveal
           as="h2"
-          className="font-light text-black"
+          className="font-light text-black text-[clamp(40px,5vw,72px)] leading-[1.2] max-w-[1100px]"
         >
           {children}
         </ScrollReveal>
-        <style>{`
-          section h2 { font-family: 'Public Sans', sans-serif; font-weight: 300; font-size: clamp(40px, 5vw, 72px); color: #000; line-height: 1.2; max-width: 1100px; }
-        `}</style>
       </div>
     </section>
   );
