@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
 import useLenis from "@/hooks/useLenis";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
-import VideoModal from "@/components/VideoModal";
 import FadeInUp from "@/components/FadeInUp";
 import ParallaxImage from "@/components/ParallaxImage";
 import ImageGrowSection from "@/components/ImageGrowSection";
 import ZoomImage from "@/components/ZoomImage";
+import StaggerStack from "@/components/StaggerStack";
+import VideoTriggerCard from "@/components/VideoTriggerCard";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 
 export const Route = createFileRoute("/infinita-treehouse")({
@@ -91,7 +91,9 @@ function ZigZagBlock({
           <div className={reverse ? "md:order-2" : ""}>
             <ParallaxImage src={image} alt={alt} aspectRatio="4/5" />
           </div>
-          <div className={reverse ? "md:order-1" : ""}>{children}</div>
+          <div className={reverse ? "md:order-1" : ""}>
+            <StaggerStack>{children}</StaggerStack>
+          </div>
         </div>
       </section>
     </FadeInUp>
@@ -102,21 +104,40 @@ function PersonBlock({
   image,
   alt,
   reverse = false,
+  videoSrc,
   children,
 }: {
   image: string;
   alt: string;
   reverse?: boolean;
+  videoSrc?: string;
   children: React.ReactNode;
 }) {
   return (
     <FadeInUp>
       <section className="py-[100px] md:py-[160px] px-6 md:px-10 bg-white">
-        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <div className={reverse ? "md:order-2" : ""}>
+        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+          <div className={`relative ${reverse ? "md:order-2" : ""}`}>
             <ParallaxImage src={image} alt={alt} aspectRatio="3/4" />
+            {videoSrc && (
+              <>
+                {/* Desktop overlay */}
+                <div
+                  className="hidden md:block absolute z-10"
+                  style={{ top: 80, right: "-110px" }}
+                >
+                  <VideoTriggerCard videoSrc={videoSrc} />
+                </div>
+                {/* Mobile below */}
+                <div className="block md:hidden mt-6">
+                  <VideoTriggerCard videoSrc={videoSrc} />
+                </div>
+              </>
+            )}
           </div>
-          <div className={reverse ? "md:order-1" : ""}>{children}</div>
+          <div className={reverse ? "md:order-1" : ""}>
+            <StaggerStack>{children}</StaggerStack>
+          </div>
         </div>
       </section>
     </FadeInUp>
@@ -125,8 +146,6 @@ function PersonBlock({
 
 function InfinitaTreehouse() {
   useLenis();
-  const [renataOpen, setRenataOpen] = useState(false);
-  const [gregOpen, setGregOpen] = useState(false);
 
   return (
     <div className="bg-white relative">
@@ -272,6 +291,7 @@ function InfinitaTreehouse() {
         <PersonBlock
           image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Renata.webp"
           alt="Renata Tilli"
+          videoSrc={VIDEO_RENATA}
         >
           <span style={eyebrowStyle}>PAISAGISMO</span>
           <ScrollReveal as="h2" className="font-light text-black">
@@ -281,12 +301,9 @@ function InfinitaTreehouse() {
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
               O projeto paisagístico, assinado por Renata Tilli, reforça a proposta de integração com a natureza. A vegetação é tratada como elemento estrutural do projeto, criando transições suaves entre os espaços construídos e o ambiente natural, além de contribuir para o conforto térmico, visual e sensorial dos moradores.
             </p>
-            <p className="padrao-p-internas" style={{ marginBottom: "32px" }}>
+            <p className="padrao-p-internas">
               A natureza não aparece como cenário, mas como parte essencial da experiência de habitar.
             </p>
-            <button className={btnClass} onClick={() => setRenataOpen(true)}>
-              Assistir vídeo
-            </button>
           </div>
         </PersonBlock>
 
@@ -295,6 +312,7 @@ function InfinitaTreehouse() {
           image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Triptyque_Greg-Bousquet_FotoJulia-Rodrigues.webp"
           alt="Greg Bousquet"
           reverse
+          videoSrc={VIDEO_GREG}
         >
           <span style={eyebrowStyle}>ARQUITETURA</span>
           <ScrollReveal as="h2" className="font-light text-black">
@@ -304,12 +322,9 @@ function InfinitaTreehouse() {
             <blockquote style={quoteStyle}>
               "Encontramos em Itajaí a beleza brasileira que fez parte da equação total ao prédio com essas vistas, o interno com externo e conexão do ser humano com a natureza"
             </blockquote>
-            <p className="padrao-p-internas" style={{ marginTop: "16px", marginBottom: "32px" }}>
+            <p className="padrao-p-internas" style={{ marginTop: "16px" }}>
               — Greg Bousquet, fundador da Architects Office, responsável pelo projeto do Infinitá Treehouse.
             </p>
-            <button className={btnClass} onClick={() => setGregOpen(true)}>
-              Assistir vídeo
-            </button>
           </div>
         </PersonBlock>
 
@@ -383,9 +398,6 @@ function InfinitaTreehouse() {
         </section>
       </main>
       <Footer />
-
-      <VideoModal src={VIDEO_RENATA} isOpen={renataOpen} onClose={() => setRenataOpen(false)} />
-      <VideoModal src={VIDEO_GREG} isOpen={gregOpen} onClose={() => setGregOpen(false)} />
     </div>
   );
 }
