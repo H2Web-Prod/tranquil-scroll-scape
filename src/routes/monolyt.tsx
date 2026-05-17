@@ -142,7 +142,7 @@ function MonolytPage() {
         >
           <div
             className="absolute"
-            style={{ top: "32%", left: "57%", textAlign: "left", zIndex: 5 }}
+            style={{ top: "32%", left: "48%", textAlign: "left", zIndex: 5 }}
           >
             <h1
               style={{
@@ -150,7 +150,7 @@ function MonolytPage() {
                 fontWeight: 300,
                 fontSize: "clamp(56px, 7vw, 96px)",
                 lineHeight: 1.1,
-                color: "#000000",
+                color: "#FFFFFF",
                 letterSpacing: "-0.02em",
                 margin: 0,
               }}
@@ -259,7 +259,7 @@ function MonolytPage() {
               src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/selo-desktop.webp"
               alt="Selo de prêmio"
               loading="lazy"
-              style={{ width: "200px", height: "auto", marginTop: "16px", display: "block" }}
+              style={{ width: "337px", height: "auto", marginTop: "16px", display: "block" }}
             />
           </div>
         </ZigZagBlock>
@@ -319,23 +319,10 @@ function MonolytPage() {
           aspectRatio="3/4"
         >
           <span style={eyebrowStyle}>ARQUITETURA</span>
-          <ScrollReveal
-            as="h2"
-            className="font-light text-black"
-          >
-            UM PROJETO ARCHITECTS OFFICE.
-          </ScrollReveal>
-          <h3
-            style={{
-              fontFamily: "'Public Sans', sans-serif",
-              fontWeight: 400,
-              fontSize: "32px",
-              color: "#000",
-              marginTop: "16px",
-            }}
-          >
+          <span style={{ ...eyebrowStyle, marginTop: "-12px" }}>UM PROJETO ARCHITECTS OFFICE.</span>
+          <ScrollReveal as="h2" className="font-light text-black">
             Greg Bousquet
-          </h3>
+          </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
               Greg Bousquet, fundador da Architects Office, consolidou ao longo de 21 anos uma trajetória marcada por projetos e premiações por todo o globo. Nos últimos anos, o arquiteto se tornou referência por sua experiência global, repertório multicultural e olhar estratégico para a eficiência de projetos.
@@ -357,20 +344,10 @@ function MonolytPage() {
           aspectRatio="3/4"
         >
           <span style={eyebrowStyle}>PAISAGISMO</span>
+          <span style={{ ...eyebrowStyle, marginTop: "-12px" }}>A ARTE AUTORAL QUE REALÇA A NATUREZA.</span>
           <ScrollReveal as="h2" className="font-light text-black">
-            A ARTE AUTORAL QUE REALÇA A NATUREZA.
-          </ScrollReveal>
-          <h3
-            style={{
-              fontFamily: "'Public Sans', sans-serif",
-              fontWeight: 400,
-              fontSize: "32px",
-              color: "#000",
-              marginTop: "16px",
-            }}
-          >
             Rodrigo Oliveira
-          </h3>
+          </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
               Formado em engenharia agronômica e com especialização em Arborist, na Flórida, o paisagista traz consigo referências de diversas escolas – da assimetria japonesa aos clássicos italianos.
