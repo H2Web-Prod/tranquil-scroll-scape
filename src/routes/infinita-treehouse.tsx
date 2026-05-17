@@ -186,13 +186,13 @@ function InfinitaTreehouse() {
             >
               Um refúgio suspenso entre a arquitetura e a natureza.
             </p>
-            <p className="padrao-p" style={{ marginBottom: "24px" }}>
+            <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
               O Infinitá Treehouse nasce em Itajaí como uma interpretação sensível do habitar contemporâneo, onde a arquitetura não se impõe ao entorno, mas dialoga com ele.
             </p>
-            <p className="padrao-p" style={{ marginBottom: "24px" }}>
+            <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
               Inserido em um território marcado pela presença da água, da vegetação e da escala humana, o empreendimento traduz a proposta da Blue Heaven de criar obras que respeitam a região e permanecem relevantes ao longo do tempo.
             </p>
-            <p className="padrao-p">
+            <p className="padrao-p-internas">
               Aqui, morar é experimentar o equilíbrio entre cidade e natureza, em um endereço que traz a contemplação, o silêncio e a integração com a paisagem.
             </p>
           </div>
@@ -211,13 +211,13 @@ function InfinitaTreehouse() {
             Arquitetura que se constrói a partir do entorno
           </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
-            <p className="padrao-p" style={{ marginBottom: "20px" }}>
+            <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
               O Infinitá Treehouse é assinado pela Architects Office em colaboração com a Triptyque. Dois escritórios com atuação internacional e repertório consistente em projetos que consideram território, clima e forma de ocupação.
             </p>
-            <p className="padrao-p" style={{ marginBottom: "20px" }}>
+            <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
               O desenho parte de uma leitura precisa do terreno, com volumes e aberturas que organizam a presença do empreendimento sem romper a relação com a paisagem. A implantação conduz essa lógica ao longo de todo o projeto. A arquitetura se estabelece a partir do lugar, introduzindo escala, vegetação e topografia para orientar decisões que definem a forma construída.
             </p>
-            <p className="padrao-p">
+            <p className="padrao-p-internas">
               Architects Office e Triptyque conduzem o projeto alinhados à visão da Blue Heaven. A arquitetura assume papel ativo na forma como o espaço é vivido, mantendo coerência entre construção, entorno e tempo.
             </p>
           </div>
@@ -230,13 +230,13 @@ function InfinitaTreehouse() {
               Um projeto que nasce do território
             </ScrollReveal>
             <div style={{ marginTop: "40px" }}>
-              <p className="padrao-p" style={{ marginBottom: "24px" }}>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
                 O Infinitá Treehouse é assinado pela Architects Office em colaboração com a Triptyque. Dois escritórios com atuação internacional e repertório consistente em projetos que consideram território, clima e forma de ocupação.
               </p>
-              <p className="padrao-p" style={{ marginBottom: "24px" }}>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
                 O desenho parte de uma leitura precisa do terreno, com volumes e aberturas que organizam a presença do empreendimento sem romper a relação com a paisagem. A implantação conduz essa lógica ao longo de todo o projeto. A arquitetura se estabelece a partir do lugar, introduzindo escala, vegetação e topografia para orientar decisões que definem a forma construída.
               </p>
-              <p className="padrao-p">
+              <p className="padrao-p-internas">
                 Architects Office e Triptyque conduzem o projeto alinhados à visão da Blue Heaven. A arquitetura assume papel ativo na forma como o espaço é vivido, mantendo coerência entre construção, entorno e tempo.
               </p>
             </div>
@@ -263,10 +263,10 @@ function InfinitaTreehouse() {
             Paisagismo como extensão da arquitetura
           </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
-            <p className="padrao-p" style={{ marginBottom: "20px" }}>
+            <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
               O projeto paisagístico, assinado por Renata Tilli, reforça a proposta de integração com a natureza. A vegetação é tratada como elemento estrutural do projeto, criando transições suaves entre os espaços construídos e o ambiente natural, além de contribuir para o conforto térmico, visual e sensorial dos moradores.
             </p>
-            <p className="padrao-p" style={{ marginBottom: "32px" }}>
+            <p className="padrao-p-internas" style={{ marginBottom: "32px" }}>
               A natureza não aparece como cenário, mas como parte essencial da experiência de habitar.
             </p>
             <button className={btnClass} onClick={() => setRenataOpen(true)}>
@@ -289,7 +289,7 @@ function InfinitaTreehouse() {
             <blockquote style={quoteStyle}>
               "Encontramos em Itajaí a beleza brasileira que fez parte da equação total ao prédio com essas vistas, o interno com externo e conexão do ser humano com a natureza"
             </blockquote>
-            <p className="padrao-p" style={{ marginTop: "16px", marginBottom: "32px" }}>
+            <p className="padrao-p-internas" style={{ marginTop: "16px", marginBottom: "32px" }}>
               — Greg Bousquet, fundador da Architects Office, responsável pelo projeto do Infinitá Treehouse.
             </p>
             <button className={btnClass} onClick={() => setGregOpen(true)}>
@@ -311,19 +311,19 @@ function InfinitaTreehouse() {
             <blockquote style={quoteStyle}>
               "O prédio está localizado entre águas, a mata e as montanhas e perto de uma das principais marinas do país, então desenvolvemos um estudo para criar piscinas com vidro e lajes inclinadas em frente a todos os apartamentos gerando essa ligação com o horizonte. A parte de trás, onde é a suíte master fica em frente para um quadro vivo verde, e o uso de vidros volta o espaço completamente para a mata"
             </blockquote>
-            <p className="padrao-p" style={{ marginTop: "12px", marginBottom: "28px" }}>
+            <p className="padrao-p-internas" style={{ marginTop: "12px", marginBottom: "28px" }}>
               — Raphaell Valença, designer de interiores da Architects Office.
             </p>
             <blockquote style={quoteStyle}>
               "Dentro da nossa proposta de decoração para um dos apartamentos, traduzimos esse universo náutico, o mar, e trazer cores, materiais curvos e assimétricos, que geram fluidez por meio das linhas orgânicas. Utilizamos uma base mais neutra nas áreas sociais para fortalecer a iluminação natural e o contato visual com a água e tons mais quentes na área íntima para a sensação de aconchego. A arquitetura foi pensada para contribuir com a melhoria da qualidade de vida das pessoas"
             </blockquote>
-            <p className="padrao-p" style={{ marginTop: "12px", marginBottom: "28px" }}>
+            <p className="padrao-p-internas" style={{ marginTop: "12px", marginBottom: "28px" }}>
               — Valença.
             </p>
             <blockquote style={quoteStyle}>
               "Hoje mais de 55% da população mundial vive em centros urbanos, então o meio ambiente é arquitetura, estamos criando o nosso mundo"
             </blockquote>
-            <p className="padrao-p" style={{ marginTop: "12px" }}>
+            <p className="padrao-p-internas" style={{ marginTop: "12px" }}>
               — Bousquet.
             </p>
           </div>
@@ -336,13 +336,13 @@ function InfinitaTreehouse() {
               Viver Infinitá é viver em sintonia com o tempo e o espaço
             </ScrollReveal>
             <div style={{ marginTop: "40px" }}>
-              <p className="padrao-p" style={{ marginBottom: "24px" }}>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
                 O Infinitá Treehouse traduz a visão da Blue Heaven de criar empreendimentos autorais, onde arquitetura, natureza e experiência caminham juntas.
               </p>
-              <p className="padrao-p" style={{ marginBottom: "24px" }}>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
                 Um projeto de imóvel exclusivo pensado para quem busca mais do que uma residência, mas uma forma de viver alinhada ao equilíbrio, à estética e à essência do lugar.
               </p>
-              <p className="padrao-p" style={{ marginBottom: "48px" }}>
+              <p className="padrao-p-internas" style={{ marginBottom: "48px" }}>
                 Uma obra singular, concebida para permanecer.
               </p>
               <a className={btnClass} href={WHATSAPP} target="_blank" rel="noopener noreferrer">
