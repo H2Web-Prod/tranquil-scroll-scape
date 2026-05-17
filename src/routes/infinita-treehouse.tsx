@@ -146,8 +146,6 @@ function PersonBlock({
 
 function InfinitaTreehouse() {
   useLenis();
-  const [renataOpen, setRenataOpen] = useState(false);
-  const [gregOpen, setGregOpen] = useState(false);
 
   return (
     <div className="bg-white relative">
