@@ -15,7 +15,7 @@ const items = [
     eyebrow: "02 · Residencial",
     title: "Aquos Oasis Home",
     body: "O Aquos Oasis Home surge a partir do poder de transformação da água, atuando como a força que orienta o projeto, molda a arquitetura e estabelece a relação entre o habitar e o território.",
-    link: "https://projetos.h2web.com.br/blueheaven/imoveis-exclusivos-blue-heaven/aquos-oasis-home/",
+    link: "/aquos-oasis-home",
   },
   {
     image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/empreendimento-monolyt.jpg",
