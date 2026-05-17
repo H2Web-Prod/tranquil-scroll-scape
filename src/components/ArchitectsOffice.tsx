@@ -1,6 +1,8 @@
-import { motion } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
 import MinimalAudioPlayer from "./MinimalAudioPlayer";
+import ParallaxImage from "./ParallaxImage";
+import FadeInUp from "./FadeInUp";
+import StaggerStack from "./StaggerStack";
 
 const GREG_AUDIO = "https://projetos.h2web.com.br/blueheaven/videos/greg-audio.mp3";
 
