@@ -45,13 +45,14 @@ const eyebrowStyle: React.CSSProperties = {
 };
 
 const quoteStyle: React.CSSProperties = {
-  fontStyle: "italic",
-  fontSize: "22px",
-  color: "#000000",
-  lineHeight: 1.6,
-  borderLeft: "2px solid #000000",
-  paddingLeft: "24px",
   fontFamily: "'Public Sans', sans-serif",
+  fontStyle: "italic",
+  fontSize: "20px",
+  fontWeight: 400,
+  color: "#606060",
+  lineHeight: 1.6,
+  borderLeft: "2px solid #606060",
+  paddingLeft: "24px",
 };
 
 const faqs: FAQItem[] = [
@@ -145,11 +146,12 @@ function InfinitaTreehouse() {
           <div
             className="absolute top-[100px] right-[32px] md:top-[140px] md:right-[80px]"
             style={{
-              maxWidth: "50vw",
+              maxWidth: "90vw",
               textAlign: "right",
               zIndex: 5,
             }}
           >
+            <style>{`@media (min-width: 768px){ .hero-subtitle{ white-space: nowrap; } }`}</style>
             <h1
               style={{
                 fontFamily: "'Public Sans', sans-serif",
@@ -160,8 +162,21 @@ function InfinitaTreehouse() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Infinitá Treehouse<br />
-              by Architects Office &amp; Triptyque
+              Infinitá Treehouse
+              <span
+                className="hero-subtitle"
+                style={{
+                  display: "block",
+                  fontFamily: "'Public Sans', sans-serif",
+                  fontWeight: 300,
+                  fontSize: "clamp(28px, 3.5vw, 48px)",
+                  lineHeight: 1.2,
+                  color: "#000000",
+                  marginTop: "12px",
+                }}
+              >
+                by Architects Office &amp; Triptyque
+              </span>
             </h1>
           </div>
         </section>
