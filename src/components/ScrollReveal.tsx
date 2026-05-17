@@ -32,8 +32,11 @@ export default function ScrollReveal({ children, className = "", as = "p", light
 
   const Tag = as as any;
 
+  const defaultLeading = as === "p" ? "leading-relaxed" : "leading-[1.1]";
+  const hasLeading = /(^|\s)leading-/.test(className);
+
   return (
-    <Tag ref={ref} className={`leading-relaxed ${className}`}>
+    <Tag ref={ref} className={`${hasLeading ? "" : defaultLeading} ${className}`}>
       {words.map((word, i) => {
         const start = i / words.length;
         const end = start + 1 / words.length;
