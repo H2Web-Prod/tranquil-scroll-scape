@@ -7,6 +7,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import VideoModal from "@/components/VideoModal";
 import FadeInUp from "@/components/FadeInUp";
 import ParallaxImage from "@/components/ParallaxImage";
+import ImageGrowSection from "@/components/ImageGrowSection";
+import ZoomImage from "@/components/ZoomImage";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 
 export const Route = createFileRoute("/infinita-treehouse")({
