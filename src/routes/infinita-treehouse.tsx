@@ -91,7 +91,9 @@ function ZigZagBlock({
           <div className={reverse ? "md:order-2" : ""}>
             <ParallaxImage src={image} alt={alt} aspectRatio="4/5" />
           </div>
-          <div className={reverse ? "md:order-1" : ""}>{children}</div>
+          <div className={reverse ? "md:order-1" : ""}>
+            <StaggerStack>{children}</StaggerStack>
+          </div>
         </div>
       </section>
     </FadeInUp>
@@ -102,21 +104,40 @@ function PersonBlock({
   image,
   alt,
   reverse = false,
+  videoSrc,
   children,
 }: {
   image: string;
   alt: string;
   reverse?: boolean;
+  videoSrc?: string;
   children: React.ReactNode;
 }) {
   return (
     <FadeInUp>
       <section className="py-[100px] md:py-[160px] px-6 md:px-10 bg-white">
-        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <div className={reverse ? "md:order-2" : ""}>
+        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+          <div className={`relative ${reverse ? "md:order-2" : ""}`}>
             <ParallaxImage src={image} alt={alt} aspectRatio="3/4" />
+            {videoSrc && (
+              <>
+                {/* Desktop overlay */}
+                <div
+                  className="hidden md:block absolute z-10"
+                  style={{ top: 80, right: "-110px" }}
+                >
+                  <VideoTriggerCard videoSrc={videoSrc} />
+                </div>
+                {/* Mobile below */}
+                <div className="block md:hidden mt-6">
+                  <VideoTriggerCard videoSrc={videoSrc} />
+                </div>
+              </>
+            )}
           </div>
-          <div className={reverse ? "md:order-1" : ""}>{children}</div>
+          <div className={reverse ? "md:order-1" : ""}>
+            <StaggerStack>{children}</StaggerStack>
+          </div>
         </div>
       </section>
     </FadeInUp>
