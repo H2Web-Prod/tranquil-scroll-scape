@@ -65,9 +65,19 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/aquos-oasis-home' | '/blue-heaven' | '/infinita-treehouse' | '/monolyt'
+  fullPaths:
+    | '/'
+    | '/aquos-oasis-home'
+    | '/blue-heaven'
+    | '/infinita-treehouse'
+    | '/monolyt'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/aquos-oasis-home' | '/blue-heaven' | '/infinita-treehouse' | '/monolyt'
+  to:
+    | '/'
+    | '/aquos-oasis-home'
+    | '/blue-heaven'
+    | '/infinita-treehouse'
+    | '/monolyt'
   id:
     | '__root__'
     | '/'
