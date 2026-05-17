@@ -172,7 +172,7 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
               </button>
             </div>
             <nav className="flex flex-col gap-6 font-manrope text-2xl text-white font-light">
-              <a href={isDark ? "/#manifesto" : "#manifesto"} onClick={() => setMobileOpen(false)}>Blue Heaven</a>
+              <Link to="/blue-heaven" onClick={() => setMobileOpen(false)}>Blue Heaven</Link>
               <div className="flex flex-col gap-3">
                 <span>Empreendimentos</span>
                 <div className="flex flex-col gap-3 pl-4 text-lg opacity-80">
