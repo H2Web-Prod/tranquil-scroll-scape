@@ -146,10 +146,10 @@ function BlueHeavenPage() {
               style={{
                 fontFamily: "'Public Sans', sans-serif",
                 fontWeight: 400,
-                fontSize: "clamp(20px, 2vw, 28px)",
+                fontSize: "clamp(16px, 1.4vw, 22px)",
                 color: "#FFFFFF",
-                lineHeight: 1.3,
-                marginTop: "16px",
+                lineHeight: 1.4,
+                marginTop: "12px",
               }}
             >
               Desafiamos o inalcançável, esculpindo o extraordinário
@@ -162,7 +162,7 @@ function BlueHeavenPage() {
           <div className="max-w-[1300px] mx-auto">
             <ScrollReveal
               as="h2"
-              className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1100px]"
+              className="font-light text-black text-[clamp(28px,3.5vw,48px)] leading-[1.1] max-w-[1200px] md:whitespace-nowrap"
             >
               Os pilares que sustentam os nossos projetos
             </ScrollReveal>
@@ -207,7 +207,7 @@ function BlueHeavenPage() {
                 <StaggerStack>
                   <ScrollReveal
                     as="h2"
-                    className="font-light text-black text-[clamp(36px,4.5vw,56px)]"
+                    className="font-light text-black text-[clamp(36px,4.5vw,56px)] leading-[1.1]"
                   >
                     Assinatura internacional na arquitetura
                   </ScrollReveal>
@@ -241,7 +241,7 @@ function BlueHeavenPage() {
                 <StaggerStack>
                   <ScrollReveal
                     as="h2"
-                    className="font-light text-black text-[clamp(36px,4.5vw,56px)]"
+                    className="font-light text-black text-[clamp(36px,4.5vw,56px)] leading-[1.1]"
                   >
                     A Blue Heaven não se limita a construir apenas residências.
                   </ScrollReveal>
@@ -262,7 +262,7 @@ function BlueHeavenPage() {
           <div className="max-w-[1300px] mx-auto">
             <ScrollReveal
               as="h2"
-              className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1100px]"
+              className="font-light text-black text-[clamp(28px,3.5vw,48px)] leading-[1.1] max-w-[1200px] md:whitespace-nowrap"
             >
               Perguntas Frequentes sobre Quem Somos
             </ScrollReveal>

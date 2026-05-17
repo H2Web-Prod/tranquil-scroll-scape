@@ -9,7 +9,7 @@ export default function TituloUnico({ children }: { children: string }) {
       <div className="max-w-[1300px] mx-auto w-full text-left">
         <ScrollReveal
           as="h2"
-          className="font-light text-black text-[clamp(40px,5vw,72px)] leading-[1.2] max-w-[1100px]"
+          className="font-light text-black text-[clamp(40px,5vw,72px)] leading-[1.1] max-w-[1100px]"
         >
           {children}
         </ScrollReveal>

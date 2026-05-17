@@ -63,16 +63,11 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
           >
             <FadeInUp>
               <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-                <ParallaxImage
-                  src={current.image}
-                  alt={current.title}
-                  aspectRatio="3/4"
-                />
                 <div>
                   <StaggerStack>
                     <ScrollReveal
                       as="h2"
-                      className="font-light text-black text-[clamp(32px,4vw,52px)] mb-6"
+                      className="font-light text-black text-[clamp(32px,4vw,52px)] leading-[1.1] mb-6"
                     >
                       {current.title}
                     </ScrollReveal>
@@ -82,6 +77,13 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
                       </p>
                     ))}
                   </StaggerStack>
+                </div>
+                <div style={{ width: "100%", maxHeight: "1024px", overflow: "hidden" }}>
+                  <img
+                    src={current.image}
+                    alt={current.title}
+                    style={{ width: "100%", height: "1024px", maxHeight: "1024px", objectFit: "cover", display: "block" }}
+                  />
                 </div>
               </div>
             </FadeInUp>
