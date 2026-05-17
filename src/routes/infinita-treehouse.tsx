@@ -143,8 +143,13 @@ function InfinitaTreehouse() {
           }}
         >
           <div
-            className="absolute left-0 right-0 px-6 text-center"
-            style={{ top: "27%" }}
+            className="absolute"
+            style={{
+              top: "27%",
+              right: "clamp(32px, 6vw, 80px)",
+              maxWidth: "50vw",
+              textAlign: "right",
+            }}
           >
             <h1
               style={{
@@ -153,17 +158,18 @@ function InfinitaTreehouse() {
                 fontSize: "clamp(48px, 6vw, 88px)",
                 lineHeight: 1.1,
                 color: "#000000",
+                letterSpacing: "-0.02em",
               }}
             >
-              <ScrollReveal as="span" className="block">Infinitá Treehouse</ScrollReveal>
-              <ScrollReveal as="span" className="block">by Architects Office & Triptyque</ScrollReveal>
+              <span className="block">Infinitá Treehouse</span>
+              <span className="block">by Architects Office & Triptyque</span>
             </h1>
           </div>
         </section>
 
-        {/* SEÇÃO 2 */}
+        {/* SEÇÃO 1 */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
-          <div className="max-w-[1200px] mx-auto">
+          <div className="max-w-[1300px] mx-auto">
             <ScrollReveal as="h2" className="font-light text-black" >
               Moldado pelo homem, inspirado pela natureza
             </ScrollReveal>
@@ -193,9 +199,12 @@ function InfinitaTreehouse() {
           </div>
         </section>
 
-        {/* BLOCO 1 */}
+        {/* IMAGEM SCROLL 100% */}
+        <ImageGrowSection src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/empreendimento-infinita-treehouse.jpg" />
+
+        {/* SEÇÃO 2 — Arquitetura (Colunas Efeito) */}
         <ZigZagBlock
-          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/infinita-01.jpg"
+          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/infinita-02.jpg"
           alt="Infinitá Treehouse — arquitetura"
         >
           <span style={eyebrowStyle}>ARQUITETURA</span>
@@ -215,28 +224,35 @@ function InfinitaTreehouse() {
           </div>
         </ZigZagBlock>
 
-        {/* BLOCO 2 */}
-        <ZigZagBlock
-          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/infinita-02.jpg"
-          alt="Infinitá Treehouse — conceito"
-          reverse
-        >
-          <span style={eyebrowStyle}>CONCEITO</span>
-          <ScrollReveal as="h2" className="font-light text-black">
-            Um projeto que nasce do território
-          </ScrollReveal>
-          <div style={{ marginTop: "32px" }}>
-            <p className="padrao-p" style={{ marginBottom: "20px" }}>
-              O Infinitá Treehouse é assinado pela Architects Office em colaboração com a Triptyque. Dois escritórios com atuação internacional e repertório consistente em projetos que consideram território, clima e forma de ocupação.
-            </p>
-            <p className="padrao-p" style={{ marginBottom: "20px" }}>
-              O desenho parte de uma leitura precisa do terreno, com volumes e aberturas que organizam a presença do empreendimento sem romper a relação com a paisagem. A implantação conduz essa lógica ao longo de todo o projeto. A arquitetura se estabelece a partir do lugar, introduzindo escala, vegetação e topografia para orientar decisões que definem a forma construída.
-            </p>
-            <p className="padrao-p">
-              Architects Office e Triptyque conduzem o projeto alinhados à visão da Blue Heaven. A arquitetura assume papel ativo na forma como o espaço é vivido, mantendo coerência entre construção, entorno e tempo.
-            </p>
+        {/* SEÇÃO 3 — texto puro */}
+        <section className="bg-white py-[140px] md:py-[240px] px-6">
+          <div className="max-w-[1300px] mx-auto">
+            <ScrollReveal as="h2" className="font-light text-black">
+              Um projeto que nasce do território
+            </ScrollReveal>
+            <div style={{ marginTop: "40px" }}>
+              <p className="padrao-p" style={{ marginBottom: "24px" }}>
+                O Infinitá Treehouse é assinado pela Architects Office em colaboração com a Triptyque. Dois escritórios com atuação internacional e repertório consistente em projetos que consideram território, clima e forma de ocupação.
+              </p>
+              <p className="padrao-p" style={{ marginBottom: "24px" }}>
+                O desenho parte de uma leitura precisa do terreno, com volumes e aberturas que organizam a presença do empreendimento sem romper a relação com a paisagem. A implantação conduz essa lógica ao longo de todo o projeto. A arquitetura se estabelece a partir do lugar, introduzindo escala, vegetação e topografia para orientar decisões que definem a forma construída.
+              </p>
+              <p className="padrao-p">
+                Architects Office e Triptyque conduzem o projeto alinhados à visão da Blue Heaven. A arquitetura assume papel ativo na forma como o espaço é vivido, mantendo coerência entre construção, entorno e tempo.
+              </p>
+            </div>
           </div>
-        </ZigZagBlock>
+        </section>
+
+        {/* DUAS IMAGENS COM ZOOM EMPREENDIMENTO EM SEQUÊNCIA */}
+        <ZoomImage
+          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/BHE_INF_Fachada_Voo_EF.webp"
+          alt="Infinitá Treehouse — fachada vista aérea"
+        />
+        <ZoomImage
+          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/BHE_INF_Fachada_Extra.webp"
+          alt="Infinitá Treehouse — fachada"
+        />
 
         {/* RENATA */}
         <PersonBlock
