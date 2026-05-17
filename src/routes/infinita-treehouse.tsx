@@ -291,6 +291,7 @@ function InfinitaTreehouse() {
         <PersonBlock
           image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Renata.webp"
           alt="Renata Tilli"
+          videoSrc={VIDEO_RENATA}
         >
           <span style={eyebrowStyle}>PAISAGISMO</span>
           <ScrollReveal as="h2" className="font-light text-black">
@@ -300,12 +301,9 @@ function InfinitaTreehouse() {
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
               O projeto paisagístico, assinado por Renata Tilli, reforça a proposta de integração com a natureza. A vegetação é tratada como elemento estrutural do projeto, criando transições suaves entre os espaços construídos e o ambiente natural, além de contribuir para o conforto térmico, visual e sensorial dos moradores.
             </p>
-            <p className="padrao-p-internas" style={{ marginBottom: "32px" }}>
+            <p className="padrao-p-internas">
               A natureza não aparece como cenário, mas como parte essencial da experiência de habitar.
             </p>
-            <button className={btnClass} onClick={() => setRenataOpen(true)}>
-              Assistir vídeo
-            </button>
           </div>
         </PersonBlock>
 
@@ -314,6 +312,7 @@ function InfinitaTreehouse() {
           image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Triptyque_Greg-Bousquet_FotoJulia-Rodrigues.webp"
           alt="Greg Bousquet"
           reverse
+          videoSrc={VIDEO_GREG}
         >
           <span style={eyebrowStyle}>ARQUITETURA</span>
           <ScrollReveal as="h2" className="font-light text-black">
@@ -323,12 +322,9 @@ function InfinitaTreehouse() {
             <blockquote style={quoteStyle}>
               "Encontramos em Itajaí a beleza brasileira que fez parte da equação total ao prédio com essas vistas, o interno com externo e conexão do ser humano com a natureza"
             </blockquote>
-            <p className="padrao-p-internas" style={{ marginTop: "16px", marginBottom: "32px" }}>
+            <p className="padrao-p-internas" style={{ marginTop: "16px" }}>
               — Greg Bousquet, fundador da Architects Office, responsável pelo projeto do Infinitá Treehouse.
             </p>
-            <button className={btnClass} onClick={() => setGregOpen(true)}>
-              Assistir vídeo
-            </button>
           </div>
         </PersonBlock>
 
