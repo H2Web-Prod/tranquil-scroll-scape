@@ -19,7 +19,7 @@ export default function ImageScrollCentralizada({
     <section
       ref={ref}
       className="relative bg-white overflow-hidden"
-      style={{ height: "200vh" }}
+      style={{ height: "150vh" }}
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
         <motion.img
