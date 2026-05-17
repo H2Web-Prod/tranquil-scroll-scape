@@ -5,7 +5,7 @@ import { Link } from "@tanstack/react-router";
 const empreendimentos = [
   { name: "Infinitá Treehouse", url: "/infinita-treehouse", internal: true },
   { name: "Aquos", url: "/aquos-oasis-home", internal: true },
-  { name: "Monolyt", url: "https://projetos.h2web.com.br/blueheaven/imoveis-exclusivos-blue-heaven/monolyt/", internal: false },
+  { name: "Monolyt", url: "/monolyt", internal: true },
 ];
 
 const navLinks = [
