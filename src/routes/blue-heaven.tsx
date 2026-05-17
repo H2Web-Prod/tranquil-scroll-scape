@@ -146,10 +146,10 @@ function BlueHeavenPage() {
               style={{
                 fontFamily: "'Public Sans', sans-serif",
                 fontWeight: 400,
-                fontSize: "clamp(20px, 2vw, 28px)",
+                fontSize: "clamp(16px, 1.4vw, 22px)",
                 color: "#FFFFFF",
-                lineHeight: 1.3,
-                marginTop: "16px",
+                lineHeight: 1.4,
+                marginTop: "12px",
               }}
             >
               Desafiamos o inalcançável, esculpindo o extraordinário
