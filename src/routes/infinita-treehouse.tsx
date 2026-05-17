@@ -146,11 +146,12 @@ function InfinitaTreehouse() {
           <div
             className="absolute top-[100px] right-[32px] md:top-[140px] md:right-[80px]"
             style={{
-              maxWidth: "50vw",
+              maxWidth: "90vw",
               textAlign: "right",
               zIndex: 5,
             }}
           >
+            <style>{`@media (min-width: 768px){ .hero-subtitle{ white-space: nowrap; } }`}</style>
             <h1
               style={{
                 fontFamily: "'Public Sans', sans-serif",
