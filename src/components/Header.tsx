@@ -61,7 +61,7 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
         </Link>
 
         <nav className={`hidden lg:flex items-stretch gap-10 ml-auto mr-8 font-manrope font-light text-[18px] nav-links ${isDark ? "text-black" : "text-white"}`}>
-          <a href={isDark ? "/#manifesto" : "#manifesto"} className={`${navClass} flex items-center`}>Blue Heaven</a>
+          <Link to="/blue-heaven" className={`${navClass} flex items-center`}>Blue Heaven</Link>
           <div
             ref={empRef}
             className="flex items-center py-5 -my-5"
