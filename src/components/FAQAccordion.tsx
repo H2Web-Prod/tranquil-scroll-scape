@@ -21,7 +21,7 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
               style={{
                 fontFamily: "'Public Sans', sans-serif",
                 fontWeight: 500,
-                fontSize: "18px",
+                fontSize: "22px",
                 color: "#000000",
                 background: "transparent",
                 border: "none",
@@ -42,7 +42,17 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
                   transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                   style={{ overflow: "hidden" }}
                 >
-                  <p className="padrao-p" style={{ paddingTop: "16px", paddingBottom: "24px" }}>
+                  <p
+                    style={{
+                      fontFamily: "'Public Sans', sans-serif",
+                      fontWeight: 400,
+                      fontSize: "18px",
+                      color: "#000000",
+                      lineHeight: 1.7,
+                      paddingTop: "16px",
+                      paddingBottom: "24px",
+                    }}
+                  >
                     {item.a}
                   </p>
                 </motion.div>
