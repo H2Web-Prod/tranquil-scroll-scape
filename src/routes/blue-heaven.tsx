@@ -162,7 +162,7 @@ function BlueHeavenPage() {
           <div className="max-w-[1300px] mx-auto">
             <ScrollReveal
               as="h2"
-              className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1100px]"
+              className="font-light text-black text-[clamp(28px,3.5vw,48px)] leading-[1.1] max-w-[1200px] md:whitespace-nowrap"
             >
               Os pilares que sustentam os nossos projetos
             </ScrollReveal>
