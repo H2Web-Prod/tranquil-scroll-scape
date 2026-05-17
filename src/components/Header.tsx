@@ -9,7 +9,7 @@ const empreendimentos = [
 ];
 
 const navLinks = [
-  { name: "Blue Heaven", href: "#manifesto" },
+  { name: "Blue Heaven", href: "/blue-heaven" },
   { name: "Blog", href: "#blog" },
   { name: "Imprensa", href: "https://projetos.h2web.com.br/blueheaven/imprensa/" },
   { name: "Contato", href: "https://projetos.h2web.com.br/blueheaven/contato/" },
@@ -61,7 +61,7 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
         </Link>
 
         <nav className={`hidden lg:flex items-stretch gap-10 ml-auto mr-8 font-manrope font-light text-[18px] nav-links ${isDark ? "text-black" : "text-white"}`}>
-          <a href={isDark ? "/#manifesto" : "#manifesto"} className={`${navClass} flex items-center`}>Blue Heaven</a>
+          <Link to="/blue-heaven" className={`${navClass} flex items-center`}>Blue Heaven</Link>
           <div
             ref={empRef}
             className="flex items-center py-5 -my-5"
@@ -172,7 +172,7 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
               </button>
             </div>
             <nav className="flex flex-col gap-6 font-manrope text-2xl text-white font-light">
-              <a href={isDark ? "/#manifesto" : "#manifesto"} onClick={() => setMobileOpen(false)}>Blue Heaven</a>
+              <Link to="/blue-heaven" onClick={() => setMobileOpen(false)}>Blue Heaven</Link>
               <div className="flex flex-col gap-3">
                 <span>Empreendimentos</span>
                 <div className="flex flex-col gap-3 pl-4 text-lg opacity-80">

@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as MonolytRouteImport } from './routes/monolyt'
 import { Route as InfinitaTreehouseRouteImport } from './routes/infinita-treehouse'
+import { Route as BlueHeavenRouteImport } from './routes/blue-heaven'
 import { Route as AquosOasisHomeRouteImport } from './routes/aquos-oasis-home'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -22,6 +23,11 @@ const MonolytRoute = MonolytRouteImport.update({
 const InfinitaTreehouseRoute = InfinitaTreehouseRouteImport.update({
   id: '/infinita-treehouse',
   path: '/infinita-treehouse',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlueHeavenRoute = BlueHeavenRouteImport.update({
+  id: '/blue-heaven',
+  path: '/blue-heaven',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AquosOasisHomeRoute = AquosOasisHomeRouteImport.update({
@@ -38,12 +44,14 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/aquos-oasis-home': typeof AquosOasisHomeRoute
+  '/blue-heaven': typeof BlueHeavenRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
   '/monolyt': typeof MonolytRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/aquos-oasis-home': typeof AquosOasisHomeRoute
+  '/blue-heaven': typeof BlueHeavenRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
   '/monolyt': typeof MonolytRoute
 }
@@ -51,18 +59,30 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/aquos-oasis-home': typeof AquosOasisHomeRoute
+  '/blue-heaven': typeof BlueHeavenRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
   '/monolyt': typeof MonolytRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/aquos-oasis-home' | '/infinita-treehouse' | '/monolyt'
+  fullPaths:
+    | '/'
+    | '/aquos-oasis-home'
+    | '/blue-heaven'
+    | '/infinita-treehouse'
+    | '/monolyt'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/aquos-oasis-home' | '/infinita-treehouse' | '/monolyt'
+  to:
+    | '/'
+    | '/aquos-oasis-home'
+    | '/blue-heaven'
+    | '/infinita-treehouse'
+    | '/monolyt'
   id:
     | '__root__'
     | '/'
     | '/aquos-oasis-home'
+    | '/blue-heaven'
     | '/infinita-treehouse'
     | '/monolyt'
   fileRoutesById: FileRoutesById
@@ -70,6 +90,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AquosOasisHomeRoute: typeof AquosOasisHomeRoute
+  BlueHeavenRoute: typeof BlueHeavenRoute
   InfinitaTreehouseRoute: typeof InfinitaTreehouseRoute
   MonolytRoute: typeof MonolytRoute
 }
@@ -88,6 +109,13 @@ declare module '@tanstack/react-router' {
       path: '/infinita-treehouse'
       fullPath: '/infinita-treehouse'
       preLoaderRoute: typeof InfinitaTreehouseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blue-heaven': {
+      id: '/blue-heaven'
+      path: '/blue-heaven'
+      fullPath: '/blue-heaven'
+      preLoaderRoute: typeof BlueHeavenRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/aquos-oasis-home': {
@@ -110,6 +138,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AquosOasisHomeRoute: AquosOasisHomeRoute,
+  BlueHeavenRoute: BlueHeavenRoute,
   InfinitaTreehouseRoute: InfinitaTreehouseRoute,
   MonolytRoute: MonolytRoute,
 }
