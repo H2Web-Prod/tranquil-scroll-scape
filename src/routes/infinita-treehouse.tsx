@@ -143,12 +143,11 @@ function InfinitaTreehouse() {
           }}
         >
           <div
-            className="absolute"
+            className="absolute top-[100px] right-[32px] md:top-[140px] md:right-[80px]"
             style={{
-              top: "27%",
-              right: "clamp(32px, 6vw, 80px)",
               maxWidth: "50vw",
               textAlign: "right",
+              zIndex: 5,
             }}
           >
             <h1
@@ -161,8 +160,8 @@ function InfinitaTreehouse() {
                 letterSpacing: "-0.02em",
               }}
             >
-              <span className="block">Infinitá Treehouse</span>
-              <span className="block">by Architects Office & Triptyque</span>
+              Infinitá Treehouse<br />
+              by Architects Office &amp; Triptyque
             </h1>
           </div>
         </section>
