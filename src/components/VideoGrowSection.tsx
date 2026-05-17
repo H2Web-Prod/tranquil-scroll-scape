@@ -17,7 +17,7 @@ export default function VideoGrowSection({
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
         <motion.video
           style={{ width, height, borderRadius: 0 }}
-          src="https://projetos.h2web.com.br/blueheaven/videos/video-1.mp4"
+          src={src}
           autoPlay
           muted
           loop
