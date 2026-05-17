@@ -121,10 +121,10 @@ function PersonBlock({
             <ParallaxImage src={image} alt={alt} aspectRatio="3/4" />
             {videoSrc && (
               <>
-                {/* Desktop overlay */}
+                {/* Desktop overlay — bottom; side flips with reverse */}
                 <div
                   className="hidden md:block absolute z-10"
-                  style={{ top: 80, right: "-110px" }}
+                  style={reverse ? { bottom: 80, left: "-110px" } : { bottom: 80, right: "-110px" }}
                 >
                   <VideoTriggerCard videoSrc={videoSrc} />
                 </div>
