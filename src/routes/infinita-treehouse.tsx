@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
 import useLenis from "@/hooks/useLenis";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
-import VideoModal from "@/components/VideoModal";
 import FadeInUp from "@/components/FadeInUp";
 import ParallaxImage from "@/components/ParallaxImage";
 import ImageGrowSection from "@/components/ImageGrowSection";
 import ZoomImage from "@/components/ZoomImage";
+import StaggerStack from "@/components/StaggerStack";
+import VideoTriggerCard from "@/components/VideoTriggerCard";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 
 export const Route = createFileRoute("/infinita-treehouse")({
