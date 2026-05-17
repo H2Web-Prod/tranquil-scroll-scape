@@ -1,6 +1,8 @@
-import { motion } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
 import MinimalAudioPlayer from "./MinimalAudioPlayer";
+import ParallaxImage from "./ParallaxImage";
+import FadeInUp from "./FadeInUp";
+import StaggerStack from "./StaggerStack";
 
 const GREG_AUDIO = "https://projetos.h2web.com.br/blueheaven/videos/greg-audio.mp3";
 
@@ -34,26 +36,20 @@ export function ConnectingSection() {
         </p>
 
         <div className="relative mt-[120px] md:mt-[160px] grid md:grid-cols-[42%_1fr] gap-12 md:gap-20 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-hidden"
-            style={{ aspectRatio: "3/4" }}
-          >
-            <img
+          <FadeInUp>
+            <ParallaxImage
               src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/greg-bousquet-fundador-architects-office.jpg"
               alt="Greg Bousquet"
-              loading="lazy"
-              className="w-full h-full object-cover"
+              aspectRatio="3/4"
             />
-          </motion.div>
+          </FadeInUp>
           <div>
-            <h3 className="mb-6 text-black" style={{ fontWeight: 400, fontSize: "32px" }}>Greg Bousquet</h3>
-            <p className="padrao-p">
-              Fundador do Architects Office e Triptyque Architecture. Sócio fundador do Architects Office LX.
-            </p>
+            <StaggerStack baseDelay={0.4} step={0.2}>
+              <h3 className="mb-6 text-black" style={{ fontWeight: 400, fontSize: "32px" }}>Greg Bousquet</h3>
+              <p className="padrao-p">
+                Fundador do Architects Office e Triptyque Architecture. Sócio fundador do Architects Office LX.
+              </p>
+            </StaggerStack>
           </div>
 
           {/* Player sobreposto — desktop */}
