@@ -9,12 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as RegiaoSantaCatarinaRouteImport } from './routes/regiao-santa-catarina'
 import { Route as MonolytRouteImport } from './routes/monolyt'
 import { Route as InfinitaTreehouseRouteImport } from './routes/infinita-treehouse'
 import { Route as BlueHeavenRouteImport } from './routes/blue-heaven'
 import { Route as AquosOasisHomeRouteImport } from './routes/aquos-oasis-home'
 import { Route as IndexRouteImport } from './routes/index'
 
+const RegiaoSantaCatarinaRoute = RegiaoSantaCatarinaRouteImport.update({
+  id: '/regiao-santa-catarina',
+  path: '/regiao-santa-catarina',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MonolytRoute = MonolytRouteImport.update({
   id: '/monolyt',
   path: '/monolyt',
@@ -47,6 +53,7 @@ export interface FileRoutesByFullPath {
   '/blue-heaven': typeof BlueHeavenRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
   '/monolyt': typeof MonolytRoute
+  '/regiao-santa-catarina': typeof RegiaoSantaCatarinaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +61,7 @@ export interface FileRoutesByTo {
   '/blue-heaven': typeof BlueHeavenRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
   '/monolyt': typeof MonolytRoute
+  '/regiao-santa-catarina': typeof RegiaoSantaCatarinaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,6 +70,7 @@ export interface FileRoutesById {
   '/blue-heaven': typeof BlueHeavenRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
   '/monolyt': typeof MonolytRoute
+  '/regiao-santa-catarina': typeof RegiaoSantaCatarinaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -71,6 +80,7 @@ export interface FileRouteTypes {
     | '/blue-heaven'
     | '/infinita-treehouse'
     | '/monolyt'
+    | '/regiao-santa-catarina'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -78,6 +88,7 @@ export interface FileRouteTypes {
     | '/blue-heaven'
     | '/infinita-treehouse'
     | '/monolyt'
+    | '/regiao-santa-catarina'
   id:
     | '__root__'
     | '/'
@@ -85,6 +96,7 @@ export interface FileRouteTypes {
     | '/blue-heaven'
     | '/infinita-treehouse'
     | '/monolyt'
+    | '/regiao-santa-catarina'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -93,10 +105,18 @@ export interface RootRouteChildren {
   BlueHeavenRoute: typeof BlueHeavenRoute
   InfinitaTreehouseRoute: typeof InfinitaTreehouseRoute
   MonolytRoute: typeof MonolytRoute
+  RegiaoSantaCatarinaRoute: typeof RegiaoSantaCatarinaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/regiao-santa-catarina': {
+      id: '/regiao-santa-catarina'
+      path: '/regiao-santa-catarina'
+      fullPath: '/regiao-santa-catarina'
+      preLoaderRoute: typeof RegiaoSantaCatarinaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/monolyt': {
       id: '/monolyt'
       path: '/monolyt'
@@ -141,6 +161,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlueHeavenRoute: BlueHeavenRoute,
   InfinitaTreehouseRoute: InfinitaTreehouseRoute,
   MonolytRoute: MonolytRoute,
+  RegiaoSantaCatarinaRoute: RegiaoSantaCatarinaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
