@@ -173,7 +173,7 @@ function AquosOasisHome() {
         </section>
 
         {/* VÍDEO SCROLL 100% */}
-        <VideoGrowSection />
+        <VideoGrowSection src="https://projetos.h2web.com.br/blueheaven/videos/aquos-institucional.mp4" />
 
         {/* SEÇÃO 4 — Conceito (Colunas Efeito) */}
         <ZigZagBlock
