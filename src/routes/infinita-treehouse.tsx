@@ -45,13 +45,14 @@ const eyebrowStyle: React.CSSProperties = {
 };
 
 const quoteStyle: React.CSSProperties = {
-  fontStyle: "italic",
-  fontSize: "22px",
-  color: "#000000",
-  lineHeight: 1.6,
-  borderLeft: "2px solid #000000",
-  paddingLeft: "24px",
   fontFamily: "'Public Sans', sans-serif",
+  fontStyle: "italic",
+  fontSize: "20px",
+  fontWeight: 400,
+  color: "#606060",
+  lineHeight: 1.6,
+  borderLeft: "2px solid #606060",
+  paddingLeft: "24px",
 };
 
 const faqs: FAQItem[] = [
