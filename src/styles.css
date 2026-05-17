@@ -59,6 +59,14 @@ html.lenis, html.lenis body { height: auto; }
   line-height: 1.7;
 }
 
+.padrao-p-internas {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.7;
+}
+
 .nav-link,
 .nav-link:link,
 .nav-link:visited,
