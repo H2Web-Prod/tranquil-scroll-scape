@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxImage from "@/components/ParallaxImage";
-import ImageGrowSection from "@/components/ImageGrowSection";
+import VideoGrowSection from "@/components/VideoGrowSection";
 import ZoomImage from "@/components/ZoomImage";
 import ImageScrollCentralizada from "@/components/ImageScrollCentralizada";
 import FadeInUp from "@/components/FadeInUp";
@@ -114,8 +114,9 @@ function AquosOasisHome() {
           <div
             className="absolute"
             style={{
-              top: "140px",
+              top: "50%",
               left: "57%",
+              transform: "translateY(-50%)",
               textAlign: "left",
               zIndex: 5,
             }}
@@ -136,7 +137,7 @@ function AquosOasisHome() {
               Oasis Home
             </h1>
           </div>
-          <style>{`@media (max-width: 767px){ .aquos-hero-h1-wrap{ top:100px !important; left:50% !important; transform: translateX(-30%); } }`}</style>
+          <style>{`@media (max-width: 767px){ .aquos-hero-h1-wrap{ left:50% !important; transform: translate(-30%, -50%) !important; } }`}</style>
         </section>
 
         {/* SEÇÃO 2 */}
@@ -171,8 +172,8 @@ function AquosOasisHome() {
           </div>
         </section>
 
-        {/* IMAGEM SCROLL 100% */}
-        <ImageGrowSection src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/empreendimento-aquos-oasis-home.jpg" />
+        {/* VÍDEO SCROLL 100% */}
+        <VideoGrowSection />
 
         {/* SEÇÃO 4 — Conceito (Colunas Efeito) */}
         <ZigZagBlock
