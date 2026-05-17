@@ -161,8 +161,21 @@ function InfinitaTreehouse() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Infinitá Treehouse<br />
-              by Architects Office &amp; Triptyque
+              Infinitá Treehouse
+              <span
+                style={{
+                  display: "block",
+                  fontFamily: "'Public Sans', sans-serif",
+                  fontWeight: 300,
+                  fontSize: "clamp(28px, 3.5vw, 48px)",
+                  lineHeight: 1.2,
+                  color: "#000000",
+                  marginTop: "12px",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                by Architects Office &amp; Triptyque
+              </span>
             </h1>
           </div>
         </section>
