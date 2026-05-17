@@ -83,10 +83,10 @@ export default function Footer() {
             </p>
             <div className="border-t border-[#E5E5E5] pt-6 mb-8 flex flex-wrap gap-x-8 gap-y-3">
               <a href={`${base}/politica-de-privacidade/`} className="flex items-center hover:opacity-70" style={bodyText}>
-                <img src={ARROW} alt="" className="w-[16px] h-auto mr-3" />Política de Privacidade
+                <img src={ARROW} alt="" className="w-[8px] h-auto mr-3" />Política de Privacidade
               </a>
               <a href={`${base}/termos-de-uso/`} className="flex items-center hover:opacity-70" style={bodyText}>
-                <img src={ARROW} alt="" className="w-[16px] h-auto mr-3" />Termos de Uso
+                <img src={ARROW} alt="" className="w-[8px] h-auto mr-3" />Termos de Uso
               </a>
             </div>
             <p className={colTitleClass}>Siga a Blue Heaven</p>
