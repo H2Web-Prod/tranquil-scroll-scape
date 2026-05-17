@@ -398,9 +398,6 @@ function InfinitaTreehouse() {
         </section>
       </main>
       <Footer />
-
-      <VideoModal src={VIDEO_RENATA} isOpen={renataOpen} onClose={() => setRenataOpen(false)} />
-      <VideoModal src={VIDEO_GREG} isOpen={gregOpen} onClose={() => setGregOpen(false)} />
     </div>
   );
 }
