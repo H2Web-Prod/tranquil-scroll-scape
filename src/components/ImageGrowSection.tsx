@@ -1,7 +1,9 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function ImageGrowSection() {
+export default function ImageGrowSection({
+  src = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/desafio-1.jpg",
+}: { src?: string } = {}) {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -15,7 +17,7 @@ export default function ImageGrowSection() {
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
         <motion.img
           style={{ width, height, borderRadius: 0 }}
-          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/desafio-1.jpg"
+          src={src}
           alt=""
           loading="lazy"
           className="object-cover will-change-transform"
