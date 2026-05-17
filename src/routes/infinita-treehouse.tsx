@@ -163,6 +163,7 @@ function InfinitaTreehouse() {
             >
               Infinitá Treehouse
               <span
+                className="hero-subtitle"
                 style={{
                   display: "block",
                   fontFamily: "'Public Sans', sans-serif",
@@ -171,7 +172,6 @@ function InfinitaTreehouse() {
                   lineHeight: 1.2,
                   color: "#000000",
                   marginTop: "12px",
-                  whiteSpace: "nowrap",
                 }}
               >
                 by Architects Office &amp; Triptyque
