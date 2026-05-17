@@ -22,7 +22,7 @@ const items = [
     eyebrow: "03 · Residencial",
     title: "Monolyt",
     body: "Idealizado para aqueles que apreciam privacidade, o contato íntimo com a natureza e espaços de alto padrão para desfrutar plenamente da vida, o Monolyt introduz um design exclusivo e atemporal que redefine o conceito de viver com estilo.",
-    link: "https://projetos.h2web.com.br/blueheaven/imoveis-exclusivos-blue-heaven/monolyt/",
+    link: "/monolyt",
   },
 ];
 
