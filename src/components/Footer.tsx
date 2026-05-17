@@ -9,7 +9,7 @@ const WPP = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05
 const MAIL = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/envelope.jpg";
 
 const institucional = [
-  { label: "Blue Heaven", href: `${base}/quem-somos/` },
+  { label: "Blue Heaven", href: `/blue-heaven` },
   { label: "Empreendimentos", href: `${base}/imoveis-exclusivos-blue-heaven/` },
   { label: "Blog", href: `${base}/blog/` },
   { label: "Imprensa", href: `${base}/imprensa/` },

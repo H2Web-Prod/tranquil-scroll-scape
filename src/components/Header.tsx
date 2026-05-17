@@ -9,7 +9,7 @@ const empreendimentos = [
 ];
 
 const navLinks = [
-  { name: "Blue Heaven", href: "#manifesto" },
+  { name: "Blue Heaven", href: "/blue-heaven" },
   { name: "Blog", href: "#blog" },
   { name: "Imprensa", href: "https://projetos.h2web.com.br/blueheaven/imprensa/" },
   { name: "Contato", href: "https://projetos.h2web.com.br/blueheaven/contato/" },
