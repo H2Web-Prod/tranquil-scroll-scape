@@ -329,13 +329,16 @@ function InfinitaTreehouse() {
           </div>
         </PersonBlock>
 
-        {/* FINAL */}
-        <section className="bg-white py-[140px] md:py-[240px] px-6">
-          <div className="max-w-[1200px] mx-auto">
-            <ScrollReveal as="h2" className="font-light text-black">
+        {/* CTA */}
+        <section className="px-6 py-[120px] md:py-[200px]" style={{ background: "#F5F5F5" }}>
+          <div className="max-w-[1300px] mx-auto text-left">
+            <ScrollReveal
+              as="h2"
+              className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1200px]"
+            >
               Viver Infinitá é viver em sintonia com o tempo e o espaço
             </ScrollReveal>
-            <div style={{ marginTop: "40px" }}>
+            <div style={{ marginTop: "40px", maxWidth: "1200px" }}>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
                 O Infinitá Treehouse traduz a visão da Blue Heaven de criar empreendimentos autorais, onde arquitetura, natureza e experiência caminham juntas.
               </p>
