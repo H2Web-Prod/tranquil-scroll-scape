@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as InfinitaTreehouseRouteImport } from './routes/infinita-treehouse'
+import { Route as AquosOasisHomeRouteImport } from './routes/aquos-oasis-home'
 import { Route as IndexRouteImport } from './routes/index'
 
 const InfinitaTreehouseRoute = InfinitaTreehouseRouteImport.update({
   id: '/infinita-treehouse',
   path: '/infinita-treehouse',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AquosOasisHomeRoute = AquosOasisHomeRouteImport.update({
+  id: '/aquos-oasis-home',
+  path: '/aquos-oasis-home',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,27 +31,31 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/aquos-oasis-home': typeof AquosOasisHomeRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/aquos-oasis-home': typeof AquosOasisHomeRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/aquos-oasis-home': typeof AquosOasisHomeRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/infinita-treehouse'
+  fullPaths: '/' | '/aquos-oasis-home' | '/infinita-treehouse'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/infinita-treehouse'
-  id: '__root__' | '/' | '/infinita-treehouse'
+  to: '/' | '/aquos-oasis-home' | '/infinita-treehouse'
+  id: '__root__' | '/' | '/aquos-oasis-home' | '/infinita-treehouse'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AquosOasisHomeRoute: typeof AquosOasisHomeRoute
   InfinitaTreehouseRoute: typeof InfinitaTreehouseRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/infinita-treehouse'
       fullPath: '/infinita-treehouse'
       preLoaderRoute: typeof InfinitaTreehouseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/aquos-oasis-home': {
+      id: '/aquos-oasis-home'
+      path: '/aquos-oasis-home'
+      fullPath: '/aquos-oasis-home'
+      preLoaderRoute: typeof AquosOasisHomeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AquosOasisHomeRoute: AquosOasisHomeRoute,
   InfinitaTreehouseRoute: InfinitaTreehouseRoute,
 }
 export const routeTree = rootRouteImport
