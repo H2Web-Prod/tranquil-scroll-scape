@@ -140,10 +140,7 @@ function MonolytPage() {
             backgroundPosition: "center",
           }}
         >
-          <div
-            className="absolute"
-            style={{ top: "32%", left: "48%", textAlign: "left", zIndex: 5 }}
-          >
+          <div className="absolute" style={{ top: "32%", left: "48%", textAlign: "left", zIndex: 5 }}>
             <h1
               style={{
                 fontFamily: "'Public Sans', sans-serif",
@@ -168,7 +165,9 @@ function MonolytPage() {
             </ScrollReveal>
             <style>{`section h2 { font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
             <p className="padrao-p-internas" style={{ marginTop: "40px" }}>
-              Idealizado para aqueles que apreciam privacidade, o contato íntimo com a natureza e espaços de alto padrão para desfrutar plenamente da vida, o Monolyt introduz um design exclusivo e atemporal que redefine o conceito de viver com estilo.
+              Idealizado para aqueles que apreciam privacidade, o contato íntimo com a natureza e espaços de alto padrão
+              para desfrutar plenamente da vida, o Monolyt introduz um design exclusivo e atemporal que redefine o
+              conceito de viver com estilo.
             </p>
           </div>
         </section>
@@ -188,10 +187,7 @@ function MonolytPage() {
               loading="lazy"
               style={{ width: "100%", height: "auto", objectFit: "contain", marginTop: "48px", borderRadius: 0 }}
             />
-            <div
-              style={{ marginTop: "64px" }}
-              className="grid md:grid-cols-2 gap-x-12 gap-y-2"
-            >
+            <div style={{ marginTop: "64px" }} className="grid md:grid-cols-2 gap-x-12 gap-y-2">
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {distCol1.map(([place, t]) => (
                   <li
@@ -241,7 +237,7 @@ function MonolytPage() {
 
         {/* 7. Arte Arquitetônica — Colunas Efeito + selo */}
         <ZigZagBlock
-          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/monololy-imagem3.jpeg"
+          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/monolyt-1.jpg"
           alt="Monolyt — arquitetura"
         >
           <span style={eyebrowStyle}>ARQUITETURA</span>
@@ -250,7 +246,10 @@ function MonolytPage() {
           </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <p className="padrao-p-internas">
-              Com dois volumes distintos, o Monolyt incorpora o elemento de rocha no primeiro edifício, lembrando a casa primordial dos primeiros humanos. A entrada deste bloco simula a sensação de entrar em uma caverna, levando a um pátio onde estão localizados a academia, o espaço de coworking e o playground, próximos às piscinas naturais do local.
+              Com dois volumes distintos, o Monolyt incorpora o elemento de rocha no primeiro edifício, lembrando a casa
+              primordial dos primeiros humanos. A entrada deste bloco simula a sensação de entrar em uma caverna,
+              levando a um pátio onde estão localizados a academia, o espaço de coworking e o playground, próximos às
+              piscinas naturais do local.
             </p>
           </div>
           <div style={{ marginTop: "48px" }}>
@@ -268,17 +267,20 @@ function MonolytPage() {
         <section className="bg-white py-[140px] md:py-[240px] px-6">
           <div className="max-w-[1300px] mx-auto">
             <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-              O segundo volume presta homenagem ao fogo, incorporando a intimidade desse elemento na arquitetura, apresentando ambientes com lareiras, um spa, espaços para prática de yoga e uma área gourmet.
+              O segundo volume presta homenagem ao fogo, incorporando a intimidade desse elemento na arquitetura,
+              apresentando ambientes com lareiras, um spa, espaços para prática de yoga e uma área gourmet.
             </p>
             <p className="padrao-p-internas">
-              Na curadoria de materiais, destaca-se o contraste entre pedras sólidas e a transparência do vidro que envolve as fachadas com varandas. A madeira está presente, humanizando a experiência e adicionando um toque contemporâneo por meio do uso de acabamentos em aço escovado.
+              Na curadoria de materiais, destaca-se o contraste entre pedras sólidas e a transparência do vidro que
+              envolve as fachadas com varandas. A madeira está presente, humanizando a experiência e adicionando um
+              toque contemporâneo por meio do uso de acabamentos em aço escovado.
             </p>
           </div>
         </section>
 
         {/* 9. Equilíbrio — Colunas Efeito invertido */}
         <ZigZagBlock
-          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/monolyt-imagem-11-1024x777-1.webp"
+          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/monolyt-2.jpg"
           alt="Monolyt — equilíbrio"
           reverse
         >
@@ -287,10 +289,14 @@ function MonolytPage() {
           </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
-              São 24 unidades distribuídas em 2 torres com 3 andares, e uma delas contando com garagem no subsolo para maior comodidade.
+              São 24 unidades distribuídas em 2 torres com 3 andares, e uma delas contando com garagem no subsolo para
+              maior comodidade.
             </p>
             <p className="padrao-p-internas">
-              O Monolyt está inserido em um terreno de 7.413,67 m², proporcionando uma sensação de amplitude e integração com a natureza circundante. Desses números, 2.654,45 m² são terrenos APP (área de Preservação Permanente), dedicados ao ecossistema local. O riacho que corta o terreno, parte integrante da APP, contribui para a atmosfera natural e única do empreendimento.
+              O Monolyt está inserido em um terreno de 7.413,67 m², proporcionando uma sensação de amplitude e
+              integração com a natureza circundante. Desses números, 2.654,45 m² são terrenos APP (área de Preservação
+              Permanente), dedicados ao ecossistema local. O riacho que corta o terreno, parte integrante da APP,
+              contribui para a atmosfera natural e única do empreendimento.
             </p>
           </div>
         </ZigZagBlock>
@@ -303,10 +309,12 @@ function MonolytPage() {
             </ScrollReveal>
             <div style={{ marginTop: "40px" }}>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                As "grutas" entre as torres são a entrada das áreas internas, representando verdadeiros espaços zen contemporâneos.
+                As "grutas" entre as torres são a entrada das áreas internas, representando verdadeiros espaços zen
+                contemporâneos.
               </p>
               <p className="padrao-p-internas">
-                Pedras brutas desafiam sua função estrutural e emergem como colunas de sustentação dos andares, contando uma história visual única e representando o ápice do design arquitetônico.
+                Pedras brutas desafiam sua função estrutural e emergem como colunas de sustentação dos andares, contando
+                uma história visual única e representando o ápice do design arquitetônico.
               </p>
             </div>
           </div>
@@ -314,7 +322,7 @@ function MonolytPage() {
 
         {/* 11. Greg Bousquet */}
         <ZigZagBlock
-          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Triptyque_Greg-Bousquet_FotoJulia-Rodrigues.webp"
+          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/greg-02.jpg"
           alt="Greg Bousquet — Architects Office"
           aspectRatio="3/4"
         >
@@ -325,13 +333,17 @@ function MonolytPage() {
           </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
-              Greg Bousquet, fundador da Architects Office, consolidou ao longo de 21 anos uma trajetória marcada por projetos e premiações por todo o globo. Nos últimos anos, o arquiteto se tornou referência por sua experiência global, repertório multicultural e olhar estratégico para a eficiência de projetos.
+              Greg Bousquet, fundador da Architects Office, consolidou ao longo de 21 anos uma trajetória marcada por
+              projetos e premiações por todo o globo. Nos últimos anos, o arquiteto se tornou referência por sua
+              experiência global, repertório multicultural e olhar estratégico para a eficiência de projetos.
             </p>
             <p className="padrao-p-internas">
-              Hoje, lidera o ARCHITECTS OFFICE, a agência que articula o urbanismo virtuoso e a arquitetura ética, dando seguimento a sua independência criativa com uma nova identidade.
+              Hoje, lidera o ARCHITECTS OFFICE, a agência que articula o urbanismo virtuoso e a arquitetura ética, dando
+              seguimento a sua independência criativa com uma nova identidade.
             </p>
             <blockquote style={blockquoteStyle}>
-              "O propósito é integrar a natureza no vocabulário da arquitetura não mais como um enfeite ou um paisagismo. Tentamos sempre traduzir como o mineral e o vegetal podem conviver em harmonia."
+              "O propósito é integrar a natureza no vocabulário da arquitetura não mais como um enfeite ou um
+              paisagismo. Tentamos sempre traduzir como o mineral e o vegetal podem conviver em harmonia."
             </blockquote>
           </div>
         </ZigZagBlock>
@@ -350,10 +362,13 @@ function MonolytPage() {
           </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
-              Formado em engenharia agronômica e com especialização em Arborist, na Flórida, o paisagista traz consigo referências de diversas escolas – da assimetria japonesa aos clássicos italianos.
+              Formado em engenharia agronômica e com especialização em Arborist, na Flórida, o paisagista traz consigo
+              referências de diversas escolas – da assimetria japonesa aos clássicos italianos.
             </p>
             <p className="padrao-p-internas">
-              As texturas e volumes verdes ganham vida e criam cenários incríveis com as composições de Rodrigo Oliveira. É pôr a mão na terra, contar com um olhar experimentado, exalar empatia e revelar a sabedoria da intuição. O paisagismo de Rodrigo Oliveira é de beleza tão genuína quanto livre, como a natureza.
+              As texturas e volumes verdes ganham vida e criam cenários incríveis com as composições de Rodrigo
+              Oliveira. É pôr a mão na terra, contar com um olhar experimentado, exalar empatia e revelar a sabedoria da
+              intuição. O paisagismo de Rodrigo Oliveira é de beleza tão genuína quanto livre, como a natureza.
             </p>
           </div>
         </ZigZagBlock>
@@ -400,15 +415,13 @@ function MonolytPage() {
         {/* 14. CTA */}
         <section className="px-6 py-[120px] md:py-[200px]" style={{ background: "#F5F5F5" }}>
           <div className="max-w-[1300px] mx-auto text-left">
-            <ScrollReveal
-              as="h2"
-              className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1200px]"
-            >
+            <ScrollReveal as="h2" className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1200px]">
               Seu novo estilo de vida começa aqui
             </ScrollReveal>
             <div style={{ marginTop: "40px", maxWidth: "1200px" }}>
               <p className="padrao-p-internas" style={{ marginBottom: "48px" }}>
-                Descubra como é viver em um lugar que conecta natureza, conforto e modernidade. Fale conosco e agende sua visita.
+                Descubra como é viver em um lugar que conecta natureza, conforto e modernidade. Fale conosco e agende
+                sua visita.
               </p>
               <a className={btnClass} href={WHATSAPP} target="_blank" rel="noopener noreferrer">
                 Fale Conosco
