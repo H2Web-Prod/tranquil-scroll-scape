@@ -6,19 +6,19 @@ const posts = [
     image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/01/post-1.jpg",
     title: "Arquitetura regenerativa: quando o projeto devolve mais ao ambiente do que retira",
     date: "28 de janeiro de 2026",
-    link: "https://projetos.h2web.com.br/blueheaven/arquitetura-regenerativa-quando-o-projeto-devolve-mais-ao-ambiente-do-que-retira/",
+    link: "https://projetos.h2web.com.br/blueheaven/blog/arquitetura-regenerativa-quando-o-projeto-devolve-mais-ao-ambiente-do-que-retira/",
   },
   {
     image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/post-2.jpg",
     title: "O papel da luz indireta na criação de atmosferas sofisticadas",
     date: "21 de janeiro de 2026",
-    link: "https://projetos.h2web.com.br/blueheaven/o-papel-da-luz-indireta-na-criacao-de-atmosferas-sofisticadas/",
+    link: "https://projetos.h2web.com.br/blueheaven/blog/o-papel-da-luz-indireta-na-criacao-de-atmosferas-sofisticadas/",
   },
   {
     image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/post-3.jpg",
     title: "Materiais inteligentes na construção de alto padrão: tecnologia que trabalha em segundo plano",
     date: "13 de janeiro de 2026",
-    link: "https://projetos.h2web.com.br/blueheaven/materiais-inteligentes-na-construcao-de-alto-padrao-tecnologia-que-trabalha-em-segundo-plano/",
+    link: "https://projetos.h2web.com.br/blueheaven/blog/materiais-inteligentes-na-construcao-de-alto-padrao-tecnologia-que-trabalha-em-segundo-plano/",
   },
 ];
 
