@@ -30,6 +30,7 @@ const whatsappUrl =
 
 function ContatoPage() {
   useLenis();
+
   return (
     <div className="bg-white text-black">
       <Header theme="dark" />
