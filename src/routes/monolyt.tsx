@@ -173,7 +173,7 @@ function MonolytPage() {
         </section>
 
         {/* 3. Imagem Scroll 100% */}
-        <ImageGrowSection src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/empreendimento-monolyt.jpg" />
+        <ImageGrowSection src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/monolyt.jpg" />
 
         {/* 4. Mapa de Distâncias */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
