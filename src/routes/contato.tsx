@@ -155,7 +155,7 @@ function ContatoPage() {
               />
 
               <div className="flex items-center" style={{ gap: "12px" }}>
-                <img src={PIN_ICON} alt="" style={{ width: "16px", height: "17px", filter: "invert(1)" }} />
+                <img src={PIN_ICON} alt="" style={{ width: "16px", height: "17px" }} />
                 <span
                   style={{
                     fontFamily: "'Public Sans', sans-serif",
@@ -175,7 +175,7 @@ function ContatoPage() {
                 className="flex items-center hover:opacity-80 transition-opacity"
                 style={{ gap: "12px", textDecoration: "none" }}
               >
-                <img src={WHATSAPP_ICON} alt="" style={{ width: "19px", height: "19px", filter: "invert(1)" }} />
+                <img src={WHATSAPP_ICON} alt="" style={{ width: "19px", height: "19px" }} />
                 <span
                   style={{
                     fontFamily: "'Public Sans', sans-serif",
@@ -192,7 +192,7 @@ function ContatoPage() {
                 className="flex items-center hover:opacity-80 transition-opacity"
                 style={{ gap: "12px", textDecoration: "none" }}
               >
-                <img src={ENVELOPE} alt="" style={{ width: "18px", height: "16px", filter: "invert(1)" }} />
+                <img src={ENVELOPE} alt="" style={{ width: "18px", height: "16px" }} />
                 <span
                   style={{
                     fontFamily: "'Public Sans', sans-serif",
