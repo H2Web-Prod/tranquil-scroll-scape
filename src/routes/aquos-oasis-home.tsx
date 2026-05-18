@@ -28,8 +28,7 @@ export const Route = createFileRoute("/aquos-oasis-home")({
       },
       {
         property: "og:image",
-        content:
-          "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Banner-Aquos.webp",
+        content: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Banner-Aquos.webp",
       },
       { property: "og:type", content: "article" },
     ],
@@ -55,15 +54,42 @@ const eyebrowStyle: React.CSSProperties = {
 };
 
 const faqs: FAQItem[] = [
-  { q: "O que é o Aquos Oasis Home?", a: "O Aquos Oasis Home é um empreendimento residencial exclusivo da Blue Heaven. O projeto parte do conceito do poder de transformação da água para orientar decisões arquitetônicas, espaciais e sensoriais, resultando em um conjunto autoral, pé na areia, inserido em uma área de preservação ambiental e com acesso direto à praia." },
-  { q: "Onde está localizado o Aquos Oasis Home?", a: "O empreendimento está situado na Praia do Estaleiro, uma das regiões mais preservadas e exclusivas de Balneário Camboriú, reconhecida pela forte presença da natureza, proximidade com o mar e ritmo mais tranquilo de vida." },
-  { q: "Qual é o conceito arquitetônico do Aquos Oasis Home?", a: "O projeto parte da água como elemento estruturante, orientando a arquitetura, os espaços e a experiência de habitar. A proposta busca integração contínua entre interior, exterior e paisagem natural." },
-  { q: "Quem assina a arquitetura do Aquos Oasis Home?", a: "O Aquos Oasis Home é assinado pela Architects Office, escritório de arquitetura internacional liderado por Greg Bousquet, conhecido por projetos que conectam arquitetura, natureza e experiência humana de forma sensível e contemporânea." },
-  { q: "Quem é Greg Bousquet?", a: "Greg Bousquet é um arquiteto à frente do Architects Office, reconhecido por uma abordagem que integra arquitetura, natureza e experiência humana, com atenção ao território e à escala do viver." },
-  { q: "Qual o diferencial da Praia do Estaleiro em relação a outras regiões de Balneário Camboriú?", a: "A Praia do Estaleiro se diferencia por manter um controle rigoroso de ocupação e verticalização, inserida em uma área de preservação ambiental que limita a densidade urbana. Esse contexto garante uma paisagem preservada, acesso direto ao mar e um perfil de ocupação mais reservado, atraindo moradores que buscam privacidade, contato com a natureza e exclusividade em Balneário Camboriú." },
-  { q: "O Aquos Oasis Home é considerado um imóvel exclusivo?", a: "Sim. Trata-se de um imóvel exclusivo, pensado para um público que valoriza arquitetura autoral, localização diferenciada e uma forma de viver conectada à natureza e ao bem-estar." },
-  { q: "Como a natureza está integrada ao projeto?", a: "A natureza está integrada ao projeto por meio da implantação frente-mar, da preservação da vegetação existente e do uso da água como elemento estruturado dos espaços. A arquitetura respeita a topografia, mantém aberturas amplas para ventilação e luz natural e estabelece uma relação direta entre áreas internas, varandas e paisagem, reforçando a presença constante do ambiente natural no cotidiano dos moradores." },
-  { q: "Para quem o Aquos Oasis Home foi pensado?", a: "O Aquos Oasis Home foi pensado para pessoas que buscam um residencial autoral, reservado e conectado ao mar, com alto nível de privacidade e qualidade espacial. É direcionado a um perfil que valoriza localização frente-mar, baixa densidade, arquitetura assinada e a experiência de viver em uma área preservada, com conforto e exclusividade." },
+  {
+    q: "O que é o Aquos Oasis Home?",
+    a: "O Aquos Oasis Home é um empreendimento residencial exclusivo da Blue Heaven. O projeto parte do conceito do poder de transformação da água para orientar decisões arquitetônicas, espaciais e sensoriais, resultando em um conjunto autoral, pé na areia, inserido em uma área de preservação ambiental e com acesso direto à praia.",
+  },
+  {
+    q: "Onde está localizado o Aquos Oasis Home?",
+    a: "O empreendimento está situado na Praia do Estaleiro, uma das regiões mais preservadas e exclusivas de Balneário Camboriú, reconhecida pela forte presença da natureza, proximidade com o mar e ritmo mais tranquilo de vida.",
+  },
+  {
+    q: "Qual é o conceito arquitetônico do Aquos Oasis Home?",
+    a: "O projeto parte da água como elemento estruturante, orientando a arquitetura, os espaços e a experiência de habitar. A proposta busca integração contínua entre interior, exterior e paisagem natural.",
+  },
+  {
+    q: "Quem assina a arquitetura do Aquos Oasis Home?",
+    a: "O Aquos Oasis Home é assinado pela Architects Office, escritório de arquitetura internacional liderado por Greg Bousquet, conhecido por projetos que conectam arquitetura, natureza e experiência humana de forma sensível e contemporânea.",
+  },
+  {
+    q: "Quem é Greg Bousquet?",
+    a: "Greg Bousquet é um arquiteto à frente do Architects Office, reconhecido por uma abordagem que integra arquitetura, natureza e experiência humana, com atenção ao território e à escala do viver.",
+  },
+  {
+    q: "Qual o diferencial da Praia do Estaleiro em relação a outras regiões de Balneário Camboriú?",
+    a: "A Praia do Estaleiro se diferencia por manter um controle rigoroso de ocupação e verticalização, inserida em uma área de preservação ambiental que limita a densidade urbana. Esse contexto garante uma paisagem preservada, acesso direto ao mar e um perfil de ocupação mais reservado, atraindo moradores que buscam privacidade, contato com a natureza e exclusividade em Balneário Camboriú.",
+  },
+  {
+    q: "O Aquos Oasis Home é considerado um imóvel exclusivo?",
+    a: "Sim. Trata-se de um imóvel exclusivo, pensado para um público que valoriza arquitetura autoral, localização diferenciada e uma forma de viver conectada à natureza e ao bem-estar.",
+  },
+  {
+    q: "Como a natureza está integrada ao projeto?",
+    a: "A natureza está integrada ao projeto por meio da implantação frente-mar, da preservação da vegetação existente e do uso da água como elemento estruturado dos espaços. A arquitetura respeita a topografia, mantém aberturas amplas para ventilação e luz natural e estabelece uma relação direta entre áreas internas, varandas e paisagem, reforçando a presença constante do ambiente natural no cotidiano dos moradores.",
+  },
+  {
+    q: "Para quem o Aquos Oasis Home foi pensado?",
+    a: "O Aquos Oasis Home foi pensado para pessoas que buscam um residencial autoral, reservado e conectado ao mar, com alto nível de privacidade e qualidade espacial. É direcionado a um perfil que valoriza localização frente-mar, baixa densidade, arquitetura assinada e a experiência de viver em uma área preservada, com conforto e exclusividade.",
+  },
 ];
 
 function ZigZagBlock({
@@ -161,10 +187,13 @@ function AquosOasisHome() {
               Onde a água define o espaço e o tempo desacelera.
             </p>
             <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-              O Aquos Oasis Home nasce a partir de um elemento essencial: a água. Não como metáfora, mas como força que orienta o projeto, molda a arquitetura e estabelece a relação entre o habitar e o território.
+              O Aquos Oasis Home nasce a partir de um elemento essencial: a água. Não como metáfora, mas como força que
+              orienta o projeto, molda a arquitetura e estabelece a relação entre o habitar e o território.
             </p>
             <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-              Localizado na Praia do Estaleiro, em Balneário Camboriú, o empreendimento se insere em um dos trechos mais preservados do litoral catarinense, onde a natureza permanece presente, o ritmo é mais silencioso e a paisagem conduz a experiência de viver.
+              Localizado na Praia do Estaleiro, em Balneário Camboriú, o empreendimento se insere em um dos trechos mais
+              preservados do litoral catarinense, onde a natureza permanece presente, o ritmo é mais silencioso e a
+              paisagem conduz a experiência de viver.
             </p>
             <p className="padrao-p-internas">
               Aqui, a arquitetura não compete com o entorno. Ela se adapta, se dilui e se revela aos poucos.
@@ -177,7 +206,7 @@ function AquosOasisHome() {
 
         {/* SEÇÃO 4 — Conceito (Colunas Efeito) */}
         <ZigZagBlock
-          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/aquos-02.jpg"
+          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/aquos-02.jpg"
           alt="Aquos Oasis Home — conceito"
         >
           <span style={eyebrowStyle}>CONCEITO</span>
@@ -186,20 +215,23 @@ function AquosOasisHome() {
           </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
-              O Aquos Oasis Home foi concebido para respeitar a geografia natural da Praia do Estaleiro, valorizando a proximidade com o mar, a vegetação nativa e a atmosfera contemplativa da região.
+              O Aquos Oasis Home foi concebido para respeitar a geografia natural da Praia do Estaleiro, valorizando a
+              proximidade com o mar, a vegetação nativa e a atmosfera contemplativa da região.
             </p>
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
-              Cada decisão de projeto parte da leitura sensível do lugar, criando espaços que favorecem a conexão com o exterior e permitem que a paisagem atravesse o cotidiano de quem habita.
+              Cada decisão de projeto parte da leitura sensível do lugar, criando espaços que favorecem a conexão com o
+              exterior e permitem que a paisagem atravesse o cotidiano de quem habita.
             </p>
             <p className="padrao-p-internas">
-              Mais do que um endereço exclusivo, o Aquos Oasis Home é uma resposta arquitetônica ao território onde está inserido.
+              Mais do que um endereço exclusivo, o Aquos Oasis Home é uma resposta arquitetônica ao território onde está
+              inserido.
             </p>
           </div>
         </ZigZagBlock>
 
         {/* SEÇÃO 5 — Greg (Colunas Efeito invertido, sem vídeo) */}
         <ZigZagBlock
-          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Triptyque_Greg-Bousquet_FotoJulia-Rodrigues.webp"
+          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/greg-02.jpg"
           alt="Greg Bousquet — Architects Office"
           reverse
         >
@@ -209,13 +241,17 @@ function AquosOasisHome() {
           </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
-              O projeto é assinado pelo Architects Office, escritório reconhecido internacionalmente por sua abordagem que integra arquitetura, paisagem e experiência humana.
+              O projeto é assinado pelo Architects Office, escritório reconhecido internacionalmente por sua abordagem
+              que integra arquitetura, paisagem e experiência humana.
             </p>
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
-              Sob a liderança de Greg Bousquet, o Architects Office desenvolve projetos que equilibram precisão técnica e liberdade criativa, explorando a relação entre o construído e o natural com atenção à escala, à materialidade e ao clima.
+              Sob a liderança de Greg Bousquet, o Architects Office desenvolve projetos que equilibram precisão técnica
+              e liberdade criativa, explorando a relação entre o construído e o natural com atenção à escala, à
+              materialidade e ao clima.
             </p>
             <p className="padrao-p-internas">
-              No Aquos Oasis Home, essa assinatura se traduz em uma arquitetura que privilegia a fluidez dos espaços, a integração visual e a sensação de continuidade entre interior e exterior.
+              No Aquos Oasis Home, essa assinatura se traduz em uma arquitetura que privilegia a fluidez dos espaços, a
+              integração visual e a sensação de continuidade entre interior e exterior.
             </p>
           </div>
         </ZigZagBlock>
@@ -231,11 +267,10 @@ function AquosOasisHome() {
                 A paisagem é parte da arquitetura do Aquos.
               </p>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                A presença da água, combinada ao desenho cuidadoso das áreas verdes, cria uma experiência sensorial contínua, promovendo conforto térmico, bem-estar e uma relação mais profunda com o ambiente natural.
+                A presença da água, combinada ao desenho cuidadoso das áreas verdes, cria uma experiência sensorial
+                contínua, promovendo conforto térmico, bem-estar e uma relação mais profunda com o ambiente natural.
               </p>
-              <p className="padrao-p-internas">
-                Viver aqui é perceber a natureza como parte do cotidiano.
-              </p>
+              <p className="padrao-p-internas">Viver aqui é perceber a natureza como parte do cotidiano.</p>
             </div>
           </div>
         </section>
@@ -254,13 +289,17 @@ function AquosOasisHome() {
             </ScrollReveal>
             <div style={{ marginTop: "40px" }}>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                A escolha da Praia do Estaleiro reforça o posicionamento do Aquos Oasis Home como um empreendimento exclusivo, voltado para quem busca viver com mais privacidade, contato com a natureza e qualidade ambiental.
+                A escolha da Praia do Estaleiro reforça o posicionamento do Aquos Oasis Home como um empreendimento
+                exclusivo, voltado para quem busca viver com mais privacidade, contato com a natureza e qualidade
+                ambiental.
               </p>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                A região preserva características raras em Balneário Camboriú, unindo paisagem natural, mar, vegetação e uma ocupação urbana mais controlada, que valoriza o silêncio e o tempo.
+                A região preserva características raras em Balneário Camboriú, unindo paisagem natural, mar, vegetação e
+                uma ocupação urbana mais controlada, que valoriza o silêncio e o tempo.
               </p>
               <p className="padrao-p-internas">
-                O Aquos Oasis Home nasce desse contexto, ampliando a experiência de viver na região sem descaracterizá-la.
+                O Aquos Oasis Home nasce desse contexto, ampliando a experiência de viver na região sem
+                descaracterizá-la.
               </p>
             </div>
           </div>
@@ -275,18 +314,17 @@ function AquosOasisHome() {
         {/* CTA */}
         <section className="px-6 py-[120px] md:py-[200px]" style={{ background: "#F5F5F5" }}>
           <div className="max-w-[1300px] mx-auto text-left">
-            <ScrollReveal
-              as="h2"
-              className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1200px]"
-            >
+            <ScrollReveal as="h2" className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1200px]">
               Honre o seu legado
             </ScrollReveal>
             <div style={{ marginTop: "40px", maxWidth: "1200px" }}>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                O Aquos Oasis Home expressa a visão da Blue Heaven de criar empreendimentos autorais, onde arquitetura, território e bem-estar coexistem em equilíbrio.
+                O Aquos Oasis Home expressa a visão da Blue Heaven de criar empreendimentos autorais, onde arquitetura,
+                território e bem-estar coexistem em equilíbrio.
               </p>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                Um imóvel exclusivo concebido para quem valoriza a paisagem, a arquitetura sensível e uma forma de viver conectada à essência do lugar.
+                Um imóvel exclusivo concebido para quem valoriza a paisagem, a arquitetura sensível e uma forma de viver
+                conectada à essência do lugar.
               </p>
               <p className="padrao-p-internas" style={{ marginBottom: "48px" }}>
                 Uma obra que nasce da água, do território e do tempo. E permanece.
