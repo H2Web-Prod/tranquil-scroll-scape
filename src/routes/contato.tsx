@@ -155,7 +155,7 @@ function ContatoPage() {
               />
 
               <div className="flex items-center" style={{ gap: "12px" }}>
-                <img src={PIN_ICON} alt="" style={{ width: "16px", height: "17px" }} />
+                <img src={PIN_ICON} alt="" style={{ width: "18px", height: "16px" }} />
                 <span
                   style={{
                     fontFamily: "'Public Sans', sans-serif",
