@@ -153,7 +153,7 @@ export default function Footer() {
         <img
           src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/BLUEHEAVEN-2048x276-1.webp"
           alt="Blue Heaven"
-          style={{ width: "100%", height: "auto", objectFit: "contain", display: "block" }}
+          style={{ width: "100%", height: "auto", objectFit: "contain", display: "block", padding-bottom: "150px" }}
         />
       </div>
     </footer>
