@@ -23,8 +23,7 @@ const empreendimentos = [
   { label: "Monolyt", href: `/monolyt` },
 ];
 
-const colTitleClass =
-  "font-sans font-semibold text-[16px] text-black uppercase tracking-[0.1em] mb-[10px]";
+const colTitleClass = "font-sans font-semibold text-[16px] text-black uppercase tracking-[0.1em] mb-[10px]";
 const bodyText: React.CSSProperties = {
   fontFamily: "'Public Sans', sans-serif",
   fontWeight: 400,
@@ -51,11 +50,7 @@ function LinkList({ items }: { items: { label: string; href: string }[] }) {
     <ul>
       {items.map((l) => (
         <li key={l.label} className="border-b border-[#E5E5E5]">
-          <a
-            href={l.href}
-            className="flex items-center pt-2 pb-2 hover:opacity-70 transition"
-            style={bodyText}
-          >
+          <a href={l.href} className="flex items-center pt-2 pb-2 hover:opacity-70 transition" style={bodyText}>
             <img src={ARROW} alt="" className="w-[8px] h-auto mr-3" />
             <span>{l.label}</span>
           </a>
@@ -79,26 +74,41 @@ export default function Footer() {
               className="mb-8"
             />
             <p style={{ ...bodyText, lineHeight: 1.7 }} className="mb-8">
-              Com a filosofia Building With Nature, colocamos nossa inteligência construtiva e tecnologia a serviço do equilíbrio da vida, desenvolvendo empreendimentos que se tornam obras de arte esculpidas a partir de uma abordagem artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a modernidade concebida pela vida humana.
+              Com a filosofia Building With Nature, colocamos nossa inteligência construtiva e tecnologia a serviço do
+              equilíbrio da vida, desenvolvendo empreendimentos que se tornam obras de arte esculpidas a partir de uma
+              abordagem artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a modernidade
+              concebida pela vida humana.
             </p>
             <div className="border-t border-[#E5E5E5] pt-6 mb-8 flex flex-wrap gap-x-8 gap-y-3">
-              <a href={`${base}/politica-de-privacidade/`} className="flex items-center hover:opacity-70" style={bodyText}>
-                <img src={ARROW} alt="" className="w-[8px] h-auto mr-3" />Política de Privacidade
+              <a
+                href={`${base}/politica-de-privacidade/`}
+                className="flex items-center hover:opacity-70"
+                style={bodyText}
+              >
+                <img src={ARROW} alt="" className="w-[8px] h-auto mr-3" />
+                Política de Privacidade
               </a>
               <a href={`${base}/termos-de-uso/`} className="flex items-center hover:opacity-70" style={bodyText}>
-                <img src={ARROW} alt="" className="w-[8px] h-auto mr-3" />Termos de Uso
+                <img src={ARROW} alt="" className="w-[8px] h-auto mr-3" />
+                Termos de Uso
               </a>
             </div>
             <p className={colTitleClass}>Siga a Blue Heaven</p>
             <div className="flex gap-3">
               <SocialIcon href="https://www.facebook.com/blueheavenemp" label="Facebook">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                </svg>
               </SocialIcon>
               <SocialIcon href="https://www.instagram.com/blueheavenemp/" label="Instagram">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.069 4.85c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.069c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608-.058-1.266-.069-1.646-.069-4.85s.012-3.584.069-4.85c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311 1.266-.058 1.646-.069 4.85-.069m0-2.163c-3.259 0-3.667.014-4.947.072-1.978.09-3.717.494-5.151 1.928s-1.838 3.173-1.928 5.151c-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.09 1.978.494 3.717 1.928 5.151s3.173 1.838 5.151 1.928c1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.978-.09 3.717-.494 5.151-1.928s1.838-3.173 1.928-5.151c.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.09-1.978-.494-3.717-1.928-5.151s-3.173-1.838-5.151-1.928c-1.28-.058-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.069 4.85c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.069c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608-.058-1.266-.069-1.646-.069-4.85s.012-3.584.069-4.85c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311 1.266-.058 1.646-.069 4.85-.069m0-2.163c-3.259 0-3.667.014-4.947.072-1.978.09-3.717.494-5.151 1.928s-1.838 3.173-1.928 5.151c-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.09 1.978.494 3.717 1.928 5.151s3.173 1.838 5.151 1.928c1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.978-.09 3.717-.494 5.151-1.928s1.838-3.173 1.928-5.151c.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.09-1.978-.494-3.717-1.928-5.151s-3.173-1.838-5.151-1.928c-1.28-.058-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
               </SocialIcon>
               <SocialIcon href="https://www.youtube.com/@BlueHeavenEmp" label="YouTube">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                </svg>
               </SocialIcon>
             </div>
           </div>
@@ -107,7 +117,9 @@ export default function Footer() {
           <div>
             <p className={colTitleClass}>Institucional</p>
             <LinkList items={institucional} />
-            <p className={colTitleClass} style={{ marginTop: "48px" }}>Empreendimentos</p>
+            <p className={colTitleClass} style={{ marginTop: "48px" }}>
+              Empreendimentos
+            </p>
             <LinkList items={empreendimentos} />
           </div>
 
@@ -123,7 +135,13 @@ export default function Footer() {
               <img src={PIN} alt="" className="w-[18px] h-auto mr-3 mt-1" />
               <span>Av. Osvaldo Reis, 3281 - sala 26 - Praia Brava, Itajaí - SC, 88306-001</span>
             </div>
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center hover:opacity-70" style={bodyText}>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center hover:opacity-70"
+              style={bodyText}
+            >
               <img src={WPP} alt="" className="w-[18px] h-auto mr-3" />
               <span>(47) 99762-5209</span>
             </a>
@@ -137,7 +155,10 @@ export default function Footer() {
 
       {/* Sub-footer */}
       <div className="border-t border-[#E5E5E5] px-6 md:px-10 py-6">
-        <div className="flex flex-col md:flex-row justify-between gap-3" style={{ fontFamily: "'Public Sans', sans-serif", fontWeight: 400, fontSize: "14px", color: "#000000" }}>
+        <div
+          className="flex flex-col md:flex-row justify-between gap-3"
+          style={{ fontFamily: "'Public Sans', sans-serif", fontWeight: 400, fontSize: "14px", color: "#000000" }}
+        >
           <p>Copyright © 2026 Todos os Direitos Reservados – Blue Heaven – CNPJ: 19.515.552/0001-60</p>
           <p>
             <a href="https://h2web.com.br/" target="_blank" rel="noopener noreferrer" className="underline">
@@ -153,7 +174,7 @@ export default function Footer() {
         <img
           src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/BLUEHEAVEN-2048x276-1.webp"
           alt="Blue Heaven"
-          style={{ width: "100%", height: "auto", objectFit: "contain", display: "block", padding-bottom: "150px" }}
+          style={{ width: "100%", height: "auto", objectFit: "contain", display: "block" }}
         />
       </div>
     </footer>
