@@ -32,20 +32,23 @@ export function ConnectingSection() {
           section h2.font-light { font-family: 'Public Sans', sans-serif; font-size: clamp(40px, 5vw, 64px); line-height: 1.15; font-weight: 300; color: #000; max-width: 1200px; }
         `}</style>
         <p className="padrao-p" style={{ maxWidth: "1200px" }}>
-          A Architects Office combina o global e o local, o orgânico e o mineral, com uma atenção detalhada à escala humana e ao meio ambiente, trazendo abordagens únicas para cada projeto.
+          A Architects Office combina o global e o local, o orgânico e o mineral, com uma atenção detalhada à escala
+          humana e ao meio ambiente, trazendo abordagens únicas para cada projeto.
         </p>
 
         <div className="relative mt-[120px] md:mt-[160px] grid md:grid-cols-[42%_1fr] gap-12 md:gap-20 items-center">
           <FadeInUp>
             <ParallaxImage
-              src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/greg-bousquet-fundador-architects-office.jpg"
+              src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/greg.jpg"
               alt="Greg Bousquet"
               aspectRatio="3/4"
             />
           </FadeInUp>
           <div>
             <StaggerStack baseDelay={0.4} step={0.2}>
-              <h3 className="mb-6 text-black" style={{ fontWeight: 400, fontSize: "32px" }}>Greg Bousquet</h3>
+              <h3 className="mb-6 text-black" style={{ fontWeight: 400, fontSize: "32px" }}>
+                Greg Bousquet
+              </h3>
               <p className="padrao-p">
                 Fundador do Architects Office e Triptyque Architecture. Sócio fundador do Architects Office LX.
               </p>
