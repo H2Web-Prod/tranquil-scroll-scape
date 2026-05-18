@@ -280,7 +280,7 @@ function MonolytPage() {
 
         {/* 9. Equilíbrio — Colunas Efeito invertido */}
         <ZigZagBlock
-          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/monolyt-2.jpg"
+          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/monolyt-2a.jpg"
           alt="Monolyt — equilíbrio"
           reverse
         >
