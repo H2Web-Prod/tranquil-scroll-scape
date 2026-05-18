@@ -78,7 +78,7 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden lg:inline-block font-manrope text-[18px] font-medium text-black bg-white rounded-full px-[30px] py-[15px] hover:bg-[#142643] hover:text-white transition-colors duration-300"
+            className="hidden lg:inline-block font-manrope text-[18px] font-medium text-black bg-white border border-black rounded-full px-[30px] py-[15px] hover:bg-[#142643] hover:text-white transition-colors duration-300"
           >
             Fale Conosco
           </a>
