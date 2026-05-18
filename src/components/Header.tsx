@@ -10,8 +10,8 @@ const empreendimentos = [
 
 const navLinks = [
   { name: "Blue Heaven", href: "/blue-heaven" },
-  { name: "Blog", href: "#blog" },
-  { name: "Imprensa", href: "https://projetos.h2web.com.br/blueheaven/imprensa/" },
+  { name: "Blog", href: "https://projetos.h2web.com.br/blueheaven/blog/" },
+  { name: "Imprensa", href: "https://projetos.h2web.com.br/blueheaven/blog/imprensa/" },
   { name: "Contato", href: "/contato" },
 ];
 
@@ -20,8 +20,7 @@ const whatsappUrl =
 
 const LOGO_LIGHT =
   "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/construtora-imobiliaria-blue-heaven.png";
-const LOGO_DARK =
-  "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/logo-blue-heaven-1.svg";
+const LOGO_DARK = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/03/logo-blue-heaven-1.svg";
 
 export default function Header({ theme = "light" }: { theme?: "light" | "dark" }) {
   const [empOpen, setEmpOpen] = useState(false);
@@ -52,52 +51,44 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
     >
       <div className="px-6 md:px-10">
         <div className={`py-5 flex items-center justify-between border-b-2 ${borderClass}`}>
-        <Link to="/" className="flex-shrink-0">
-          <img
-            src={isDark ? LOGO_DARK : LOGO_LIGHT}
-            alt="Blue Heaven"
-            className="w-[160px] md:w-[248px] h-auto"
-          />
-        </Link>
+          <Link to="/" className="flex-shrink-0">
+            <img src={isDark ? LOGO_DARK : LOGO_LIGHT} alt="Blue Heaven" className="w-[160px] md:w-[248px] h-auto" />
+          </Link>
 
-        <nav className={`hidden lg:flex items-stretch gap-10 ml-auto mr-8 font-manrope font-light text-[18px] nav-links ${isDark ? "text-black" : "text-white"}`}>
-          <Link to="/blue-heaven" className={`${navClass} flex items-center`}>Blue Heaven</Link>
-          <div
-            ref={empRef}
-            className="flex items-center py-5 -my-5"
-            onMouseEnter={openEmpreendimentos}
+          <nav
+            className={`hidden lg:flex items-stretch gap-10 ml-auto mr-8 font-manrope font-light text-[18px] nav-links ${isDark ? "text-black" : "text-white"}`}
           >
-            <button className={navClass}>Empreendimentos</button>
-          </div>
-          {navLinks.slice(1).map((l) => {
-            const href = isDark && l.href.startsWith("#") ? `/${l.href}` : l.href;
-            return (
-              <a key={l.name} href={href} className={navClass}>
-                {l.name}
-              </a>
-            );
-          })}
-        </nav>
+            <Link to="/blue-heaven" className={`${navClass} flex items-center`}>
+              Blue Heaven
+            </Link>
+            <div ref={empRef} className="flex items-center py-5 -my-5" onMouseEnter={openEmpreendimentos}>
+              <button className={navClass}>Empreendimentos</button>
+            </div>
+            {navLinks.slice(1).map((l) => {
+              const href = isDark && l.href.startsWith("#") ? `/${l.href}` : l.href;
+              return (
+                <a key={l.name} href={href} className={navClass}>
+                  {l.name}
+                </a>
+              );
+            })}
+          </nav>
 
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden lg:inline-block font-manrope text-[18px] font-medium text-black bg-white rounded-full px-[30px] py-[15px] hover:bg-[#142643] hover:text-white transition-colors duration-300"
-        >
-          Fale Conosco
-        </a>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:inline-block font-manrope text-[18px] font-medium text-black bg-white rounded-full px-[30px] py-[15px] hover:bg-[#142643] hover:text-white transition-colors duration-300"
+          >
+            Fale Conosco
+          </a>
 
-        <button
-          className={`lg:hidden p-2 ${iconColor}`}
-          aria-label="Abrir menu"
-          onClick={() => setMobileOpen(true)}
-        >
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <line x1="3" y1="8" x2="21" y2="8" />
-            <line x1="3" y1="16" x2="21" y2="16" />
-          </svg>
-        </button>
+          <button className={`lg:hidden p-2 ${iconColor}`} aria-label="Abrir menu" onClick={() => setMobileOpen(true)}>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <line x1="3" y1="8" x2="21" y2="8" />
+              <line x1="3" y1="16" x2="21" y2="16" />
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -124,22 +115,14 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
           >
             {empreendimentos.map((e) =>
               e.internal ? (
-                <Link
-                  key={e.name}
-                  to={e.url}
-                  className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2"
-                >
+                <Link key={e.name} to={e.url} className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2">
                   {e.name}
                 </Link>
               ) : (
-                <a
-                  key={e.name}
-                  href={e.url}
-                  className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2"
-                >
+                <a key={e.name} href={e.url} className="text-[16px] font-normal text-black hover:opacity-60 px-3 py-2">
                   {e.name}
                 </a>
-              )
+              ),
             )}
           </div>
         </div>
@@ -155,16 +138,8 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
             className="fixed inset-0 z-50 bg-[#142643] flex flex-col px-6 py-8"
           >
             <div className="flex justify-between items-center mb-12">
-              <img
-                src={LOGO_LIGHT}
-                alt="Blue Heaven"
-                className="w-[160px]"
-              />
-              <button
-                aria-label="Fechar menu"
-                onClick={() => setMobileOpen(false)}
-                className="text-white p-2"
-              >
+              <img src={LOGO_LIGHT} alt="Blue Heaven" className="w-[160px]" />
+              <button aria-label="Fechar menu" onClick={() => setMobileOpen(false)} className="text-white p-2">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <line x1="5" y1="5" x2="19" y2="19" />
                   <line x1="19" y1="5" x2="5" y2="19" />
@@ -172,23 +147,31 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
               </button>
             </div>
             <nav className="flex flex-col gap-6 font-manrope text-2xl text-white font-light">
-              <Link to="/blue-heaven" onClick={() => setMobileOpen(false)}>Blue Heaven</Link>
+              <Link to="/blue-heaven" onClick={() => setMobileOpen(false)}>
+                Blue Heaven
+              </Link>
               <div className="flex flex-col gap-3">
                 <span>Empreendimentos</span>
                 <div className="flex flex-col gap-3 pl-4 text-lg opacity-80">
                   {empreendimentos.map((e) =>
                     e.internal ? (
-                      <Link key={e.name} to={e.url} onClick={() => setMobileOpen(false)}>{e.name}</Link>
+                      <Link key={e.name} to={e.url} onClick={() => setMobileOpen(false)}>
+                        {e.name}
+                      </Link>
                     ) : (
-                      <a key={e.name} href={e.url}>{e.name}</a>
-                    )
+                      <a key={e.name} href={e.url}>
+                        {e.name}
+                      </a>
+                    ),
                   )}
                 </div>
               </div>
               {navLinks.slice(1).map((l) => {
                 const href = isDark && l.href.startsWith("#") ? `/${l.href}` : l.href;
                 return (
-                  <a key={l.name} href={href} onClick={() => setMobileOpen(false)}>{l.name}</a>
+                  <a key={l.name} href={href} onClick={() => setMobileOpen(false)}>
+                    {l.name}
+                  </a>
                 );
               })}
             </nav>
