@@ -170,7 +170,7 @@ export default function Footer() {
       </div>
 
       {/* Faixa gigante */}
-      <div style={{ background: "#142643" }}>
+      <div style={{ background: "#142643", paddingBottom: "150px" }}>
         <img
           src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/BLUEHEAVEN-2048x276-1.webp"
           alt="Blue Heaven"
