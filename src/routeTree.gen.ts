@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as RegiaoSantaCatarinaRouteImport } from './routes/regiao-santa-catarina'
 import { Route as MonolytRouteImport } from './routes/monolyt'
 import { Route as InfinitaTreehouseRouteImport } from './routes/infinita-treehouse'
+import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as BlueHeavenRouteImport } from './routes/blue-heaven'
 import { Route as AquosOasisHomeRouteImport } from './routes/aquos-oasis-home'
 import { Route as IndexRouteImport } from './routes/index'
@@ -29,6 +30,11 @@ const MonolytRoute = MonolytRouteImport.update({
 const InfinitaTreehouseRoute = InfinitaTreehouseRouteImport.update({
   id: '/infinita-treehouse',
   path: '/infinita-treehouse',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/contato',
+  path: '/contato',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlueHeavenRoute = BlueHeavenRouteImport.update({
@@ -51,6 +57,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/aquos-oasis-home': typeof AquosOasisHomeRoute
   '/blue-heaven': typeof BlueHeavenRoute
+  '/contato': typeof ContatoRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
   '/monolyt': typeof MonolytRoute
   '/regiao-santa-catarina': typeof RegiaoSantaCatarinaRoute
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/aquos-oasis-home': typeof AquosOasisHomeRoute
   '/blue-heaven': typeof BlueHeavenRoute
+  '/contato': typeof ContatoRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
   '/monolyt': typeof MonolytRoute
   '/regiao-santa-catarina': typeof RegiaoSantaCatarinaRoute
@@ -68,6 +76,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/aquos-oasis-home': typeof AquosOasisHomeRoute
   '/blue-heaven': typeof BlueHeavenRoute
+  '/contato': typeof ContatoRoute
   '/infinita-treehouse': typeof InfinitaTreehouseRoute
   '/monolyt': typeof MonolytRoute
   '/regiao-santa-catarina': typeof RegiaoSantaCatarinaRoute
@@ -78,6 +87,7 @@ export interface FileRouteTypes {
     | '/'
     | '/aquos-oasis-home'
     | '/blue-heaven'
+    | '/contato'
     | '/infinita-treehouse'
     | '/monolyt'
     | '/regiao-santa-catarina'
@@ -86,6 +96,7 @@ export interface FileRouteTypes {
     | '/'
     | '/aquos-oasis-home'
     | '/blue-heaven'
+    | '/contato'
     | '/infinita-treehouse'
     | '/monolyt'
     | '/regiao-santa-catarina'
@@ -94,6 +105,7 @@ export interface FileRouteTypes {
     | '/'
     | '/aquos-oasis-home'
     | '/blue-heaven'
+    | '/contato'
     | '/infinita-treehouse'
     | '/monolyt'
     | '/regiao-santa-catarina'
@@ -103,6 +115,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AquosOasisHomeRoute: typeof AquosOasisHomeRoute
   BlueHeavenRoute: typeof BlueHeavenRoute
+  ContatoRoute: typeof ContatoRoute
   InfinitaTreehouseRoute: typeof InfinitaTreehouseRoute
   MonolytRoute: typeof MonolytRoute
   RegiaoSantaCatarinaRoute: typeof RegiaoSantaCatarinaRoute
@@ -129,6 +142,13 @@ declare module '@tanstack/react-router' {
       path: '/infinita-treehouse'
       fullPath: '/infinita-treehouse'
       preLoaderRoute: typeof InfinitaTreehouseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contato': {
+      id: '/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof ContatoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blue-heaven': {
@@ -159,6 +179,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AquosOasisHomeRoute: AquosOasisHomeRoute,
   BlueHeavenRoute: BlueHeavenRoute,
+  ContatoRoute: ContatoRoute,
   InfinitaTreehouseRoute: InfinitaTreehouseRoute,
   MonolytRoute: MonolytRoute,
   RegiaoSantaCatarinaRoute: RegiaoSantaCatarinaRoute,
@@ -166,3 +187,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

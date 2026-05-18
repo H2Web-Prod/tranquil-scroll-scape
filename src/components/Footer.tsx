@@ -14,7 +14,7 @@ const institucional = [
   { label: "Blog", href: `${base}/blog/` },
   { label: "Imprensa", href: `${base}/imprensa/` },
   { label: "Região", href: `/regiao-santa-catarina` },
-  { label: "Contato", href: `${base}/contato/` },
+  { label: "Contato", href: `/contato` },
 ];
 
 const empreendimentos = [
