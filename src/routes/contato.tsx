@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import useLenis from "@/hooks/useLenis";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -8,24 +9,20 @@ export const Route = createFileRoute("/contato")({
       { title: "Contato — Blue Heaven" },
       {
         name: "description",
-        content:
-          "Entre em contato com a Blue Heaven para mais informações sobre os nossos empreendimentos.",
+        content: "Entre em contato com a Blue Heaven para mais informações sobre os nossos empreendimentos.",
       },
       { property: "og:title", content: "Contato — Blue Heaven" },
       {
         property: "og:description",
-        content:
-          "Entre em contato com a Blue Heaven para mais informações sobre os nossos empreendimentos.",
+        content: "Entre em contato com a Blue Heaven para mais informações sobre os nossos empreendimentos.",
       },
     ],
   }),
   component: ContatoPage,
 });
 
-const ENVELOPE =
-  "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/icon-envelope-dark.jpg";
-const WHATSAPP_ICON =
-  "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/icon-whatsapp-dark.jpg";
+const ENVELOPE = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/icon-envelope-dark.jpg";
+const WHATSAPP_ICON = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/icon-whatsapp-dark.jpg";
 const PIN_ICON = ENVELOPE; // user spec uses envelope icon for address per provided list
 
 const whatsappUrl =
@@ -37,14 +34,8 @@ function ContatoPage() {
       <Header theme="dark" />
 
       {/* HERO COMPACTO */}
-      <section
-        className="relative bg-white w-full"
-        style={{ height: "380px" }}
-      >
-        <div
-          className="absolute"
-          style={{ bottom: "40px", left: 0, right: 0 }}
-        >
+      <section className="relative bg-white w-full" style={{ height: "380px" }}>
+        <div className="absolute" style={{ bottom: "40px", left: 0, right: 0 }}>
           <div className="px-6 md:px-10 mx-auto" style={{ maxWidth: "1200px" }}>
             <h1
               style={{
@@ -68,8 +59,7 @@ function ContatoPage() {
                 marginTop: "16px",
               }}
             >
-              Entre em contato com a Blue Heaven para mais informações sobre os
-              nossos empreendimentos
+              Entre em contato com a Blue Heaven para mais informações sobre os nossos empreendimentos
             </p>
           </div>
         </div>
@@ -163,11 +153,7 @@ function ContatoPage() {
               />
 
               <div className="flex items-center" style={{ gap: "12px" }}>
-                <img
-                  src={PIN_ICON}
-                  alt=""
-                  style={{ width: "16px", height: "17px", filter: "invert(1)" }}
-                />
+                <img src={PIN_ICON} alt="" style={{ width: "16px", height: "17px", filter: "invert(1)" }} />
                 <span
                   style={{
                     fontFamily: "'Public Sans', sans-serif",
@@ -187,11 +173,7 @@ function ContatoPage() {
                 className="flex items-center hover:opacity-80 transition-opacity"
                 style={{ gap: "12px", textDecoration: "none" }}
               >
-                <img
-                  src={WHATSAPP_ICON}
-                  alt=""
-                  style={{ width: "19px", height: "19px", filter: "invert(1)" }}
-                />
+                <img src={WHATSAPP_ICON} alt="" style={{ width: "19px", height: "19px", filter: "invert(1)" }} />
                 <span
                   style={{
                     fontFamily: "'Public Sans', sans-serif",
@@ -208,11 +190,7 @@ function ContatoPage() {
                 className="flex items-center hover:opacity-80 transition-opacity"
                 style={{ gap: "12px", textDecoration: "none" }}
               >
-                <img
-                  src={ENVELOPE}
-                  alt=""
-                  style={{ width: "18px", height: "16px", filter: "invert(1)" }}
-                />
+                <img src={ENVELOPE} alt="" style={{ width: "18px", height: "16px", filter: "invert(1)" }} />
                 <span
                   style={{
                     fontFamily: "'Public Sans', sans-serif",
