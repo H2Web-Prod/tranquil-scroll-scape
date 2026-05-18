@@ -29,6 +29,7 @@ const whatsappUrl =
   "https://api.whatsapp.com/send/?phone=5547997625209&text=Olá+vim+pelo+site+Blue+Heaven+e+gostaria+de+mais+informações!";
 
 function ContatoPage() {
+  useLenis();
   return (
     <div className="bg-white text-black">
       <Header theme="dark" />
