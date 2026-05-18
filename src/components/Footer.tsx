@@ -12,7 +12,7 @@ const institucional = [
   { label: "Blue Heaven", href: `/blue-heaven` },
   { label: "Empreendimentos", href: `${base}/imoveis-exclusivos-blue-heaven/` },
   { label: "Blog", href: `${base}/blog/` },
-  { label: "Imprensa", href: `${base}/imprensa/` },
+  { label: "Imprensa", href: `${base}/blog/imprensa/` },
   { label: "Região", href: `/regiao-santa-catarina` },
   { label: "Contato", href: `/contato` },
 ];
