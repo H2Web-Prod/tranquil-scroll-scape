@@ -3,7 +3,7 @@ import EmpreendimentoBlock from "./EmpreendimentoBlock";
 
 const items = [
   {
-    image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/empreendimento-infinita-treehouse.jpg",
+    image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/infinita01.jpg",
     eyebrow: "01 · Residencial",
     title: "Infinitá Treehouse",
     subtitle: "Um refúgio suspenso entre a arquitetura e a natureza.",
@@ -11,14 +11,14 @@ const items = [
     link: "/infinita-treehouse",
   },
   {
-    image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/empreendimento-aquos-oasis-home.jpg",
+    image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/aquos01.jpg",
     eyebrow: "02 · Residencial",
     title: "Aquos Oasis Home",
     body: "O Aquos Oasis Home surge a partir do poder de transformação da água, atuando como a força que orienta o projeto, molda a arquitetura e estabelece a relação entre o habitar e o território.",
     link: "/aquos-oasis-home",
   },
   {
-    image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/empreendimento-monolyt.jpg",
+    image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/monolyt.jpg",
     eyebrow: "03 · Residencial",
     title: "Monolyt",
     body: "Idealizado para aqueles que apreciam privacidade, o contato íntimo com a natureza e espaços de alto padrão para desfrutar plenamente da vida, o Monolyt introduz um design exclusivo e atemporal que redefine o conceito de viver com estilo.",
