@@ -10,7 +10,6 @@ const MAIL = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/0
 
 const institucional = [
   { label: "Blue Heaven", href: `/blue-heaven` },
-  { label: "Empreendimentos", href: `${base}/imoveis-exclusivos-blue-heaven/` },
   { label: "Blog", href: `${base}/blog/` },
   { label: "Imprensa", href: `${base}/blog/imprensa/` },
   { label: "Região", href: `/regiao-santa-catarina` },
