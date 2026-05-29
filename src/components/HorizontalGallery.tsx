@@ -12,7 +12,9 @@ export default function HorizontalGallery({ images }: HorizontalGalleryProps) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
@@ -50,26 +52,50 @@ export default function HorizontalGallery({ images }: HorizontalGalleryProps) {
 
   if (isMobile) {
     return (
-      <section className="relative bg-white">
+      <section
+        style={{
+          background: "#FFFFFF",
+          padding: "60px 0",
+          width: "100%",
+          overflowX: "auto",
+          overflowY: "hidden",
+          WebkitOverflowScrolling: "touch",
+          scrollbarWidth: "none",
+        }}
+      >
         <style>{`
           .horizontal-gallery-mobile::-webkit-scrollbar { display: none; }
-          .horizontal-gallery-mobile { -ms-overflow-style: none; scrollbar-width: none; }
         `}</style>
         <div
-          className="horizontal-gallery-mobile flex gap-4 overflow-x-auto px-4 py-8"
-          style={{ scrollSnapType: "x mandatory", WebkitOverflowScrolling: "touch" }}
+          className="horizontal-gallery-mobile"
+          style={{
+            display: "flex",
+            gap: "16px",
+            paddingLeft: "24px",
+            paddingRight: "24px",
+          }}
         >
           {images.map((src, i) => (
             <div
               key={i}
-              className="flex-shrink-0 overflow-hidden"
-              style={{ width: "75vw", aspectRatio: "3 / 4", scrollSnapAlign: "start" }}
+              style={{
+                flex: "none",
+                width: "75vw",
+                aspectRatio: "3 / 4",
+                overflow: "hidden",
+                background: "#f2f2f2",
+              }}
             >
               <img
                 src={src}
                 alt=""
-                loading="lazy"
-                className="w-full h-full object-cover"
+                draggable={false}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block",
+                }}
               />
             </div>
           ))}
@@ -81,31 +107,65 @@ export default function HorizontalGallery({ images }: HorizontalGalleryProps) {
   return (
     <section
       ref={containerRef}
-      className="relative bg-white"
-      style={{ height: "300vh" }}
+      style={{
+        height: "500vh",
+        background: "#FFFFFF",
+        position: "relative",
+      }}
     >
-      <style>{`
-        @media (max-width: 1023px) {
-          .horizontal-gallery-track > div { width: 35vw !important; }
-        }
-      `}</style>
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center">
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          height: "100vh",
+          width: "100%",
+          overflow: "hidden",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
         <motion.div
           ref={trackRef}
-          style={{ x }}
-          className="horizontal-gallery-track flex gap-6 px-6 will-change-transform"
+          className="horizontal-gallery-track"
+          style={{
+            x,
+            display: "flex",
+            gap: "24px",
+            paddingLeft: "120px",
+            paddingRight: "80px",
+            willChange: "transform",
+          }}
         >
+          <style>{`
+            .horizontal-gallery-track > div {
+              width: 25vw;
+              aspect-ratio: 3 / 4;
+            }
+            @media (max-width: 1023px) {
+              .horizontal-gallery-track > div {
+                width: 35vw;
+              }
+            }
+          `}</style>
           {images.map((src, i) => (
             <div
               key={i}
-              className="flex-shrink-0 overflow-hidden"
-              style={{ width: "25vw", aspectRatio: "3 / 4" }}
+              style={{
+                flex: "none",
+                overflow: "hidden",
+                background: "#f2f2f2",
+              }}
             >
               <img
                 src={src}
                 alt=""
-                loading="lazy"
-                className="w-full h-full object-cover"
+                draggable={false}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block",
+                }}
               />
             </div>
           ))}
