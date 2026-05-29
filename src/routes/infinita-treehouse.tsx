@@ -7,6 +7,18 @@ import FadeInUp from "@/components/FadeInUp";
 import ParallaxImage from "@/components/ParallaxImage";
 import ImageGrowSection from "@/components/ImageGrowSection";
 import ZoomImage from "@/components/ZoomImage";
+import HorizontalGallery from "@/components/HorizontalGallery";
+
+const INFINITA_GALLERY_IMAGES = [
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/01.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/02.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/03.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/04.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/05.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/06.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/07.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/08.jpg",
+];
 import StaggerStack from "@/components/StaggerStack";
 import VideoTriggerCard from "@/components/VideoTriggerCard";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
@@ -342,15 +354,8 @@ function InfinitaTreehouse() {
           </div>
         </section>
 
-        {/* DUAS IMAGENS COM ZOOM EMPREENDIMENTO EM SEQUÊNCIA */}
-        <ZoomImage
-          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/BHE_INF_Fachada_Voo_EF.webp"
-          alt="Infinitá Treehouse — fachada vista aérea"
-        />
-        <ZoomImage
-          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/BHE_INF_Fachada_Extra.webp"
-          alt="Infinitá Treehouse — fachada"
-        />
+        {/* GALERIA HORIZONTAL */}
+        <HorizontalGallery images={INFINITA_GALLERY_IMAGES} />
 
         {/* RENATA */}
         <PersonBlock
