@@ -29,8 +29,7 @@ export const Route = createFileRoute("/blue-heaven")({
       },
       {
         property: "og:image",
-        content:
-          "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/bg-quem-somos-1.jpg",
+        content: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/bg-quem-somos-1.jpg",
       },
       { property: "og:type", content: "article" },
     ],
@@ -52,8 +51,7 @@ const tabs = [
   {
     label: "Natureza",
     title: "Natureza",
-    image:
-      "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/natureza-blue-heaven.webp",
+    image: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/natureza-blue-heaven.webp",
     paragraphs: [
       "Nossos projetos se integram à paisagem e respeitam o entorno. Essa relação cuidadosa proporciona uma experiência autêntica de viver em contato com a natureza, onde arquitetura e meio ambiente coexistem de forma equilibrada.",
     ],
@@ -158,7 +156,7 @@ function BlueHeavenPage() {
         </section>
 
         {/* 2. PILARES + TABS */}
-        <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
+        <section className="pt-[140px] md:pt-[240px] px-6 md:px-10 bg-white">
           <div className="max-w-[1300px] mx-auto">
             <ScrollReveal
               as="h2"
@@ -166,9 +164,9 @@ function BlueHeavenPage() {
             >
               Os pilares que sustentam os nossos projetos
             </ScrollReveal>
-            <div style={{ marginTop: "80px" }}>
-              <TabsVerticais tabs={tabs} />
-            </div>
+          </div>
+          <div className="max-w-[1300px] mx-auto" style={{ marginTop: "80px" }}>
+            <TabsVerticais tabs={tabs} />
           </div>
         </section>
 
@@ -177,14 +175,14 @@ function BlueHeavenPage() {
           <div className="max-w-[1300px] mx-auto">
             <FadeInUp>
               <StaggerStack>
-                <ScrollReveal
-                  as="h2"
-                  className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1100px]"
-                >
+                <ScrollReveal as="h2" className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1100px]">
                   Building Wellness
                 </ScrollReveal>
                 <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
-                  Com a filosofia 'Building With Nature', colocamos nossa inteligência construtiva e tecnologia a serviço do equilíbrio da vida, desenvolvendo empreendimentos que se tornam obras de artes esculpidas com uma abordagem artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a modernidade concebida pela vida humana.
+                  Com a filosofia 'Building With Nature', colocamos nossa inteligência construtiva e tecnologia a
+                  serviço do equilíbrio da vida, desenvolvendo empreendimentos que se tornam obras de artes esculpidas
+                  com uma abordagem artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a
+                  modernidade concebida pela vida humana.
                 </p>
               </StaggerStack>
             </FadeInUp>
@@ -205,17 +203,17 @@ function BlueHeavenPage() {
               />
               <div>
                 <StaggerStack>
-                  <ScrollReveal
-                    as="h2"
-                    className="font-light text-black text-[clamp(36px,4.5vw,56px)] leading-[1.1]"
-                  >
+                  <ScrollReveal as="h2" className="font-light text-black text-[clamp(36px,4.5vw,56px)] leading-[1.1]">
                     Assinatura internacional na arquitetura
                   </ScrollReveal>
                   <p className="padrao-p-internas" style={{ marginTop: "32px" }}>
-                    A Architects Office cria projetos que harmonizam inovação, natureza e estética. Liderada por Greg Bousquet, a empresa integra referências globais e contextos locais, o orgânico e o mineral, com atenção cuidadosa à escala humana, à paisagem e ao meio ambiente.
+                    A Architects Office cria projetos que harmonizam inovação, natureza e estética. Liderada por Greg
+                    Bousquet, a empresa integra referências globais e contextos locais, o orgânico e o mineral, com
+                    atenção cuidadosa à escala humana, à paisagem e ao meio ambiente.
                   </p>
                   <p className="padrao-p-internas" style={{ marginTop: "20px" }}>
-                    Essa colaboração reforça a identidade autoral dos empreendimentos Blue Heaven, consolidando uma arquitetura singular, sensível e atemporal.
+                    Essa colaboração reforça a identidade autoral dos empreendimentos Blue Heaven, consolidando uma
+                    arquitetura singular, sensível e atemporal.
                   </p>
                 </StaggerStack>
               </div>
@@ -225,7 +223,8 @@ function BlueHeavenPage() {
 
         {/* 6. TÍTULO ÚNICO */}
         <TituloUnico>
-          Construir com bem-estar é proporcionar um refúgio onde os moradores podem viver com equilíbrio, saúde e felicidade.
+          Construir com bem-estar é proporcionar um refúgio onde os moradores podem viver com equilíbrio, saúde e
+          felicidade.
         </TituloUnico>
 
         {/* 7. BLUE HEAVEN NÃO SE LIMITA */}
@@ -239,14 +238,13 @@ function BlueHeavenPage() {
               />
               <div>
                 <StaggerStack>
-                  <ScrollReveal
-                    as="h2"
-                    className="font-light text-black text-[clamp(36px,4.5vw,56px)] leading-[1.1]"
-                  >
+                  <ScrollReveal as="h2" className="font-light text-black text-[clamp(36px,4.5vw,56px)] leading-[1.1]">
                     A Blue Heaven não se limita a construir apenas residências.
                   </ScrollReveal>
                   <p className="padrao-p-internas" style={{ marginTop: "32px" }}>
-                    Pensando em ambientes que promovem o bem-estar em todos os aspectos, a preocupação com Building Wellness é adotada desde o design arquitetônico até os materiais escolhidos, criando espaços que inspiram e elevam a qualidade de vida.
+                    Pensando em ambientes que promovem o bem-estar em todos os aspectos, a preocupação com Building
+                    Wellness é adotada desde o design arquitetônico até os materiais escolhidos, criando espaços que
+                    inspiram e elevam a qualidade de vida.
                   </p>
                 </StaggerStack>
               </div>
