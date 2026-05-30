@@ -10,12 +10,8 @@ export interface TabItem {
   title: string;
   image: string;
   paragraphs: string[];
+  scrollWeight?: number; // peso opcional do scroll (default = 1)
 }
-
-// Quantas "telas" de scroll cada aba ocupa (1 = 100vh, 1.5 = 150vh, etc.)
-// Aumentar = mais tempo pra ler cada aba
-// Diminuir = scroll mais rápido entre abas
-const SCROLL_HEIGHT_PER_TAB = 1.5;
 
 export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
   const [active, setActive] = useState(0);
@@ -23,6 +19,19 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const isScrollingToTab = useRef(false);
   const current = tabs[active];
+
+  // Calcula os pesos e os limites (start/end) de cada aba em % do scroll total
+  const weights = tabs.map((t) => t.scrollWeight ?? 1);
+  const totalWeight = weights.reduce((sum, w) => sum + w, 0);
+
+  // tabRanges: array com { start, end } em valores de 0 a 1
+  // Ex: pesos [1.5, 0.8, 1.5] → ranges [{0, 0.39}, {0.39, 0.6}, {0.6, 1}]
+  const tabRanges = weights.reduce<{ start: number; end: number }[]>((acc, w, i) => {
+    const prevEnd = i === 0 ? 0 : acc[i - 1].end;
+    const range = w / totalWeight;
+    acc.push({ start: prevEnd, end: prevEnd + range });
+    return acc;
+  }, []);
 
   // Detecta mobile
   useEffect(() => {
@@ -50,14 +59,25 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
       const scrolled = -rect.top;
       const progress = Math.max(0, Math.min(1, scrolled / scrollableDistance));
 
-      const tabIndex = Math.min(tabs.length - 1, Math.floor(progress * tabs.length));
+      // Encontra a aba ativa baseado nos ranges ponderados
+      let tabIndex = 0;
+      for (let i = 0; i < tabRanges.length; i++) {
+        if (progress >= tabRanges[i].start && progress < tabRanges[i].end) {
+          tabIndex = i;
+          break;
+        }
+        if (i === tabRanges.length - 1 && progress >= tabRanges[i].start) {
+          tabIndex = i;
+        }
+      }
+
       setActive(tabIndex);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isMobile, tabs.length]);
+  }, [isMobile, tabRanges]);
 
   // Handler de clique numa aba
   const handleTabClick = (i: number) => {
@@ -76,7 +96,9 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
     const viewportHeight = window.innerHeight;
     const scrollableDistance = containerHeight - viewportHeight;
 
-    const targetProgress = (i + 0.5) / tabs.length;
+    // Vai pro meio do range da aba clicada
+    const range = tabRanges[i];
+    const targetProgress = (range.start + range.end) / 2;
     const targetScroll = containerTop + scrollableDistance * targetProgress;
 
     window.scrollTo({ top: targetScroll, behavior: "smooth" });
@@ -158,12 +180,12 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
     );
   }
 
-  // Desktop — sticky scroll
+  // Desktop — sticky scroll com pesos ponderados
   return (
     <section
       ref={containerRef}
       style={{
-        height: `${tabs.length * 100 * SCROLL_HEIGHT_PER_TAB}vh`,
+        height: `${totalWeight * 100}vh`,
         position: "relative",
       }}
     >
