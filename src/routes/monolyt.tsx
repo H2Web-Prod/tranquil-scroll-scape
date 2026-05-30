@@ -178,19 +178,24 @@ function MonolytPage() {
         {/* 4. Mapa de Distâncias */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
           <style>{`
-            @keyframes monolytMapPulse {
-              0% {
-                width: 20px;
-                height: 20px;
-                opacity: 0.6;
-              }
-              100% {
-                width: 80px;
-                height: 80px;
-                opacity: 0;
-              }
-            }
-          `}</style>
+  @keyframes monolytMapPulse {
+    0% {
+      width: 20px;
+      height: 20px;
+      opacity: 0.6;
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .monolyt-map-pulse {
+      display: none;
+    }
+  }
+`}</style>
           <div className="max-w-[1300px] mx-auto">
             <ScrollReveal as="h2" className="font-light text-black">
               Mapa de Distâncias
