@@ -47,7 +47,7 @@ const tabs = [
       "Desde sistemas de automação até soluções inovadoras de sustentabilidade, a tecnologia é aplicada de forma inteligente e sensível ao contexto. Enfrentando desafios que vão além do convencional, os empreendimentos exclusivos Blue Heaven incorporam avanços tecnológicos que se manifestam em elementos distintivos, como piscinas suspensas, concreto aparente e colunas esculpidas em rocha.",
       "Cada um de nossos projetos conta com inovações que proporcionam experiências únicas, convertendo tecnologia em expressão arquitetônica e oferecendo mais do que simples comodidades: uma identidade singular para cada obra.",
     ],
-    scrollWeight: 1.0,
+    scrollWeight: 1.5,
   },
   {
     label: "Natureza",
@@ -56,7 +56,7 @@ const tabs = [
     paragraphs: [
       "Nossos projetos se integram à paisagem e respeitam o entorno. Essa relação cuidadosa proporciona uma experiência autêntica de viver em contato com a natureza, onde arquitetura e meio ambiente coexistem de forma equilibrada.",
     ],
-    scrollWeight: 1.5,
+    scrollWeight: 2.5,
   },
   {
     label: "Edificação",
