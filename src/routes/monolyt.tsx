@@ -206,8 +206,8 @@ function MonolytPage() {
               <span
                 style={{
                   position: "absolute",
-                  left: "62%",
-                  top: "50%",
+                  left: "67.3%",
+                  top: "49.2%",
                   width: "20px",
                   height: "20px",
                   transform: "translate(-50%, -50%)",
@@ -222,8 +222,8 @@ function MonolytPage() {
               <span
                 style={{
                   position: "absolute",
-                  left: "62%",
-                  top: "50%",
+                  left: "67.3%",
+                  top: "49.2%",
                   width: "20px",
                   height: "20px",
                   transform: "translate(-50%, -50%)",
