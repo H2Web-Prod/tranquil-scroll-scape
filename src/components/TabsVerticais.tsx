@@ -12,6 +12,11 @@ export interface TabItem {
   paragraphs: string[];
 }
 
+// Quantas "telas" de scroll cada aba ocupa (1 = 100vh, 1.5 = 150vh, etc.)
+// Aumentar = mais tempo pra ler cada aba
+// Diminuir = scroll mais rápido entre abas
+const SCROLL_HEIGHT_PER_TAB = 1.5;
+
 export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
   const [active, setActive] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
@@ -35,18 +40,16 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
 
     const handleScroll = () => {
       if (!containerRef.current) return;
-      if (isScrollingToTab.current) return; // ignora durante scroll programático
+      if (isScrollingToTab.current) return;
 
       const rect = containerRef.current.getBoundingClientRect();
       const containerHeight = containerRef.current.offsetHeight;
       const viewportHeight = window.innerHeight;
       const scrollableDistance = containerHeight - viewportHeight;
 
-      // Progress de 0 a 1 dentro da seção
       const scrolled = -rect.top;
       const progress = Math.max(0, Math.min(1, scrolled / scrollableDistance));
 
-      // Divide o progress em N abas
       const tabIndex = Math.min(tabs.length - 1, Math.floor(progress * tabs.length));
       setActive(tabIndex);
     };
@@ -56,7 +59,7 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMobile, tabs.length]);
 
-  // Handler de clique numa aba — rola pra posição correspondente
+  // Handler de clique numa aba
   const handleTabClick = (i: number) => {
     if (isMobile) {
       setActive(i);
@@ -73,19 +76,17 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
     const viewportHeight = window.innerHeight;
     const scrollableDistance = containerHeight - viewportHeight;
 
-    // Posição relativa da aba dentro do range scrollable
     const targetProgress = (i + 0.5) / tabs.length;
     const targetScroll = containerTop + scrollableDistance * targetProgress;
 
     window.scrollTo({ top: targetScroll, behavior: "smooth" });
 
-    // Libera o handleScroll depois de 600ms (tempo do scroll suave)
     setTimeout(() => {
       isScrollingToTab.current = false;
     }, 600);
   };
 
-  // Versão mobile — comportamento original (sem sticky)
+  // Mobile — comportamento original
   if (isMobile) {
     return (
       <div className="grid grid-cols-1 gap-8">
@@ -157,12 +158,12 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
     );
   }
 
-  // Versão desktop — com sticky scroll
+  // Desktop — sticky scroll
   return (
     <section
       ref={containerRef}
       style={{
-        height: `${tabs.length * 100}vh`,
+        height: `${tabs.length * 100 * SCROLL_HEIGHT_PER_TAB}vh`,
         position: "relative",
       }}
     >
@@ -177,7 +178,6 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
         }}
       >
         <div className="grid md:grid-cols-[28%_1fr] gap-12 md:gap-16 w-full">
-          {/* Tabs column */}
           <div className="flex flex-col">
             {tabs.map((t, i) => {
               const isActive = i === active;
@@ -210,7 +210,6 @@ export default function TabsVerticais({ tabs }: { tabs: TabItem[] }) {
             })}
           </div>
 
-          {/* Content column */}
           <div className="relative" style={{ minHeight: "70vh" }}>
             <AnimatePresence mode="wait">
               <motion.div
