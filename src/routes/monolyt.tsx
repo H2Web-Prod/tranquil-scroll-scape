@@ -177,16 +177,64 @@ function MonolytPage() {
 
         {/* 4. Mapa de Distâncias */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
+          <style>{`
+            @keyframes monolytMapPulse {
+              0% {
+                width: 20px;
+                height: 20px;
+                opacity: 0.6;
+              }
+              100% {
+                width: 80px;
+                height: 80px;
+                opacity: 0;
+              }
+            }
+          `}</style>
           <div className="max-w-[1300px] mx-auto">
             <ScrollReveal as="h2" className="font-light text-black">
               Mapa de Distâncias
             </ScrollReveal>
-            <img
-              src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/monolyt-imagem-5-2048x1387-1.webp"
-              alt="Mapa de distâncias Monolyt"
-              loading="lazy"
-              style={{ width: "100%", height: "auto", objectFit: "contain", marginTop: "48px", borderRadius: 0 }}
-            />
+            <div style={{ position: "relative", width: "100%", marginTop: "48px" }}>
+              <img
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/mapa-monolyt.jpg"
+                alt="Mapa de distâncias Monolyt"
+                loading="lazy"
+                style={{ width: "100%", height: "auto", objectFit: "contain", display: "block", borderRadius: 0 }}
+              />
+              {/* Pulse 1 — onda inicial */}
+              <span
+                style={{
+                  position: "absolute",
+                  left: "62%",
+                  top: "50%",
+                  width: "20px",
+                  height: "20px",
+                  transform: "translate(-50%, -50%)",
+                  borderRadius: "50%",
+                  backgroundColor: "#142643",
+                  opacity: 0.6,
+                  animation: "monolytMapPulse 2s ease-out infinite",
+                  pointerEvents: "none",
+                }}
+              />
+              {/* Pulse 2 — onda com delay (cria efeito contínuo) */}
+              <span
+                style={{
+                  position: "absolute",
+                  left: "62%",
+                  top: "50%",
+                  width: "20px",
+                  height: "20px",
+                  transform: "translate(-50%, -50%)",
+                  borderRadius: "50%",
+                  backgroundColor: "#142643",
+                  opacity: 0.6,
+                  animation: "monolytMapPulse 2s ease-out infinite 1s",
+                  pointerEvents: "none",
+                }}
+              />
+            </div>
             <div style={{ marginTop: "64px" }} className="grid md:grid-cols-2 gap-x-12 gap-y-2">
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {distCol1.map(([place, t]) => (
