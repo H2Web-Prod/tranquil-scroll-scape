@@ -132,7 +132,7 @@ function ContatoPage() {
       {/* SEÇÃO 2 COLUNAS COM ÍCONES LUCIDE */}
       <section className="bg-white" style={{ paddingTop: "40px", paddingBottom: "80px" }}>
         <div className="px-6 md:px-10 mx-auto" style={{ maxWidth: "1200px" }}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
             <a
               href={whatsappUrl}
               target="_blank"
