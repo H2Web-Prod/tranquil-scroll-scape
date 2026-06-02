@@ -140,7 +140,18 @@ function MonolytPage() {
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute" style={{ top: "32%", left: "48%", textAlign: "left", zIndex: 5 }}>
+          <div
+            className="absolute px-6 md:px-10 bottom-[60px] md:bottom-[100px]"
+            style={{
+              left: 0,
+              right: 0,
+              maxWidth: "1300px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              textAlign: "left",
+              zIndex: 5,
+            }}
+          >
             <h1
               style={{
                 fontFamily: "'Public Sans', sans-serif",
