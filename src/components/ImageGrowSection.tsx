@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function ImageGrowSection({
-  src = "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/desafio-1.jpg",
+  src = "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/home-1b.jpg",
 }: { src?: string } = {}) {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
