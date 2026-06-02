@@ -123,6 +123,17 @@ html.lenis body {
   color: #000000 !important;
 }
 
+/* Ocultar badge "Edit with Lovable" em produção */
+#lovable-badge,
+[data-lovable-badge],
+[id*="lovable"],
+a[href*="lovable.dev"],
+a[href*="lovable.app"] {
+  display: none !important;
+}
+
+
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
