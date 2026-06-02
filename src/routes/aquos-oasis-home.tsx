@@ -10,6 +10,7 @@ import ImageScrollCentralizada from "@/components/ImageScrollCentralizada";
 import FadeInUp from "@/components/FadeInUp";
 import StaggerStack from "@/components/StaggerStack";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
+import HorizontalGallery from "@/components/HorizontalGallery";
 
 export const Route = createFileRoute("/aquos-oasis-home")({
   head: () => ({
@@ -118,6 +119,17 @@ function ZigZagBlock({
     </FadeInUp>
   );
 }
+
+const AQUOS_GALLERY_IMAGES = [
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-1.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-2.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-3.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-4.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-5.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-6.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-7.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-8.jpg",
+];
 
 function AquosOasisHome() {
   useLenis();
@@ -291,6 +303,9 @@ function AquosOasisHome() {
           src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Aquos-6.webp"
           alt="Aquos Oasis Home — fachada"
         />
+
+        {/* GALERIA HORIZONTAL */}
+        <HorizontalGallery images={AQUOS_GALLERY_IMAGES} />
 
         {/* SEÇÃO 8 — texto puro */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
