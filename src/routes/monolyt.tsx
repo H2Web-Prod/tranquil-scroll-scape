@@ -350,7 +350,7 @@ function MonolytPage() {
 
         {/* 5. Zoom Empreendimento */}
         <ZoomImage
-          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/monolyt-imagem-61.webp"
+          src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/paisagem-monolyt.jpg"
           alt="Monolyt — fachada"
         />
 
