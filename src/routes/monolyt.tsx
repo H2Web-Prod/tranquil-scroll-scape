@@ -333,7 +333,7 @@ function MonolytPage() {
                 por mansões e condomínios fechados de alto padrão, consolidando o Estaleiro como um dos endereços mais
                 exclusivos da cidade.
               </p>
-              <p className="padrao-p-internas">
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
                 Essa mesmaexclusividade do Estaleiro é, em grande parte, fruto de restrições urbanísticas que se
                 transformaram em seu maior diferencial. Apenas 40% da área é liberada para construção, enquanto os
                 outros 60% permanecem como áreas de preservação permanente.Os limites de altura das edificações,
