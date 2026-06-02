@@ -178,12 +178,13 @@ function ContatoPage() {
       <section className="bg-white w-full">
         <iframe
           title="Blue Heaven map"
-          src="https://maps.google.com/maps?q=Av.%20Osvaldo%20Reis,%203281%20-%20Praia%20Brava,%20Itajai%20-%20SC&t=m&z=15&output=embed&iwloc=near"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.4603115819364!2d-48.6397494!3d-26.952318699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cbddd7c7d2d1%3A0x513d2cc6e787040a!2sBlue%20Heaven!5e0!3m2!1spt-BR!2sbr!4v1780423570124!5m2!1spt-BR!2sbr"
           width="100%"
           height="500"
           style={{ border: 0, display: "block" }}
           allowFullScreen
           loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
         />
       </section>
 
