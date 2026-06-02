@@ -220,17 +220,21 @@ const distancias: [string, string][] = [
 ];
 
 const diferenciais = [
-  "Pé na areia com acesso direto à praia sem vias ou barreiras entre o terreno e o mar",
-  "Fachada em concreto aparente pigmentado moldado artesanalmente, com textura e tonalidade de formação rochosa natural, técnica inédita no Brasil",
-  "Todos os apartamentos com piscina privativa em formato de lago sem degraus, simulando imersão gradual como em um lago natural",
-  "Coberturas com segunda piscina de vidro no teto, com fundoe laterais em vidro, conceito raro no Brasil",
-  "Apenas 12 unidades em um terreno de 5.000 m²",
-  "Projeto em co-criação com aArchitects Office",
-  "Paisagismo assinado por Rodrigo Oliveira",
-  "Iluminação assinada pelo OM Studio Lightin",
-  "Sistema de captação, tratamento e reutilização de água da chuva para irrigação dos jardins",
-  "Coberturas com quase 900 m² de área privativa",
-  "Apartamentos tipo Duplex, Gardens e Cobertura com metragens de 356 m² a 881 m²",
+  "Iluminação dos apartamentos 100% automatizada.",
+  "Pavimento exclusivo de garagem decorada com 1 vaga elétrica por apartamento.",
+  "1 apartamento por andar.",
+  "Laje protendida, permitindo amplos espaços sem vigas.",
+  "Inclinação de laje da piscina.",
+  "Piscina com borda infinita e visor de vidro em cada varanda.",
+  "Janelas piso-teto nos apartamentos.",
+  "Jardins suspensos na fachada.",
+  "Brises na fachada.",
+  "Elevador exclusivo para lazer.",
+  "Decorado com lâmina 100% natural italiana, automação, móveis com assinatura exclusiva e iluminação Flos.",
+  "Com mantas acústicas de 8 mm de qualidade premium, garantindo mais conforto e evitando poluição sonora entre as lajes.",
+  "Os espaços de lazer abordam: Magnólia Gourmet (Salão de festas), Carvalho Work (Workplace), Acácia Pub (Sala de jogos e Pub), Cedro Kids (Espaço para crianças), Sapuva Pool (Piscina adulto e infantil), Sequoia Square (Firepla ce), Baobá Fit (Academia), Freijó Spa (SPA) e Jacarandá Relax (Sauna).",
+  "A fachada transforma o visual, ajuda a filtrar o ar e ameniza a radiação solar, além de trazer mais proximidade à natureza.",
+  "Localização privilegiada, próxima da marina de Itajaí e vista para Mata Atlântica.",
 ];
 
 function InfinitaTreehouse() {
@@ -501,7 +505,7 @@ function InfinitaTreehouse() {
 
         {/* 5. Zoom Empreendimento */}
         <ZoomImage
-          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/monolyt-imagem-61.webp"
+          src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/04/BHE_INF_Fachada_Voo_EF.webp"
           alt="Monolyt — fachada"
         />
 
@@ -607,7 +611,7 @@ function InfinitaTreehouse() {
                   margin: 0,
                 }}
               >
-                Descubra como é viver em sintonia com a natureza e a modernidade.
+                Infinitá é ter uma vida que surpreende seus sentidos com a natureza.
               </h2>
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, borderTop: "1px solid #E5E5E5" }}>
