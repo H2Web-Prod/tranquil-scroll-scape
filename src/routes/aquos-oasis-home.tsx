@@ -420,7 +420,7 @@ function AquosOasisHome() {
 
         {/* ZOOM EMPREENDIMENTO */}
         <ZoomImage
-          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Aquos-6.webp"
+          src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/paisagem-estaleiro.jpg"
           alt="Aquos Oasis Home — fachada"
         />
 
