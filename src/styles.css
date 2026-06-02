@@ -89,6 +89,18 @@ html.lenis body {
   line-height: 1.5;
 }
 
+.bloco-direita {
+  margin-left: auto;
+  width: 50%;
+  max-width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .bloco-direita {
+    width: 100%;
+  }
+}
+
 .nav-link,
 .nav-link:link,
 .nav-link:visited,
