@@ -266,6 +266,8 @@ function InfinitaTreehouse() {
                   lineHeight: 1.2,
                   color: "#FFFFFF",
                   marginTop: "12px",
+                  letterSpacing: "0px",
+                  marginLeft: "10px",
                 }}
               >
                 by Architects Office &amp; Triptyque
