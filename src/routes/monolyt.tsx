@@ -168,7 +168,7 @@ function MonolytPage() {
                 fontWeight: 300,
                 fontSize: "20px",
                 color: "#FFFFFF",
-                margin: "12px 0 0 0",
+                margin: "12px 0 0 10px",
               }}
             >
               by Architects Office &amp; Triptyque
