@@ -395,8 +395,8 @@ function InfinitaTreehouse() {
               <span
                 style={{
                   position: "absolute",
-                  left: "67.3%",
-                  top: "49.2%",
+                  left: "57.4%",
+                  top: "77.4%",
                   width: "20px",
                   height: "20px",
                   transform: "translate(-50%, -50%)",
@@ -411,8 +411,8 @@ function InfinitaTreehouse() {
               <span
                 style={{
                   position: "absolute",
-                  left: "67.3%",
-                  top: "49.2%",
+                  left: "57.4%",
+                  top: "77.4%",
                   width: "20px",
                   height: "20px",
                   transform: "translate(-50%, -50%)",
@@ -455,23 +455,31 @@ function InfinitaTreehouse() {
         <section className="bg-white py-[140px] md:py-[240px] px-6">
           <div className="max-w-[1300px] mx-auto">
             <ScrollReveal as="h2" className="font-light text-black">
-              Um projeto que nasce do território
+              Fazenda, um dos bairros mais promissores de Itajaí
             </ScrollReveal>
             <div style={{ marginTop: "40px" }}>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                O Infinitá Treehouse é assinado pela Architects Office em colaboração com a Triptyque. Dois escritórios
-                com atuação internacional e repertório consistente em projetos que consideram território, clima e forma
-                de ocupação.
+                A localização estratégica do bairro, entre o Centro da cidade e a orla, oferece fácil acesso a Balneário
+                Camboriú e às principais praias da região, como a Praia Brava e a Praia de Cabeçudas. Em seu território,
+                a Avenida Beira-Rio se destaca como um polo gastronômico e de lazer, com ciclovia, calçadão e uma orla
+                arborizada que convida ao descanso e contemplação.
               </p>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                O desenho parte de uma leitura precisa do terreno, com volumes e aberturas que organizam a presença do
-                empreendimento sem romper a relação com a paisagem. A implantação conduz essa lógica ao longo de todo o
-                projeto. A arquitetura se estabelece a partir do lugar, introduzindo escala, vegetação e topografia para
-                orientar decisões que definem a forma construída.
+                A infraestrutura do bairro é outro de seus grandes atrativos, com comércio variado, serviços de
+                excelência e fácil acesso a escolas, hospitais e áreas de lazer. Esse conjunto de atributos tem gerado
+                uma expressiva valorização imobiliária na região. Nos últimos anos, o valor do metro quadrado no Fazenda
+                saltou, representando um dos maiores índices de crescimento do país, o que o torna também uma escolha
+                estratégica para investidores que buscam segurança e retorno sólido.
               </p>
               <p className="padrao-p-internas">
-                Architects Office e Triptyque conduzem o projeto alinhados à visão da Blue Heaven. A arquitetura assume
-                papel ativo na forma como o espaço é vivido, mantendo coerência entre construção, entorno e tempo.
+                O cenário de desenvolvimento do bairro se completa com projetos de grande porte que estão em andamento.
+                O futuro Boulevard Marina Itajaí, um shopping integrado à marina, promete adicionar um novo marco de
+                sofisticação e lazer à região, enquanto a criação de um parque ecológico e náutico de mais de 23 mil
+                metros quadrados amplia as opções de convívio com a natureza para moradores e visitantes.
+              </p>
+              <p className="padrao-p-internas">
+                Tudo isso faz do bairro Fazenda um dos maisnobres e promissores de Itajaí.um lugar onde tradição,
+                natureza e modernidade coexistem em harmonia.
               </p>
             </div>
           </div>
