@@ -134,6 +134,15 @@ const distancias: [string, string][] = [
   ["São Paulo", "10h min"],
 ];
 
+const diferenciais = [
+  "Diferencial 1",
+  "Diferencial 2",
+  "Diferencial 3",
+  "Diferencial 4",
+  "Diferencial 5",
+  "Diferencial 6",
+];
+
 const AQUOS_GALLERY_IMAGES = [
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-1.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-2.jpg",
@@ -442,6 +451,45 @@ function AquosOasisHome() {
           src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/aquos-32.jpg"
           alt="Aquos Oasis Home — interior"
         />
+
+        {/* DIFERENCIAIS */}
+        <section className="bg-white py-[140px] md:py-[240px] px-6">
+          <div className="max-w-[1300px] mx-auto grid md:grid-cols-[35fr_65fr] gap-12 md:gap-16">
+            <div>
+              <span style={eyebrowStyle}>DIFERENCIAIS</span>
+              <h2
+                style={{
+                  fontFamily: "'Public Sans', sans-serif",
+                  fontWeight: 400,
+                  fontSize: "clamp(28px, 3vw, 40px)",
+                  color: "#000",
+                  lineHeight: 1.3,
+                  margin: 0,
+                }}
+              >
+                Título placeholder dos diferenciais do Aquos.
+              </h2>
+            </div>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, borderTop: "1px solid #E5E5E5" }}>
+              {diferenciais.map((item) => (
+                <li
+                  key={item}
+                  style={{
+                    fontFamily: "'Public Sans', sans-serif",
+                    fontWeight: 400,
+                    fontSize: "18px",
+                    color: "#000",
+                    lineHeight: 1.5,
+                    padding: "20px 0",
+                    borderBottom: "1px solid #E5E5E5",
+                  }}
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
 
         {/* CTA */}
         <section className="px-6 py-[120px] md:py-[200px]" style={{ background: "#F5F5F5" }}>
