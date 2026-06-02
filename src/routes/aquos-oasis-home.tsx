@@ -121,14 +121,14 @@ function ZigZagBlock({
 }
 
 const distancias: [string, string][] = [
-  ["Balneário Camboriú", "7 min"],
+  ["Balneário Camboriú", "10 min"],
+  ["Beto Carrero World", "52 min"],
+  ["Navegantes", "36 min"],
   ["Porto Belo", "26 min"],
-  ["Navegantes", "35 min"],
   ["Bombinhas", "41 min"],
-  ["Beto Carrero World", "54 min"],
-  ["Florianópolis", "1h11 min"],
   ["Blumenau", "1h18 min"],
   ["Joinville", "1h55 min"],
+  ["Florianópolis", "1h11 min"],
   ["Curitiba", "3h45 min"],
   ["Porto Alegre", "6h10 min"],
   ["São Paulo", "10h min"],
@@ -149,14 +149,14 @@ const diferenciais = [
 ];
 
 const AQUOS_GALLERY_IMAGES = [
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-1.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-2.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-3.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-4.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-5.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-6.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-7.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-8.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-1.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-2.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-3.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-4.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-5.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-6a.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-7.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-8a.jpg",
 ];
 
 function AquosOasisHome() {
