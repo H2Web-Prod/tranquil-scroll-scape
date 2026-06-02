@@ -138,11 +138,13 @@ function AquosOasisHome() {
           }}
         >
           <div
-            className="absolute"
+            className="absolute px-6 md:px-10 bottom-[60px] md:bottom-[100px]"
             style={{
-              top: "50%",
-              left: "57%",
-              transform: "translateY(-50%)",
+              left: 0,
+              right: 0,
+              maxWidth: "1300px",
+              marginLeft: "auto",
+              marginRight: "auto",
               textAlign: "left",
               zIndex: 5,
             }}
@@ -163,7 +165,6 @@ function AquosOasisHome() {
               Oasis Home
             </h1>
           </div>
-          <style>{`@media (max-width: 767px){ .aquos-hero-h1-wrap{ left:50% !important; transform: translate(-30%, -50%) !important; } }`}</style>
         </section>
 
         {/* SEÇÃO 2 */}

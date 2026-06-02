@@ -91,9 +91,15 @@ function RegiaoPage() {
           }}
         >
           <div
-            className="absolute hero-title-block"
+            className="absolute px-6 md:px-10 bottom-[60px] md:bottom-[100px]"
             style={{
-              textAlign: "right",
+              left: 0,
+              right: 0,
+              maxWidth: "1300px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              textAlign: "left",
+              zIndex: 5,
             }}
           >
             <h1
@@ -121,12 +127,6 @@ function RegiaoPage() {
               Um território onde história, natureza e qualidade de vida coexistem
             </p>
           </div>
-          <style>{`
-            .hero-title-block { bottom: 60px; right: 32px; max-width: calc(100% - 64px); }
-            @media (min-width: 768px) {
-              .hero-title-block { bottom: 100px; right: 80px; max-width: 60vw; }
-            }
-          `}</style>
         </section>
 
         {/* 2. A HISTÓRIA */}

@@ -224,10 +224,14 @@ function InfinitaTreehouse() {
           }}
         >
           <div
-            className="absolute top-[100px] right-[32px] md:top-[140px] md:right-[80px]"
+            className="absolute px-6 md:px-10 bottom-[60px] md:bottom-[100px]"
             style={{
-              maxWidth: "90vw",
-              textAlign: "right",
+              left: 0,
+              right: 0,
+              maxWidth: "1300px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              textAlign: "left",
               zIndex: 5,
             }}
           >

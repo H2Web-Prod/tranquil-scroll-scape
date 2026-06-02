@@ -121,14 +121,14 @@ function BlueHeavenPage() {
           }}
         >
           <div
-            className="absolute"
+            className="absolute px-6 md:px-10 bottom-[60px] md:bottom-[100px]"
             style={{
-              left: "50%",
-              transform: "translateX(-50%)",
+              left: 0,
+              right: 0,
+              maxWidth: "1300px",
+              marginLeft: "auto",
+              marginRight: "auto",
               textAlign: "left",
-              maxWidth: "800px",
-              width: "calc(100% - 48px)",
-              bottom: "100px",
             }}
           >
             <h1
