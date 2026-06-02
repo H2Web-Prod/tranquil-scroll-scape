@@ -122,14 +122,14 @@ const diferenciais = [
 ];
 
 const MONOLYT_GALLERY_IMAGES = [
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-1.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-2.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-3.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-4.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-5.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-6.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-7.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-8.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-1.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-2.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-3.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-4.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-5.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-6.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-7.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-8.jpg",
 ];
 
 function MonolytPage() {
@@ -209,9 +209,9 @@ function MonolytPage() {
               </ScrollReveal>
               <style>{`section h2 { font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
               <p className="padrao-p-internas" style={{ marginTop: "40px" }}>
-                Idealizado para aqueles que apreciam privacidade, o contato íntimo com a natureza e espaços de alto padrão
-                para desfrutar plenamente da vida, o Monolyt introduz um design exclusivo e atemporal que redefine o
-                conceito de viver com estilo.
+                Idealizado para aqueles que apreciam privacidade, o contato íntimo com a natureza e espaços de alto
+                padrão para desfrutar plenamente da vida, o Monolyt introduz um design exclusivo e atemporal que
+                redefine o conceito de viver com estilo.
               </p>
             </div>
           </div>
