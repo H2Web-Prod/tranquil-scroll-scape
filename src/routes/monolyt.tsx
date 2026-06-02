@@ -95,17 +95,15 @@ function ZigZagBlock({
   );
 }
 
-const distCol1 = [
+const distancias = [
   ["Balneário Camboriú", "7 min"],
-  ["Beto Carrero World", "54 min"],
-  ["Navegantes", "35 min"],
   ["Porto Belo", "26 min"],
+  ["Navegantes", "35 min"],
   ["Bombinhas", "41 min"],
-  ["Blumenau", "1h18 min"],
-];
-const distCol2 = [
-  ["Joinville", "1h55 min"],
+  ["Beto Carrero World", "54 min"],
   ["Florianópolis", "1h11 min"],
+  ["Blumenau", "1h18 min"],
+  ["Joinville", "1h55 min"],
   ["Curitiba", "3h45 min"],
   ["Porto Alegre", "6h10 min"],
   ["São Paulo", "10h min"],
@@ -287,28 +285,26 @@ function MonolytPage() {
                 }}
               />
             </div>
-            <div style={{ marginTop: "64px" }} className="grid md:grid-cols-2 gap-x-12 gap-y-2">
+            <div style={{ marginTop: "64px", maxWidth: "500px", marginLeft: "auto", marginRight: "auto" }}>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                {distCol1.map(([place, t]) => (
+                {distancias.map(([place, t], i) => (
                   <li
                     key={place}
-                    className="padrao-p-internas"
-                    style={{ padding: "8px 0", display: "flex", justifyContent: "space-between", gap: 24 }}
+                    style={{
+                      fontFamily: "'Public Sans', sans-serif",
+                      fontWeight: 400,
+                      fontSize: "16px",
+                      color: "#000000",
+                      lineHeight: 1.5,
+                      padding: "14px 0",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      gap: 24,
+                      borderBottom: i === distancias.length - 1 ? "none" : "1px solid #E5E5E5",
+                    }}
                   >
                     <span>{place}</span>
-                    <span>{t}</span>
-                  </li>
-                ))}
-              </ul>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                {distCol2.map(([place, t]) => (
-                  <li
-                    key={place}
-                    className="padrao-p-internas"
-                    style={{ padding: "8px 0", display: "flex", justifyContent: "space-between", gap: 24 }}
-                  >
-                    <span>{place}</span>
-                    <span>{t}</span>
+                    <span style={{ color: "#666666" }}>{t}</span>
                   </li>
                 ))}
               </ul>
