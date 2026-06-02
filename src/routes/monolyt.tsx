@@ -193,15 +193,17 @@ function MonolytPage() {
         {/* 2. Texto */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
           <div className="max-w-[1300px] mx-auto">
-            <ScrollReveal as="h2" className="font-light text-black">
-              Uma obra de arte esculpida em pedra bruta
-            </ScrollReveal>
-            <style>{`section h2 { font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
-            <p className="padrao-p-internas" style={{ marginTop: "40px" }}>
-              Idealizado para aqueles que apreciam privacidade, o contato íntimo com a natureza e espaços de alto padrão
-              para desfrutar plenamente da vida, o Monolyt introduz um design exclusivo e atemporal que redefine o
-              conceito de viver com estilo.
-            </p>
+            <div className="bloco-direita">
+              <ScrollReveal as="h2" className="font-light text-black">
+                Uma obra de arte esculpida em pedra bruta
+              </ScrollReveal>
+              <style>{`section h2 { font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
+              <p className="padrao-p-internas" style={{ marginTop: "40px" }}>
+                Idealizado para aqueles que apreciam privacidade, o contato íntimo com a natureza e espaços de alto padrão
+                para desfrutar plenamente da vida, o Monolyt introduz um design exclusivo e atemporal que redefine o
+                conceito de viver com estilo.
+              </p>
+            </div>
           </div>
         </section>
 

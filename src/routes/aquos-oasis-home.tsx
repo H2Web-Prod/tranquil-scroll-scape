@@ -178,35 +178,37 @@ function AquosOasisHome() {
         {/* SEÇÃO 2 */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
           <div className="max-w-[1300px] mx-auto">
-            <ScrollReveal as="h2" className="font-light text-black">
-              Explore o exclusivo, viva o incomparável
-            </ScrollReveal>
-            <style>{`section h2 { font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
-            <p
-              style={{
-                fontFamily: "'Public Sans', sans-serif",
-                fontWeight: 400,
-                fontSize: "24px",
-                color: "#000",
-                lineHeight: 1.5,
-                marginTop: "40px",
-                marginBottom: "40px",
-              }}
-            >
-              Onde a água define o espaço e o tempo desacelera.
-            </p>
-            <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-              O Aquos Oasis Home nasce a partir de um elemento essencial: a água. Não como metáfora, mas como força que
-              orienta o projeto, molda a arquitetura e estabelece a relação entre o habitar e o território.
-            </p>
-            <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-              Localizado na Praia do Estaleiro, em Balneário Camboriú, o empreendimento se insere em um dos trechos mais
-              preservados do litoral catarinense, onde a natureza permanece presente, o ritmo é mais silencioso e a
-              paisagem conduz a experiência de viver.
-            </p>
-            <p className="padrao-p-internas">
-              Aqui, a arquitetura não compete com o entorno. Ela se adapta, se dilui e se revela aos poucos.
-            </p>
+            <div className="bloco-direita">
+              <ScrollReveal as="h2" className="font-light text-black">
+                Explore o exclusivo, viva o incomparável
+              </ScrollReveal>
+              <style>{`section h2 { font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
+              <p
+                style={{
+                  fontFamily: "'Public Sans', sans-serif",
+                  fontWeight: 400,
+                  fontSize: "24px",
+                  color: "#000",
+                  lineHeight: 1.5,
+                  marginTop: "40px",
+                  marginBottom: "40px",
+                }}
+              >
+                Onde a água define o espaço e o tempo desacelera.
+              </p>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                O Aquos Oasis Home nasce a partir de um elemento essencial: a água. Não como metáfora, mas como força que
+                orienta o projeto, molda a arquitetura e estabelece a relação entre o habitar e o território.
+              </p>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                Localizado na Praia do Estaleiro, em Balneário Camboriú, o empreendimento se insere em um dos trechos mais
+                preservados do litoral catarinense, onde a natureza permanece presente, o ritmo é mais silencioso e a
+                paisagem conduz a experiência de viver.
+              </p>
+              <p className="padrao-p-internas">
+                Aqui, a arquitetura não compete com o entorno. Ela se adapta, se dilui e se revela aos poucos.
+              </p>
+            </div>
           </div>
         </section>
 
