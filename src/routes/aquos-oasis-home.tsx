@@ -135,12 +135,17 @@ const distancias: [string, string][] = [
 ];
 
 const diferenciais = [
-  "Diferencial 1",
-  "Diferencial 2",
-  "Diferencial 3",
-  "Diferencial 4",
-  "Diferencial 5",
-  "Diferencial 6",
+  "Pé na areia com acesso direto à praia sem vias ou barreiras entre o terreno e o mar",
+  "Fachada em concreto aparente pigmentado moldado artesanalmente, com textura e tonalidade de formação rochosa natural, técnica inédita no Brasil",
+  "Todos os apartamentos com piscina privativa em formato de lago sem degraus, simulando imersão gradual como em um lago natural",
+  "Coberturas com segunda piscina de vidro no teto, com fundoe laterais em vidro, conceito raro no Brasil",
+  "Apenas 12 unidades em um terreno de 5.000 m²",
+  "Projeto em co-criação com aArchitects Office",
+  "Paisagismo assinado por Rodrigo Oliveira",
+  "Iluminação assinada pelo OM Studio Lightin",
+  "Sistema de captação, tratamento e reutilização de água da chuva para irrigação dos jardins",
+  "Coberturas com quase 900 m² de área privativa",
+  "Apartamentos tipo Duplex, Gardens e Cobertura com metragens de 356 m² a 881 m²",
 ];
 
 const AQUOS_GALLERY_IMAGES = [
