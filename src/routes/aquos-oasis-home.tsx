@@ -134,6 +134,15 @@ const distancias: [string, string][] = [
   ["São Paulo", "10h min"],
 ];
 
+const diferenciais = [
+  "Diferencial 1",
+  "Diferencial 2",
+  "Diferencial 3",
+  "Diferencial 4",
+  "Diferencial 5",
+  "Diferencial 6",
+];
+
 const AQUOS_GALLERY_IMAGES = [
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-1.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-2.jpg",
