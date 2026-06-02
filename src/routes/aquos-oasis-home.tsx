@@ -209,13 +209,13 @@ function AquosOasisHome() {
                 Onde a água define o espaço e o tempo desacelera.
               </p>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                O Aquos Oasis Home nasce a partir de um elemento essencial: a água. Não como metáfora, mas como força que
-                orienta o projeto, molda a arquitetura e estabelece a relação entre o habitar e o território.
+                O Aquos Oasis Home nasce a partir de um elemento essencial: a água. Não como metáfora, mas como força
+                que orienta o projeto, molda a arquitetura e estabelece a relação entre o habitar e o território.
               </p>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                Localizado na Praia do Estaleiro, em Balneário Camboriú, o empreendimento se insere em um dos trechos mais
-                preservados do litoral catarinense, onde a natureza permanece presente, o ritmo é mais silencioso e a
-                paisagem conduz a experiência de viver.
+                Localizado na Praia do Estaleiro, em Balneário Camboriú, o empreendimento se insere em um dos trechos
+                mais preservados do litoral catarinense, onde a natureza permanece presente, o ritmo é mais silencioso e
+                a paisagem conduz a experiência de viver.
               </p>
               <p className="padrao-p-internas">
                 Aqui, a arquitetura não compete com o entorno. Ela se adapta, se dilui e se revela aos poucos.
@@ -278,6 +278,98 @@ function AquosOasisHome() {
             </p>
           </div>
         </ZigZagBlock>
+
+        {/* 4. Mapa de Distâncias */}
+        <section className="bg-white py-[140px] md:py-[240px] px-6">
+          <style>{`
+  @keyframes monolytMapPulse {
+    0% {
+      width: 20px;
+      height: 20px;
+      opacity: 0.6;
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .monolyt-map-pulse {
+      display: none;
+    }
+  }
+`}</style>
+          <div className="max-w-[1300px] mx-auto">
+            <ScrollReveal as="h2" className="font-light text-black">
+              Mapa de Distâncias
+            </ScrollReveal>
+            <div style={{ position: "relative", width: "100%", marginTop: "48px" }}>
+              <img
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/mapa-monolyt.jpg"
+                alt="Mapa de distâncias Monolyt"
+                loading="lazy"
+                style={{ width: "100%", height: "auto", objectFit: "contain", display: "block", borderRadius: 0 }}
+              />
+              {/* Pulse 1 — onda inicial */}
+              <span
+                style={{
+                  position: "absolute",
+                  left: "67.3%",
+                  top: "49.2%",
+                  width: "20px",
+                  height: "20px",
+                  transform: "translate(-50%, -50%)",
+                  borderRadius: "50%",
+                  backgroundColor: "#142643",
+                  opacity: 0.6,
+                  animation: "monolytMapPulse 2s ease-out infinite",
+                  pointerEvents: "none",
+                }}
+              />
+              {/* Pulse 2 — onda com delay (cria efeito contínuo) */}
+              <span
+                style={{
+                  position: "absolute",
+                  left: "67.3%",
+                  top: "49.2%",
+                  width: "20px",
+                  height: "20px",
+                  transform: "translate(-50%, -50%)",
+                  borderRadius: "50%",
+                  backgroundColor: "#142643",
+                  opacity: 0.6,
+                  animation: "monolytMapPulse 2s ease-out infinite 1s",
+                  pointerEvents: "none",
+                }}
+              />
+            </div>
+            <div style={{ marginTop: "64px", maxWidth: "500px", marginLeft: "auto", marginRight: "auto" }}>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                {distancias.map(([place, t], i) => (
+                  <li
+                    key={place}
+                    style={{
+                      fontFamily: "'Public Sans', sans-serif",
+                      fontWeight: 400,
+                      fontSize: "16px",
+                      color: "#000000",
+                      lineHeight: 1.5,
+                      padding: "14px 0",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      gap: 24,
+                      borderBottom: i === distancias.length - 1 ? "none" : "1px solid #E5E5E5",
+                    }}
+                  >
+                    <span>{place}</span>
+                    <span style={{ color: "#666666" }}>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
 
         {/* SEÇÃO 6 — texto puro */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
