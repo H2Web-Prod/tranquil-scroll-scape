@@ -32,7 +32,7 @@ const bodyText: React.CSSProperties = {
 
 function SocialIcon({ children, href, label }: { children: React.ReactNode; href: string; label: string }) {
   return (
-    <a
+    
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -79,7 +79,7 @@ export default function Footer() {
               concebida pela vida humana.
             </p>
             <div className="border-t border-[#E5E5E5] pt-6 mb-8 flex flex-wrap gap-x-8 gap-y-3">
-              <a
+              
                 href={`${base}/blog/politica-de-privacidade/`}
                 className="flex items-center hover:opacity-70"
                 style={bodyText}
@@ -124,17 +124,23 @@ export default function Footer() {
 
           {/* Col 3 */}
           <div className="flex flex-col gap-5">
-            <iframe
-              title="Blue Heaven map"
-              src="https://maps.google.com/maps?q=Blue%20Heaven&t=m&z=15&output=embed&iwloc=near"
-              className="w-full h-[240px] rounded-md border-0"
-              loading="lazy"
-            />
+            
+              href="https://maps.app.goo.gl/vtVmJPKgzP5L7PCm7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block hover:opacity-90 transition"
+            >
+              <img
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mapa-1.jpg"
+                alt="Localização Blue Heaven - clique para abrir no Google Maps"
+                className="w-full h-auto block"
+              />
+            </a>
             <div className="flex items-start" style={bodyText}>
-              <img src={PIN} alt="" className="w-[18px] h-auto mr-3 mt-1" />
+              <img src={PIN} alt="" className="w-[14px] h-auto mr-3 mt-1" />
               <span>Av. Osvaldo Reis, 3281 - sala 26 - Praia Brava, Itajaí - SC, 88306-001</span>
             </div>
-            <a
+            
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
