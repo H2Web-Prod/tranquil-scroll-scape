@@ -365,15 +365,17 @@ function MonolytPage() {
         {/* 8. Texto puro */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
           <div className="max-w-[1300px] mx-auto">
-            <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-              O segundo volume presta homenagem ao fogo, incorporando a intimidade desse elemento na arquitetura,
-              apresentando ambientes com lareiras, um spa, espaços para prática de yoga e uma área gourmet.
-            </p>
-            <p className="padrao-p-internas">
-              Na curadoria de materiais, destaca-se o contraste entre pedras sólidas e a transparência do vidro que
-              envolve as fachadas com varandas. A madeira está presente, humanizando a experiência e adicionando um
-              toque contemporâneo por meio do uso de acabamentos em aço escovado.
-            </p>
+            <div className="bloco-direita">
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                O segundo volume presta homenagem ao fogo, incorporando a intimidade desse elemento na arquitetura,
+                apresentando ambientes com lareiras, um spa, espaços para prática de yoga e uma área gourmet.
+              </p>
+              <p className="padrao-p-internas">
+                Na curadoria de materiais, destaca-se o contraste entre pedras sólidas e a transparência do vidro que
+                envolve as fachadas com varandas. A madeira está presente, humanizando a experiência e adicionando um
+                toque contemporâneo por meio do uso de acabamentos em aço escovado.
+              </p>
+            </div>
           </div>
         </section>
 
