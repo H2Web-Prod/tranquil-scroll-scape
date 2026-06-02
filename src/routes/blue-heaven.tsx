@@ -198,7 +198,7 @@ function BlueHeavenPage() {
           <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
             <div className="max-w-[1300px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
               <ParallaxImage
-                src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Greg-Bousquet-PB.jpg.webp"
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/greg-2.jpg"
                 alt="Greg Bousquet"
                 aspectRatio="3/4"
               />
