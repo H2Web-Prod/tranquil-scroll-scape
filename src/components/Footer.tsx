@@ -140,7 +140,7 @@ export default function Footer() {
               <img src={PIN} alt="" className="w-[14px] h-auto mr-3 mt-1" />
               <span>Av. Osvaldo Reis, 3281 - sala 26 - Praia Brava, Itajaí - SC, 88306-001</span>
             </div>
-            <
+            <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
