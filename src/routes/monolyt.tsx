@@ -322,6 +322,9 @@ function MonolytPage() {
           alt="Monolyt — fachada"
         />
 
+        {/* GALERIA HORIZONTAL */}
+        <HorizontalGallery images={MONOLYT_GALLERY_IMAGES} />
+
         {/* 6. Architects Office + Imagem Scroll Centralizada */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
           <div className="max-w-[1300px] mx-auto">
