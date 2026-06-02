@@ -125,9 +125,6 @@ function BlueHeavenPage() {
             style={{
               left: 0,
               right: 0,
-              maxWidth: "1300px",
-              marginLeft: "auto",
-              marginRight: "auto",
               textAlign: "left",
             }}
           >
