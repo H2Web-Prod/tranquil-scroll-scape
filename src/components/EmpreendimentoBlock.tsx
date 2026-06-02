@@ -89,7 +89,7 @@ export default function EmpreendimentoBlock({ image, eyebrow, title, subtitle, b
                 fontWeight: 400,
                 fontSize: "28px",
                 color: "#000000",
-                lineHeight: 1.4,
+                lineHeight: 1.5,
                 maxWidth: "1200px",
                 marginBottom: "40px",
               }}
@@ -97,7 +97,7 @@ export default function EmpreendimentoBlock({ image, eyebrow, title, subtitle, b
               {subtitle}
             </p>
           )}
-          <p className="padrao-p" style={{ maxWidth: "1200px", lineHeight: 1.9 }}>
+          <p className="padrao-p" style={{ maxWidth: "1200px", lineHeight: 1.5 }}>
             {body}
           </p>
           <div style={{ marginTop: "64px" }}>
