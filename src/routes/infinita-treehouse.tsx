@@ -219,6 +219,20 @@ const distancias: [string, string][] = [
   ["São Paulo", "9h50 min"],
 ];
 
+const diferenciais = [
+  "Pé na areia com acesso direto à praia sem vias ou barreiras entre o terreno e o mar",
+  "Fachada em concreto aparente pigmentado moldado artesanalmente, com textura e tonalidade de formação rochosa natural, técnica inédita no Brasil",
+  "Todos os apartamentos com piscina privativa em formato de lago sem degraus, simulando imersão gradual como em um lago natural",
+  "Coberturas com segunda piscina de vidro no teto, com fundoe laterais em vidro, conceito raro no Brasil",
+  "Apenas 12 unidades em um terreno de 5.000 m²",
+  "Projeto em co-criação com aArchitects Office",
+  "Paisagismo assinado por Rodrigo Oliveira",
+  "Iluminação assinada pelo OM Studio Lightin",
+  "Sistema de captação, tratamento e reutilização de água da chuva para irrigação dos jardins",
+  "Coberturas com quase 900 m² de área privativa",
+  "Apartamentos tipo Duplex, Gardens e Cobertura com metragens de 356 m² a 881 m²",
+];
+
 function InfinitaTreehouse() {
   useLenis();
 
@@ -577,6 +591,45 @@ function InfinitaTreehouse() {
             </p>
           </div>
         </PersonBlock>
+
+        {/* DIFERENCIAIS */}
+        <section className="bg-white py-[140px] md:py-[240px] px-6">
+          <div className="max-w-[1300px] mx-auto grid md:grid-cols-[35fr_65fr] gap-12 md:gap-16">
+            <div>
+              <span style={eyebrowStyle}>DIFERENCIAIS</span>
+              <h2
+                style={{
+                  fontFamily: "'Public Sans', sans-serif",
+                  fontWeight: 400,
+                  fontSize: "clamp(28px, 3vw, 40px)",
+                  color: "#000",
+                  lineHeight: 1.3,
+                  margin: 0,
+                }}
+              >
+                Descubra como é viver em sintonia com a natureza e a modernidade.
+              </h2>
+            </div>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, borderTop: "1px solid #E5E5E5" }}>
+              {diferenciais.map((item) => (
+                <li
+                  key={item}
+                  style={{
+                    fontFamily: "'Public Sans', sans-serif",
+                    fontWeight: 400,
+                    fontSize: "18px",
+                    color: "#000",
+                    lineHeight: 1.5,
+                    padding: "20px 0",
+                    borderBottom: "1px solid #E5E5E5",
+                  }}
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
 
         {/* CTA */}
         <section className="px-6 py-[120px] md:py-[200px]" style={{ background: "#F5F5F5" }}>
