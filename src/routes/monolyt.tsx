@@ -312,6 +312,25 @@ function MonolytPage() {
           </div>
         </section>
 
+        {/* SEÇÃO 6 — texto puro */}
+        <section className="bg-white py-[140px] md:py-[240px] px-6">
+          <div className="max-w-[1300px] mx-auto">
+            <ScrollReveal as="h2" className="font-light text-black">
+              Paisagem como elemento estruturante
+            </ScrollReveal>
+            <div style={{ marginTop: "40px" }}>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                A paisagem é parte da arquitetura do Aquos.
+              </p>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                A presença da água, combinada ao desenho cuidadoso das áreas verdes, cria uma experiência sensorial
+                contínua, promovendo conforto térmico, bem-estar e uma relação mais profunda com o ambiente natural.
+              </p>
+              <p className="padrao-p-internas">Viver aqui é perceber a natureza como parte do cotidiano.</p>
+            </div>
+          </div>
+        </section>
+
         {/* 5. Zoom Empreendimento */}
         <ZoomImage
           src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/monolyt-imagem-61.webp"
