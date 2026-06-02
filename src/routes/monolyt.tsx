@@ -9,6 +9,7 @@ import ZoomImage from "@/components/ZoomImage";
 import ImageScrollCentralizada from "@/components/ImageScrollCentralizada";
 import FadeInUp from "@/components/FadeInUp";
 import StaggerStack from "@/components/StaggerStack";
+import HorizontalGallery from "@/components/HorizontalGallery";
 
 export const Route = createFileRoute("/monolyt")({
   head: () => ({

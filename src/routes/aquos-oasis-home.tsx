@@ -10,6 +10,7 @@ import ImageScrollCentralizada from "@/components/ImageScrollCentralizada";
 import FadeInUp from "@/components/FadeInUp";
 import StaggerStack from "@/components/StaggerStack";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
+import HorizontalGallery from "@/components/HorizontalGallery";
 
 export const Route = createFileRoute("/aquos-oasis-home")({
   head: () => ({
