@@ -205,6 +205,20 @@ function PersonBlock({
   );
 }
 
+const distancias: [string, string][] = [
+  ["Balneário Camboriú", "7 min"],
+  ["Porto Belo", "26 min"],
+  ["Navegantes", "35 min"],
+  ["Bombinhas", "41 min"],
+  ["Beto Carrero World", "54 min"],
+  ["Florianópolis", "1h11 min"],
+  ["Blumenau", "1h18 min"],
+  ["Joinville", "1h55 min"],
+  ["Curitiba", "3h45 min"],
+  ["Porto Alegre", "6h10 min"],
+  ["São Paulo", "10h min"],
+];
+
 function InfinitaTreehouse() {
   useLenis();
 
