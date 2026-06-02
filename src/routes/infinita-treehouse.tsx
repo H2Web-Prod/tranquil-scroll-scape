@@ -10,14 +10,14 @@ import ZoomImage from "@/components/ZoomImage";
 import HorizontalGallery from "@/components/HorizontalGallery";
 
 const INFINITA_GALLERY_IMAGES = [
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/01.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/02.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/03.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/04.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/05.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/06.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/07.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/08.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-1.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-2.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-3.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-4.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-5.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-6.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-7.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-8.jpg",
 ];
 import StaggerStack from "@/components/StaggerStack";
 import VideoTriggerCard from "@/components/VideoTriggerCard";
