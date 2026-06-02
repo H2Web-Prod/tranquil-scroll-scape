@@ -120,20 +120,6 @@ function ZigZagBlock({
   );
 }
 
-const distancias: [string, string][] = [
-  ["Balneário Camboriú", "7 min"],
-  ["Porto Belo", "26 min"],
-  ["Navegantes", "35 min"],
-  ["Bombinhas", "41 min"],
-  ["Beto Carrero World", "54 min"],
-  ["Florianópolis", "1h11 min"],
-  ["Blumenau", "1h18 min"],
-  ["Joinville", "1h55 min"],
-  ["Curitiba", "3h45 min"],
-  ["Porto Alegre", "6h10 min"],
-  ["São Paulo", "10h min"],
-];
-
 const AQUOS_GALLERY_IMAGES = [
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-1.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-2.jpg",
@@ -329,8 +315,8 @@ function AquosOasisHome() {
               <span
                 style={{
                   position: "absolute",
-                  left: "67.3%",
-                  top: "49.2%",
+                  left: "58%",
+                  top: "67.4%",
                   width: "20px",
                   height: "20px",
                   transform: "translate(-50%, -50%)",
@@ -345,8 +331,8 @@ function AquosOasisHome() {
               <span
                 style={{
                   position: "absolute",
-                  left: "67.3%",
-                  top: "49.2%",
+                  left: "58%",
+                  top: "67.4%",
                   width: "20px",
                   height: "20px",
                   transform: "translate(-50%, -50%)",
