@@ -131,7 +131,7 @@ export default function Footer() {
               className="block hover:opacity-90 transition"
             >
               <img
-                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mapa-1.jpg"
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mapa-2.jpg"
                 alt="Localização Blue Heaven - clique para abrir no Google Maps"
                 className="w-full h-auto block"
               />
