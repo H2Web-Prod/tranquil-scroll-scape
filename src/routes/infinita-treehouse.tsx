@@ -451,12 +451,6 @@ function InfinitaTreehouse() {
           </div>
         </section>
 
-        {/* 5. Zoom Empreendimento */}
-        <ZoomImage
-          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/monolyt-imagem-61.webp"
-          alt="Monolyt — fachada"
-        />
-
         {/* SEÇÃO 3 — texto puro */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
           <div className="max-w-[1300px] mx-auto">
@@ -482,6 +476,12 @@ function InfinitaTreehouse() {
             </div>
           </div>
         </section>
+
+        {/* 5. Zoom Empreendimento */}
+        <ZoomImage
+          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/monolyt-imagem-61.webp"
+          alt="Monolyt — fachada"
+        />
 
         {/* GALERIA HORIZONTAL */}
         <HorizontalGallery images={INFINITA_GALLERY_IMAGES} />
