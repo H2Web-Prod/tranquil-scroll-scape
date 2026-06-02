@@ -206,17 +206,17 @@ function PersonBlock({
 }
 
 const distancias: [string, string][] = [
-  ["Balneário Camboriú", "7 min"],
-  ["Porto Belo", "26 min"],
-  ["Navegantes", "35 min"],
-  ["Bombinhas", "41 min"],
-  ["Beto Carrero World", "54 min"],
-  ["Florianópolis", "1h11 min"],
-  ["Blumenau", "1h18 min"],
-  ["Joinville", "1h55 min"],
+  ["Balneário Camboriú", "20 min"],
+  ["Beto Carrero World", "47 min"],
+  ["Navegantes", "15 min"],
+  ["Porto Belo", "50 min"],
+  ["Bombinhas", "1h15 min"],
+  ["Blumenau", "1h10 min"],
+  ["Joinville", "1h36 min"],
+  ["Florianópolis", "1h30 min"],
   ["Curitiba", "3h45 min"],
-  ["Porto Alegre", "6h10 min"],
-  ["São Paulo", "10h min"],
+  ["Porto Alegre", "6h30 min"],
+  ["São Paulo", "9h50 min"],
 ];
 
 function InfinitaTreehouse() {
@@ -386,7 +386,7 @@ function InfinitaTreehouse() {
             </ScrollReveal>
             <div style={{ position: "relative", width: "100%", marginTop: "48px" }}>
               <img
-                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/mapa-monolyt.jpg"
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mapa-infinita.jpg"
                 alt="Mapa de distâncias Monolyt"
                 loading="lazy"
                 style={{ width: "100%", height: "auto", objectFit: "contain", display: "block", borderRadius: 0 }}
