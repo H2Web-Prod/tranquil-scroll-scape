@@ -279,36 +279,38 @@ function InfinitaTreehouse() {
         {/* SEÇÃO 1 */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
           <div className="max-w-[1300px] mx-auto">
-            <ScrollReveal as="h2" className="font-light text-black">
-              Moldado pelo homem, inspirado pela natureza
-            </ScrollReveal>
-            <style>{`section h2 { font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
-            <p
-              style={{
-                fontFamily: "'Public Sans', sans-serif",
-                fontWeight: 400,
-                fontSize: "24px",
-                color: "#000",
-                lineHeight: 1.5,
-                marginTop: "40px",
-                marginBottom: "40px",
-              }}
-            >
-              Um refúgio suspenso entre a arquitetura e a natureza.
-            </p>
-            <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-              O Infinitá Treehouse nasce em Itajaí como uma interpretação sensível do habitar contemporâneo, onde a
-              arquitetura não se impõe ao entorno, mas dialoga com ele.
-            </p>
-            <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-              Inserido em um território marcado pela presença da água, da vegetação e da escala humana, o empreendimento
-              traduz a proposta da Blue Heaven de criar obras que respeitam a região e permanecem relevantes ao longo do
-              tempo.
-            </p>
-            <p className="padrao-p-internas">
-              Aqui, morar é experimentar o equilíbrio entre cidade e natureza, em um endereço que traz a contemplação, o
-              silêncio e a integração com a paisagem.
-            </p>
+            <div className="bloco-direita">
+              <ScrollReveal as="h2" className="font-light text-black">
+                Moldado pelo homem, inspirado pela natureza
+              </ScrollReveal>
+              <style>{`section h2 { font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
+              <p
+                style={{
+                  fontFamily: "'Public Sans', sans-serif",
+                  fontWeight: 400,
+                  fontSize: "24px",
+                  color: "#000",
+                  lineHeight: 1.5,
+                  marginTop: "40px",
+                  marginBottom: "40px",
+                }}
+              >
+                Um refúgio suspenso entre a arquitetura e a natureza.
+              </p>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                O Infinitá Treehouse nasce em Itajaí como uma interpretação sensível do habitar contemporâneo, onde a
+                arquitetura não se impõe ao entorno, mas dialoga com ele.
+              </p>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                Inserido em um território marcado pela presença da água, da vegetação e da escala humana, o empreendimento
+                traduz a proposta da Blue Heaven de criar obras que respeitam a região e permanecem relevantes ao longo do
+                tempo.
+              </p>
+              <p className="padrao-p-internas">
+                Aqui, morar é experimentar o equilíbrio entre cidade e natureza, em um endereço que traz a contemplação, o
+                silêncio e a integração com a paisagem.
+              </p>
+            </div>
           </div>
         </section>
 
