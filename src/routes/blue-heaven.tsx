@@ -200,7 +200,7 @@ function BlueHeavenPage() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/greg-3.jpg"
                 alt="Greg Bousquet"
-                aspectRatio="3/4"
+                /*aspectRatio="3/4"*/
               />
               <div>
                 <StaggerStack>
