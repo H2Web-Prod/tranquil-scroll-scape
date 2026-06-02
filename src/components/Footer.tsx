@@ -32,7 +32,7 @@ const bodyText: React.CSSProperties = {
 
 function SocialIcon({ children, href, label }: { children: React.ReactNode; href: string; label: string }) {
   return (
-    <a
+    
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -79,7 +79,7 @@ export default function Footer() {
               concebida pela vida humana.
             </p>
             <div className="border-t border-[#E5E5E5] pt-6 mb-8 flex flex-wrap gap-x-8 gap-y-3">
-              <a
+              
                 href={`${base}/blog/politica-de-privacidade/`}
                 className="flex items-center hover:opacity-70"
                 style={bodyText}
@@ -124,7 +124,7 @@ export default function Footer() {
 
           {/* Col 3 */}
           <div className="flex flex-col gap-5">
-            <a
+            
               href="https://maps.app.goo.gl/vtVmJPKgzP5L7PCm7"
               target="_blank"
               rel="noopener noreferrer"
@@ -140,7 +140,7 @@ export default function Footer() {
               <img src={PIN} alt="" className="w-[14px] h-auto mr-3 mt-1" />
               <span>Av. Osvaldo Reis, 3281 - sala 26 - Praia Brava, Itajaí - SC, 88306-001</span>
             </div>
-            <a
+            
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -151,7 +151,7 @@ export default function Footer() {
               <span>(47) 99762-5209</span>
             </a>
             <a href="mailto:contato@blueheaven.com.br" className="flex items-center hover:opacity-70" style={bodyText}>
-              <img src={MAIL} alt="" className="w-[18px] h-auto mr-3" />
+              <img src={MAIL} alt="" className="w-[16px] h-auto mr-3" />
               <span>contato@blueheaven.com.br</span>
             </a>
           </div>
