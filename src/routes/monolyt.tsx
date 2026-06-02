@@ -133,6 +133,8 @@ const MONOLYT_GALLERY_IMAGES = [
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-7.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-8.jpg",
 ];
+
+function MonolytPage() {
   useLenis();
 
   return (
