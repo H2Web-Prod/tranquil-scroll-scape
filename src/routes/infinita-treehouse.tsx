@@ -302,13 +302,13 @@ function InfinitaTreehouse() {
                 arquitetura não se impõe ao entorno, mas dialoga com ele.
               </p>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                Inserido em um território marcado pela presença da água, da vegetação e da escala humana, o empreendimento
-                traduz a proposta da Blue Heaven de criar obras que respeitam a região e permanecem relevantes ao longo do
-                tempo.
+                Inserido em um território marcado pela presença da água, da vegetação e da escala humana, o
+                empreendimento traduz a proposta da Blue Heaven de criar obras que respeitam a região e permanecem
+                relevantes ao longo do tempo.
               </p>
               <p className="padrao-p-internas">
-                Aqui, morar é experimentar o equilíbrio entre cidade e natureza, em um endereço que traz a contemplação, o
-                silêncio e a integração com a paisagem.
+                Aqui, morar é experimentar o equilíbrio entre cidade e natureza, em um endereço que traz a contemplação,
+                o silêncio e a integração com a paisagem.
               </p>
             </div>
           </div>
@@ -344,6 +344,104 @@ function InfinitaTreehouse() {
             </p>
           </div>
         </ZigZagBlock>
+
+        {/* 4. Mapa de Distâncias */}
+        <section className="bg-white py-[140px] md:py-[240px] px-6">
+          <style>{`
+  @keyframes monolytMapPulse {
+    0% {
+      width: 20px;
+      height: 20px;
+      opacity: 0.6;
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .monolyt-map-pulse {
+      display: none;
+    }
+  }
+`}</style>
+          <div className="max-w-[1300px] mx-auto">
+            <ScrollReveal as="h2" className="font-light text-black">
+              Mapa de Distâncias
+            </ScrollReveal>
+            <div style={{ position: "relative", width: "100%", marginTop: "48px" }}>
+              <img
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/mapa-monolyt.jpg"
+                alt="Mapa de distâncias Monolyt"
+                loading="lazy"
+                style={{ width: "100%", height: "auto", objectFit: "contain", display: "block", borderRadius: 0 }}
+              />
+              {/* Pulse 1 — onda inicial */}
+              <span
+                style={{
+                  position: "absolute",
+                  left: "67.3%",
+                  top: "49.2%",
+                  width: "20px",
+                  height: "20px",
+                  transform: "translate(-50%, -50%)",
+                  borderRadius: "50%",
+                  backgroundColor: "#142643",
+                  opacity: 0.6,
+                  animation: "monolytMapPulse 2s ease-out infinite",
+                  pointerEvents: "none",
+                }}
+              />
+              {/* Pulse 2 — onda com delay (cria efeito contínuo) */}
+              <span
+                style={{
+                  position: "absolute",
+                  left: "67.3%",
+                  top: "49.2%",
+                  width: "20px",
+                  height: "20px",
+                  transform: "translate(-50%, -50%)",
+                  borderRadius: "50%",
+                  backgroundColor: "#142643",
+                  opacity: 0.6,
+                  animation: "monolytMapPulse 2s ease-out infinite 1s",
+                  pointerEvents: "none",
+                }}
+              />
+            </div>
+            <div style={{ marginTop: "64px", maxWidth: "500px", marginLeft: "auto", marginRight: "auto" }}>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                {distancias.map(([place, t], i) => (
+                  <li
+                    key={place}
+                    style={{
+                      fontFamily: "'Public Sans', sans-serif",
+                      fontWeight: 400,
+                      fontSize: "16px",
+                      color: "#000000",
+                      lineHeight: 1.5,
+                      padding: "14px 0",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      gap: 24,
+                      borderBottom: i === distancias.length - 1 ? "none" : "1px solid #E5E5E5",
+                    }}
+                  >
+                    <span>{place}</span>
+                    <span style={{ color: "#666666" }}>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* 5. Zoom Empreendimento */}
+        <ZoomImage
+          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/monolyt-imagem-61.webp"
+          alt="Monolyt — fachada"
+        />
 
         {/* SEÇÃO 3 — texto puro */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
