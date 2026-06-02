@@ -467,7 +467,7 @@ function AquosOasisHome() {
                   margin: 0,
                 }}
               >
-                Título placeholder dos diferenciais do Aquos.
+                Descubra como é viver em sintonia com a natureza e a modernidade.
               </h2>
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, borderTop: "1px solid #E5E5E5" }}>
