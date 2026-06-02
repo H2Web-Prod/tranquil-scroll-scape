@@ -120,20 +120,6 @@ function ZigZagBlock({
   );
 }
 
-const distancias: [string, string][] = [
-  ["Balneário Camboriú", "7 min"],
-  ["Porto Belo", "26 min"],
-  ["Navegantes", "35 min"],
-  ["Bombinhas", "41 min"],
-  ["Beto Carrero World", "54 min"],
-  ["Florianópolis", "1h11 min"],
-  ["Blumenau", "1h18 min"],
-  ["Joinville", "1h55 min"],
-  ["Curitiba", "3h45 min"],
-  ["Porto Alegre", "6h10 min"],
-  ["São Paulo", "10h min"],
-];
-
 const AQUOS_GALLERY_IMAGES = [
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-1.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-2.jpg",
@@ -320,8 +306,8 @@ function AquosOasisHome() {
             </ScrollReveal>
             <div style={{ position: "relative", width: "100%", marginTop: "48px" }}>
               <img
-                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/05/mapa-monolyt.jpg"
-                alt="Mapa de distâncias Monolyt"
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mapa-aquos.jpg"
+                alt="Mapa de distâncias Aquos"
                 loading="lazy"
                 style={{ width: "100%", height: "auto", objectFit: "contain", display: "block", borderRadius: 0 }}
               />
