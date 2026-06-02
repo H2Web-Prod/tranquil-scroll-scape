@@ -148,6 +148,7 @@ function BlueHeavenPage() {
                 color: "#FFFFFF",
                 lineHeight: 1.4,
                 marginTop: "12px",
+                marginLeft: "10px",
               }}
             >
               Desafiamos o inalcançável, esculpindo o extraordinário
