@@ -155,12 +155,23 @@ function AquosOasisHome() {
                 color: "#FFFFFF",
                 letterSpacing: "-0.02em",
                 margin: 0,
+                whiteSpace: "nowrap",
               }}
             >
-              Aquos
-              <br />
-              Oasis Home
+              Aquos Oasis Home
             </h1>
+            <p
+              style={{
+                fontFamily: "'Public Sans', sans-serif",
+                fontWeight: 300,
+                fontSize: "20px",
+                color: "#FFFFFF",
+                marginTop: "12px",
+                margin: "12px 0 0 0",
+              }}
+            >
+              by Architects Office &amp; Triptyque
+            </p>
           </div>
         </section>
 

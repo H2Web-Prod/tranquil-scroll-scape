@@ -224,6 +224,18 @@ function InfinitaTreehouse() {
           }}
         >
           <div
+            style={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: "50%",
+              background: "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 100%)",
+              pointerEvents: "none",
+              zIndex: 1,
+            }}
+          />
+          <div
             className="absolute px-6 md:px-10 bottom-[60px] md:bottom-[100px]"
             style={{
               left: 0,
@@ -239,7 +251,7 @@ function InfinitaTreehouse() {
                 fontWeight: 300,
                 fontSize: "clamp(48px, 6vw, 88px)",
                 lineHeight: 1.1,
-                color: "#000000",
+                color: "#FFFFFF",
                 letterSpacing: "-0.02em",
               }}
             >
@@ -250,9 +262,9 @@ function InfinitaTreehouse() {
                   display: "block",
                   fontFamily: "'Public Sans', sans-serif",
                   fontWeight: 300,
-                  fontSize: "clamp(28px, 3.5vw, 48px)",
+                  fontSize: "20px",
                   lineHeight: 1.2,
-                  color: "#000000",
+                  color: "#FFFFFF",
                   marginTop: "12px",
                 }}
               >

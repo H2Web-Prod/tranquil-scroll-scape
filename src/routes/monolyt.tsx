@@ -162,6 +162,17 @@ function MonolytPage() {
             >
               Monolyt
             </h1>
+            <p
+              style={{
+                fontFamily: "'Public Sans', sans-serif",
+                fontWeight: 300,
+                fontSize: "20px",
+                color: "#FFFFFF",
+                margin: "12px 0 0 0",
+              }}
+            >
+              by Architects Office &amp; Triptyque
+            </p>
           </div>
         </section>
 
