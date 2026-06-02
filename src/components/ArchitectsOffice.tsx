@@ -39,7 +39,7 @@ export function ConnectingSection() {
         <div className="relative mt-[120px] md:mt-[160px] grid md:grid-cols-[42%_1fr] gap-12 md:gap-20 items-center">
           <FadeInUp>
             <ParallaxImage
-              src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/greg.jpg"
+              src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/greg-1.jpg"
               alt="Greg Bousquet"
               aspectRatio="3/4"
             />
