@@ -427,7 +427,7 @@ function AquosOasisHome() {
         />
 
         {/* GALERIA HORIZONTAL */}
-        <HorizontalGallery images={AQUOS_GALLERY_IMAGES} />
+        <HorizontalGallery images={AQUOS_GALLERY_IMAGES} displayCount={8} />
 
         {/* SEÇÃO 8 — texto puro */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
