@@ -518,7 +518,7 @@ function InfinitaTreehouse() {
         />
 
         {/* GALERIA HORIZONTAL */}
-        <HorizontalGallery images={INFINITA_GALLERY_IMAGES} />
+        <HorizontalGallery images={INFINITA_GALLERY_IMAGES} displayCount={8} />
 
         {/* RENATA */}
         <PersonBlock
