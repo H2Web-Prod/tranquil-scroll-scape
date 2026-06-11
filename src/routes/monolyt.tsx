@@ -196,7 +196,7 @@ function MonolytPage() {
                 margin: "12px 0 0 10px",
               }}
             >
-              by Architects Office &amp; Triptyque
+              by Architects Office
             </p>
           </div>
         </section>
