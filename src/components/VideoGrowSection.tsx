@@ -2,7 +2,9 @@ import { useRef, useState, useEffect } from "react";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function VideoGrowSection({ src }: { src: string }) {
+export default function VideoGrowSection({
+  src = "https://projetos.h2web.com.br/blueheaven/videos/video-1.mp4",
+}: { src?: string } = {}) {
   const ref = useRef<HTMLElement>(null);
   const [isMobile, setIsMobile] = useState(false);
 
