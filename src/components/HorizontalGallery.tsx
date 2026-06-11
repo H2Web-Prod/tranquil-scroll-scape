@@ -1,9 +1,5 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-
-
 
 interface HorizontalGalleryProps {
   images: string[];
@@ -15,15 +11,14 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
   const trackRef = useRef<HTMLDivElement>(null);
   const [translateDistance, setTranslateDistance] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const displayed = displayCount ? images.slice(0, displayCount) : images;
 
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
@@ -34,7 +29,6 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
       setTranslateDistance(0);
       return;
     }
-
     const calculateDistance = () => {
       if (!trackRef.current) return;
       const trackWidth = trackRef.current.scrollWidth;
@@ -42,7 +36,6 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
       const distance = trackWidth - viewportWidth;
       setTranslateDistance(distance > 0 ? distance : 0);
     };
-
     calculateDistance();
     window.addEventListener("resize", calculateDistance);
     const timer = setTimeout(calculateDistance, 500);
@@ -52,67 +45,37 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
     };
   }, [displayed, isMobile]);
 
+  // Keyboard navigation
+  useEffect(() => {
+    if (!lightboxOpen) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight") setLightboxIndex((i) => (i + 1) % images.length);
+      if (e.key === "ArrowLeft") setLightboxIndex((i) => (i - 1 + images.length) % images.length);
+      if (e.key === "Escape") setLightboxOpen(false);
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [lightboxOpen, images.length]);
+
+  // Block body scroll when lightbox open
+  useEffect(() => {
+    document.body.style.overflow = lightboxOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [lightboxOpen]);
+
+  const openLightbox = useCallback((index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
 
   const x = useTransform(scrollYProgress, [0, 1], [0, -translateDistance]);
-
-  const openLightbox = (index: number) => {
-    setLightboxIndex(index);
-    setLightboxOpen(true);
-  };
-
-  const lightbox = (
-    <>
-      <style>{`
-        .yarl__button[data-testid="yarl__button_close"], button.yarl__button:has(svg[data-testid="yarl__icon_close"]) { position: fixed !important; top: 1rem !important; right: 1rem !important; z-index: 9999 !important; }
-      `}</style>
-      <Lightbox
-        open={lightboxOpen}
-        close={() => setLightboxOpen(false)}
-        index={lightboxIndex}
-        slides={images.map((src) => ({ src }))}
-        on={{ view: ({ index }) => setLightboxIndex(index) }}
-      />
-      {lightboxOpen && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          height: '56px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'flex-end',
-          gap: '6px',
-          zIndex: 10000,
-          paddingBottom: '8px',
-          flexWrap: 'nowrap',
-          background: 'transparent',
-          pointerEvents: 'none',
-        }}>
-          {images.map((_, i) => (
-            <div
-              key={i}
-              onClick={() => setLightboxIndex(i)}
-              style={{
-                width: '28px',
-                height: '4px',
-                borderRadius: '0',
-                background: i === lightboxIndex ? '#ffffff' : 'rgba(255,255,255,0.35)',
-                transition: 'background 0.2s',
-                flexShrink: 0,
-                cursor: 'pointer',
-                pointerEvents: 'all',
-              }}
-            />
-          ))}
-        </div>
-      )}
-    </>
-  );
 
   if (isMobile) {
     return (
@@ -128,17 +91,10 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
             scrollbarWidth: "none",
           }}
         >
-          <style>{`
-            .horizontal-gallery-mobile::-webkit-scrollbar { display: none; }
-          `}</style>
+          <style>{`.horizontal-gallery-mobile::-webkit-scrollbar { display: none; }`}</style>
           <div
             className="horizontal-gallery-mobile"
-            style={{
-              display: "flex",
-              gap: "16px",
-              paddingLeft: "24px",
-              paddingRight: "24px",
-            }}
+            style={{ display: "flex", gap: "16px", paddingLeft: "24px", paddingRight: "24px" }}
           >
             {displayed.map((src, i) => (
               <div
@@ -157,32 +113,27 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
                   src={src}
                   alt=""
                   draggable={false}
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    display: "block",
-                  }}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                 />
               </div>
             ))}
           </div>
         </section>
-        {lightbox}
+        {lightboxOpen && (
+          <LightboxOverlay
+            images={images}
+            index={lightboxIndex}
+            onClose={() => setLightboxOpen(false)}
+            onNavigate={setLightboxIndex}
+          />
+        )}
       </>
     );
   }
 
   return (
     <>
-      <section
-        ref={containerRef}
-        style={{
-          height: "500vh",
-          background: "#FFFFFF",
-          position: "relative",
-        }}
-      >
+      <section ref={containerRef} style={{ height: "500vh", background: "#FFFFFF", position: "relative" }}>
         <div
           style={{
             position: "sticky",
@@ -207,26 +158,14 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
             }}
           >
             <style>{`
-              .horizontal-gallery-track > div {
-                width: 25vw;
-                aspect-ratio: 3 / 4;
-              }
-              @media (max-width: 1023px) {
-                .horizontal-gallery-track > div {
-                  width: 35vw;
-                }
-              }
+              .horizontal-gallery-track > div { width: 25vw; aspect-ratio: 3 / 4; }
+              @media (max-width: 1023px) { .horizontal-gallery-track > div { width: 35vw; } }
             `}</style>
             {displayed.map((src, i) => (
               <div
                 key={i}
                 onClick={() => openLightbox(i)}
-                style={{
-                  flex: "none",
-                  overflow: "hidden",
-                  background: "#f2f2f2",
-                  cursor: "pointer",
-                }}
+                style={{ flex: "none", overflow: "hidden", background: "#f2f2f2", cursor: "pointer" }}
               >
                 <img
                   src={src}
@@ -237,14 +176,191 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
                     height: "100%",
                     objectFit: "cover",
                     display: "block",
+                    transition: "transform 0.4s ease",
                   }}
+                  onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.04)")}
+                  onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
                 />
               </div>
             ))}
           </motion.div>
         </div>
       </section>
-      {lightbox}
+      {lightboxOpen && (
+        <LightboxOverlay
+          images={images}
+          index={lightboxIndex}
+          onClose={() => setLightboxOpen(false)}
+          onNavigate={setLightboxIndex}
+        />
+      )}
     </>
+  );
+}
+
+// ─── Lightbox custom ───────────────────────────────────────────────────────────
+
+interface LightboxOverlayProps {
+  images: string[];
+  index: number;
+  onClose: () => void;
+  onNavigate: (index: number) => void;
+}
+
+function LightboxOverlay({ images, index, onClose, onNavigate }: LightboxOverlayProps) {
+  const touchStartX = useRef<number>(0);
+
+  const prev = () => onNavigate((index - 1 + images.length) % images.length);
+  const next = () => onNavigate((index + 1) % images.length);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) diff > 0 ? next() : prev();
+  };
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        inset: 0,
+        zIndex: 9999,
+        background: "rgba(0,0,0,0.95)",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
+      {/* Faixa de indicadores — área exclusiva no topo, nunca sobrepõe a imagem */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: "56px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "6px",
+          flexWrap: "nowrap",
+          zIndex: 2,
+        }}
+      >
+        {images.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => onNavigate(i)}
+            aria-label={`Ir para imagem ${i + 1}`}
+            style={{
+              width: "28px",
+              height: "4px",
+              padding: 0,
+              border: "none",
+              borderRadius: 0,
+              background: i === index ? "#ffffff" : "rgba(255,255,255,0.35)",
+              cursor: "pointer",
+              transition: "background 0.2s",
+              flexShrink: 0,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Botão fechar */}
+      <button
+        onClick={onClose}
+        aria-label="Fechar"
+        style={{
+          position: "absolute",
+          top: "16px",
+          right: "16px",
+          width: "40px",
+          height: "40px",
+          background: "transparent",
+          border: "none",
+          color: "#fff",
+          fontSize: "24px",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 3,
+          lineHeight: 1,
+        }}
+      >
+        ✕
+      </button>
+
+      {/* Seta esquerda */}
+      <button
+        onClick={prev}
+        aria-label="Anterior"
+        style={{
+          position: "absolute",
+          left: "16px",
+          top: "50%",
+          transform: "translateY(-50%)",
+          background: "transparent",
+          border: "none",
+          color: "#fff",
+          fontSize: "2.5rem",
+          cursor: "pointer",
+          padding: "8px 16px",
+          zIndex: 2,
+          lineHeight: 1,
+        }}
+      >
+        ‹
+      </button>
+
+      {/* Imagem — começa abaixo dos 56px dos indicadores */}
+      <div
+        style={{
+          marginTop: "56px",
+          width: "100%",
+          height: "calc(100vh - 56px)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "16px 80px",
+          boxSizing: "border-box",
+        }}
+      >
+        <img
+          key={index}
+          src={images[index]}
+          alt=""
+          style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: "block" }}
+        />
+      </div>
+
+      {/* Seta direita */}
+      <button
+        onClick={next}
+        aria-label="Próxima"
+        style={{
+          position: "absolute",
+          right: "16px",
+          top: "50%",
+          transform: "translateY(-50%)",
+          background: "transparent",
+          border: "none",
+          color: "#fff",
+          fontSize: "2.5rem",
+          cursor: "pointer",
+          padding: "8px 16px",
+          zIndex: 2,
+          lineHeight: 1,
+        }}
+      >
+        ›
+      </button>
+    </div>
   );
 }
