@@ -7,6 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
+import ScrollToTop from "@/components/ScrollToTop";
 
 import appCss from "../styles.css?url";
 
@@ -121,6 +122,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <Outlet />
+      <ScrollToTop />
     </QueryClientProvider>
   );
 }
