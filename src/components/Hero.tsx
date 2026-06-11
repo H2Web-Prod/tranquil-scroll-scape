@@ -5,7 +5,7 @@ export default function Hero() {
     <>
       <style>{`
         @media (max-width: 767px) {
-          .hero-section { height: 75vw !important; min-height: 400px !important; }
+          .hero-section { height: 80vw !important; min-height: 600px !important; }
           .hero-scroll-indicator { bottom: 16px !important; }
         }
       `}</style>
