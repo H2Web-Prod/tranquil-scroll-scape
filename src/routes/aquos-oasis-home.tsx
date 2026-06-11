@@ -210,7 +210,7 @@ function AquosOasisHome() {
                 color: "#FFFFFF",
                 letterSpacing: "-0.02em",
                 margin: 0,
-                whiteSpace: "nowrap",
+                
               }}
             >
               Aquos Oasis Home
