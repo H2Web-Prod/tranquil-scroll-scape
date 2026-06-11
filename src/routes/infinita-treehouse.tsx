@@ -71,7 +71,7 @@ const eyebrowStyle: React.CSSProperties = {
 const quoteStyle: React.CSSProperties = {
   fontFamily: "'Public Sans', sans-serif",
   fontStyle: "italic",
-  fontSize: "20px",
+  fontSize: "18px",
   fontWeight: 400,
   color: "#606060",
   lineHeight: 1.6,
