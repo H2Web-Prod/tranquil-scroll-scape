@@ -322,28 +322,28 @@ function MonolytPage() {
             <div style={{ marginTop: "40px" }}>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
                 Diferente dos centros urbanos adensados que marcam a paisagem de Balneário Camboriú, o bairro Estaleiro
-                é umrefúgio de quietude e beleza natural. Sua atmosfera exclusiva é definida por uma combinação rara:
+                é um refúgio de quietude e beleza natural. Sua atmosfera exclusiva é definida por uma combinação rara:
                 praias de águas cristalinas, vegetação da Mata Atlântica preservada e uma ocupação de baixa densidade
                 que privilegia a privacidade.
               </p>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                A Praia do Estaleiro, com cerca de 1,7quilômetros de extensão, é a maior entre as praias da Rodovia
+                A Praia do Estaleiro, com cerca de 1,7 quilômetros de extensão, é a maior entre as praias da Rodovia
                 Interpraias.Suas águas limpas e de coloração azul-esverdeada, somadas à restinga preservada, renderam à
                 região certificações de prestígio internacional, como o selo Bandeira Azul, atestando qualidade
-                ambiental, gestão sustentável e segurança.A orla, de perfil predominantemente residencial, é composta
+                ambiental, gestão sustentável e segurança. A orla, de perfil predominantemente residencial, é composta
                 por mansões e condomínios fechados de alto padrão, consolidando o Estaleiro como um dos endereços mais
                 exclusivos da cidade.
               </p>
               <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                Essa mesmaexclusividade do Estaleiro é, em grande parte, fruto de restrições urbanísticas que se
+                Essa mesma exclusividade do Estaleiro é, em grande parte, fruto de restrições urbanísticas que se
                 transformaram em seu maior diferencial. Apenas 40% da área é liberada para construção, enquanto os
-                outros 60% permanecem como áreas de preservação permanente.Os limites de altura das edificações,
+                outros 60% permanecem como áreas de preservação permanente. Os limites de altura das edificações,
                 restritas a poucos pavimentos, garantem que a paisagem não seja obstruída e que a integração com o
                 entorno natural seja uma constante.
               </p>
               <p className="padrao-p-internas">
-                O Estaleiro éolugaridealpara quem busca um estilo de vida ancorado na beleza, privacidade erespeito ao
-                meio ambiente.
+                O Estaleiro é o lugar ideal para quem busca um estilo de vida ancorado na beleza, privacidade e respeito
+                ao meio ambiente.
               </p>
             </div>
           </div>
