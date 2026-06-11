@@ -5,14 +5,11 @@ export default function Hero() {
     <>
       <style>{`
         @media (max-width: 767px) {
-          .hero-section { height: 56vw !important; min-height: 280px; }
+          .hero-section { height: 75vw !important; min-height: 320px; }
           .hero-scroll-indicator { bottom: 16px !important; }
         }
       `}</style>
-      <section
-        className="hero-section relative w-screen overflow-hidden"
-        style={{ height: "100svh" }}
-      >
+      <section className="hero-section relative w-screen overflow-hidden" style={{ height: "100svh" }}>
         <video
           src="https://projetos.h2web.com.br/blueheaven/videos/blueheaven-video-hero.mp4"
           autoPlay
