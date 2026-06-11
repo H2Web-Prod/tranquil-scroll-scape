@@ -2,12 +2,10 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative w-screen h-screen overflow-hidden">
-      <style>{`
-        @media (max-width: 767px) {
-          .hero-video { height: 100svh !important; }
-        }
-      `}</style>
+    <section
+      className="relative w-screen overflow-hidden"
+      style={{ height: "100svh" }}
+    >
       <video
         src="https://projetos.h2web.com.br/blueheaven/videos/blueheaven-video-hero.mp4"
         autoPlay
@@ -15,20 +13,12 @@ export default function Hero() {
         loop
         playsInline
         preload="auto"
-        className="hero-video"
-        style={{
-          position: "absolute",
-          inset: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          objectPosition: "center center",
-        }}
+        className="absolute inset-0 w-full h-full object-cover"
       />
       <div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.5))",
+          background: "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.35) 100%)",
         }}
       />
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
