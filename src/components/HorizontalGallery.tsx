@@ -79,17 +79,19 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
       {lightboxOpen && (
         <div style={{
           position: 'fixed',
-          top: '20px',
-          left: '0',
-          right: '0',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: '56px',
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center',
+          alignItems: 'flex-end',
           gap: '6px',
           zIndex: 10000,
+          paddingBottom: '8px',
+          flexWrap: 'nowrap',
+          background: 'transparent',
           pointerEvents: 'none',
-          flexWrap: 'wrap',
-          padding: '0 16px',
         }}>
           {images.map((_, i) => (
             <div
