@@ -497,14 +497,14 @@ function InfinitaTreehouse() {
                 saltou, representando um dos maiores índices de crescimento do país, o que o torna também uma escolha
                 estratégica para investidores que buscam segurança e retorno sólido.
               </p>
-              <p className="padrao-p-internas">
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
                 O cenário de desenvolvimento do bairro se completa com projetos de grande porte que estão em andamento.
                 O futuro Boulevard Marina Itajaí, um shopping integrado à marina, promete adicionar um novo marco de
                 sofisticação e lazer à região, enquanto a criação de um parque ecológico e náutico de mais de 23 mil
                 metros quadrados amplia as opções de convívio com a natureza para moradores e visitantes.
               </p>
-              <p className="padrao-p-internas">
-                Tudo isso faz do bairro Fazenda um dos maisnobres e promissores de Itajaí.um lugar onde tradição,
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                Tudo isso faz do bairro Fazenda um dos mais nobres e promissores de Itajaí. Um lugar onde tradição,
                 natureza e modernidade coexistem em harmonia.
               </p>
             </div>
