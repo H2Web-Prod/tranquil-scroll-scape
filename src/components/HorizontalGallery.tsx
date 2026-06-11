@@ -65,22 +65,33 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
   };
 
   const lightbox = (
-    <Lightbox
-      open={lightboxOpen}
-      close={() => setLightboxOpen(false)}
-      index={lightboxIndex}
-      slides={images.map((src) => ({ src }))}
-      plugins={[Thumbnails]}
-      thumbnails={{
-        position: "top",
-        width: 80,
-        height: 60,
-        border: 0,
-        borderRadius: 4,
-        padding: 4,
-        gap: 8,
-      }}
-    />
+    <>
+      <style>{`
+        .yarl__thumbnails_thumbnail img { display: none !important; }
+
+        .yarl__thumbnails_thumbnail { width: 15px !important; height: 15px !important; min-width: 15px !important; min-height: 15px !important; padding: 0 !important; border: 1.5px solid rgba(255,255,255,0.4) !important; border-radius: 0 !important; background: transparent !important; opacity: 1 !important; }
+
+        .yarl__thumbnails_thumbnail_active, .yarl__thumbnails_thumbnail[aria-selected="true"] { border-color: #ffffff !important; background: #ffffff !important; }
+
+        .yarl__button[data-testid="yarl__button_close"], button.yarl__button:has(svg[data-testid="yarl__icon_close"]) { position: fixed !important; top: 1rem !important; right: 1rem !important; z-index: 9999 !important; }
+      `}</style>
+      <Lightbox
+        open={lightboxOpen}
+        close={() => setLightboxOpen(false)}
+        index={lightboxIndex}
+        slides={images.map((src) => ({ src }))}
+        plugins={[Thumbnails]}
+        thumbnails={{
+          position: "top",
+          width: 15,
+          height: 15,
+          border: 0,
+          borderRadius: 0,
+          padding: 0,
+          gap: 8,
+        }}
+      />
+    </>
   );
 
   if (isMobile) {
