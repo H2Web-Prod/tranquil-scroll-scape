@@ -174,19 +174,21 @@ function BlueHeavenPage() {
         {/* 3. BUILDING WELLNESS */}
         <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
           <div className="max-w-[1300px] mx-auto">
-            <FadeInUp>
-              <StaggerStack>
-                <ScrollReveal as="h2" className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1100px]">
-                  Building Wellness
-                </ScrollReveal>
-                <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
-                  Com a filosofia 'Building With Nature', colocamos nossa inteligência construtiva e tecnologia a
-                  serviço do equilíbrio da vida, desenvolvendo empreendimentos que se tornam obras de artes esculpidas
-                  com uma abordagem artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a
-                  modernidade concebida pela vida humana.
-                </p>
-              </StaggerStack>
-            </FadeInUp>
+            <div className="bloco-direita">
+              <FadeInUp>
+                <StaggerStack>
+                  <ScrollReveal as="h2" className="font-light text-black text-[clamp(40px,5vw,64px)] max-w-[1100px]">
+                    Building Wellness
+                  </ScrollReveal>
+                  <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
+                    Com a filosofia 'Building With Nature', colocamos nossa inteligência construtiva e tecnologia a
+                    serviço do equilíbrio da vida, desenvolvendo empreendimentos que se tornam obras de artes esculpidas
+                    com uma abordagem artesanal e única, transformando espaços em ambientes que enaltecem a natureza e a
+                    modernidade concebida pela vida humana.
+                  </p>
+                </StaggerStack>
+              </FadeInUp>
+            </div>
           </div>
         </section>
 
