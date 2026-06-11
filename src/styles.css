@@ -74,8 +74,7 @@ html.lenis body {
 .padrao-p {
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  letter-spacing: -0.02em;
+  font-size: 18px;
   color: #000000;
   line-height: 1.5;
 }
@@ -83,8 +82,7 @@ html.lenis body {
 .padrao-p-internas {
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  letter-spacing: -0.02em;
+  font-size: 18px;
   color: #000000;
   line-height: 1.5;
 }
@@ -131,8 +129,6 @@ a[href*="lovable.dev"],
 a[href*="lovable.app"] {
   display: none !important;
 }
-
-
 
 @media (prefers-reduced-motion: reduce) {
   *,
