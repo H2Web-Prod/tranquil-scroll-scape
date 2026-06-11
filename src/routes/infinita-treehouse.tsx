@@ -323,7 +323,7 @@ function InfinitaTreehouse() {
               <ScrollReveal as="h2" className="font-light text-black">
                 Moldado pelo homem, inspirado pela natureza
               </ScrollReveal>
-              <style>{`section h2 { font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
+              <style>{`section h2 { font-size: clamp(40px, 5vw, 56px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
               <p
                 style={{
                   fontFamily: "'Public Sans', sans-serif",
