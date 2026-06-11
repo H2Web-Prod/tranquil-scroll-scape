@@ -59,9 +59,22 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
 
   // Block body scroll when lightbox open
   useEffect(() => {
-    document.body.style.overflow = lightboxOpen ? "hidden" : "";
+    if (lightboxOpen) {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+      const lenis = (window as any).__lenis;
+      if (lenis) lenis.stop();
+    } else {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+      const lenis = (window as any).__lenis;
+      if (lenis) lenis.start();
+    }
     return () => {
       document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+      const lenis = (window as any).__lenis;
+      if (lenis) lenis.start();
     };
   }, [lightboxOpen]);
 
