@@ -141,26 +141,28 @@ function RegiaoPage() {
         {/* 2. A HISTÓRIA */}
         <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
           <div className="max-w-[1300px] mx-auto">
-            <FadeInUp>
-              <StaggerStack>
-                <ScrollReveal
-                  as="h2"
-                  className="font-light text-black text-[clamp(40px,5vw,64px)] leading-[1.1] max-w-[1100px]"
-                >
-                  A História de Santa Catarina
-                </ScrollReveal>
-                <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
-                  A história de Santa Catarina é marcada pelo encontro de culturas. Povos indígenas, colonizadores
-                  europeus, especialmente açorianos, alemães e italianos, e fluxos migratórios posteriores moldaram a
-                  identidade do estado ao longo dos séculos.
-                </p>
-                <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                  Essa diversidade se reflete na arquitetura, nos costumes, na gastronomia e na forma como as cidades se
-                  organizam. Muitas regiões preservam traços históricos em diálogo com uma vida contemporânea ativa,
-                  criando um ambiente onde tradição e modernidade coexistem de maneira natural.
-                </p>
-              </StaggerStack>
-            </FadeInUp>
+            <div className="bloco-direita">
+              <FadeInUp>
+                <StaggerStack>
+                  <ScrollReveal
+                    as="h2"
+                    className="font-light text-black text-[clamp(40px,5vw,64px)] leading-[1.1] max-w-[1100px]"
+                  >
+                    A História de Santa Catarina
+                  </ScrollReveal>
+                  <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
+                    A história de Santa Catarina é marcada pelo encontro de culturas. Povos indígenas, colonizadores
+                    europeus, especialmente açorianos, alemães e italianos, e fluxos migratórios posteriores moldaram a
+                    identidade do estado ao longo dos séculos.
+                  </p>
+                  <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
+                    Essa diversidade se reflete na arquitetura, nos costumes, na gastronomia e na forma como as cidades se
+                    organizam. Muitas regiões preservam traços históricos em diálogo com uma vida contemporânea ativa,
+                    criando um ambiente onde tradição e modernidade coexistem de maneira natural.
+                  </p>
+                </StaggerStack>
+              </FadeInUp>
+            </div>
           </div>
         </section>
 
@@ -238,27 +240,29 @@ function RegiaoPage() {
         {/* 6. AS PRAIAS */}
         <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
           <div className="max-w-[1300px] mx-auto">
-            <FadeInUp>
-              <StaggerStack>
-                <ScrollReveal
-                  as="h2"
-                  className="font-light text-black text-[clamp(40px,5vw,64px)] leading-[1.1] max-w-[1100px]"
-                >
-                  As praias de Santa Catarina
-                </ScrollReveal>
-                <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
-                  O litoral catarinense é um dos mais variados do país. Com mais de 500 quilômetros de costa, Santa
-                  Catarina abriga praias com características muito distintas entre si: desde faixas de areia extensas e
-                  abertas até enseadas mais reservadas, cercadas por vegetação nativa.
-                </p>
-                <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                  Essa diversidade permite diferentes formas de viver o litoral, seja de maneira mais urbana, próxima a
-                  centros movimentados, ou em regiões onde a natureza permanece como protagonista. Em comum, as praias
-                  do estado oferecem paisagens preservadas, águas limpas e uma forte relação com o cotidiano de quem
-                  escolhe viver próximo ao mar.
-                </p>
-              </StaggerStack>
-            </FadeInUp>
+            <div className="bloco-direita">
+              <FadeInUp>
+                <StaggerStack>
+                  <ScrollReveal
+                    as="h2"
+                    className="font-light text-black text-[clamp(40px,5vw,64px)] leading-[1.1] max-w-[1100px]"
+                  >
+                    As praias de Santa Catarina
+                  </ScrollReveal>
+                  <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
+                    O litoral catarinense é um dos mais variados do país. Com mais de 500 quilômetros de costa, Santa
+                    Catarina abriga praias com características muito distintas entre si: desde faixas de areia extensas e
+                    abertas até enseadas mais reservadas, cercadas por vegetação nativa.
+                  </p>
+                  <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
+                    Essa diversidade permite diferentes formas de viver o litoral, seja de maneira mais urbana, próxima a
+                    centros movimentados, ou em regiões onde a natureza permanece como protagonista. Em comum, as praias
+                    do estado oferecem paisagens preservadas, águas limpas e uma forte relação com o cotidiano de quem
+                    escolhe viver próximo ao mar.
+                  </p>
+                </StaggerStack>
+              </FadeInUp>
+            </div>
           </div>
         </section>
 
@@ -271,31 +275,33 @@ function RegiaoPage() {
         {/* 8. ESCOLHA DE VIDA */}
         <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
           <div className="max-w-[1300px] mx-auto">
-            <FadeInUp>
-              <StaggerStack>
-                <ScrollReveal
-                  as="h2"
-                  className="font-light text-black text-[clamp(40px,5vw,64px)] leading-[1.1] max-w-[1100px]"
-                >
-                  Santa Catarina como escolha de vida
-                </ScrollReveal>
-                <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
-                  Mais do que um destino turístico, Santa Catarina se consolidou como um território de permanência. Um
-                  lugar onde é possível construir uma rotina equilibrada, com acesso à natureza, infraestrutura de
-                  qualidade e cidades que oferecem oportunidades sem perder a escala humana.
-                </p>
-                <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                  É essa combinação, história, paisagem, desenvolvimento e qualidade de vida, que faz de Santa Catarina
-                  um estado escolhido por quem busca viver com mais consciência, estabilidade e conexão com o lugar.
-                </p>
-                <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                  Santa Catarina não é apenas onde se vive.
-                </p>
-                <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                  É onde o tempo encontra espaço para acontecer.
-                </p>
-              </StaggerStack>
-            </FadeInUp>
+            <div className="bloco-direita">
+              <FadeInUp>
+                <StaggerStack>
+                  <ScrollReveal
+                    as="h2"
+                    className="font-light text-black text-[clamp(40px,5vw,64px)] leading-[1.1] max-w-[1100px]"
+                  >
+                    Santa Catarina como escolha de vida
+                  </ScrollReveal>
+                  <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
+                    Mais do que um destino turístico, Santa Catarina se consolidou como um território de permanência. Um
+                    lugar onde é possível construir uma rotina equilibrada, com acesso à natureza, infraestrutura de
+                    qualidade e cidades que oferecem oportunidades sem perder a escala humana.
+                  </p>
+                  <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
+                    É essa combinação, história, paisagem, desenvolvimento e qualidade de vida, que faz de Santa Catarina
+                    um estado escolhido por quem busca viver com mais consciência, estabilidade e conexão com o lugar.
+                  </p>
+                  <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
+                    Santa Catarina não é apenas onde se vive.
+                  </p>
+                  <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
+                    É onde o tempo encontra espaço para acontecer.
+                  </p>
+                </StaggerStack>
+              </FadeInUp>
+            </div>
           </div>
         </section>
 
