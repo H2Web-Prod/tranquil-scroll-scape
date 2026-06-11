@@ -130,6 +130,7 @@ const MONOLYT_GALLERY_IMAGES = [
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-6.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-7.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-8.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/04/extraordinario-reside-nos-detalhes.jpg",
 ];
 
 function MonolytPage() {
