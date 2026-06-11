@@ -75,15 +75,40 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
         index={lightboxIndex}
         slides={images.map((src) => ({ src }))}
         on={{ view: ({ index }) => setLightboxIndex(index) }}
-        render={{
-          iconPrev: () => <span style={{fontSize: '2rem', color: '#fff', padding: '0 1rem', cursor: 'pointer'}}>‹</span>,
-          iconNext: () => <span style={{fontSize: '2rem', color: '#fff', padding: '0 1rem', cursor: 'pointer'}}>›</span>,
-          slideHeader: ({ slide, ...rest }) => {
-            const on = (rest as any).on ?? { view: () => {} };
-            return <GalleryIndicators images={images} on={on} />;
-          },
-        }}
       />
+      {lightboxOpen && (
+        <div style={{
+          position: 'fixed',
+          top: '20px',
+          left: '0',
+          right: '0',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '6px',
+          zIndex: 10000,
+          pointerEvents: 'none',
+          flexWrap: 'wrap',
+          padding: '0 16px',
+        }}>
+          {images.map((_, i) => (
+            <div
+              key={i}
+              onClick={() => setLightboxIndex(i)}
+              style={{
+                width: '28px',
+                height: '4px',
+                borderRadius: '0',
+                background: i === lightboxIndex ? '#ffffff' : 'rgba(255,255,255,0.35)',
+                transition: 'background 0.2s',
+                flexShrink: 0,
+                cursor: 'pointer',
+                pointerEvents: 'all',
+              }}
+            />
+          ))}
+        </div>
+      )}
     </>
   );
 
