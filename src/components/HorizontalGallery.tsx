@@ -1,43 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Lightbox, { useLightboxState } from "yet-another-react-lightbox";
+import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-function GalleryIndicators({ images, on }: { images: string[], on: { view: (args: { index: number }) => void } }) {
-  const { currentIndex } = useLightboxState();
-
-  return (
-    <div style={{
-      position: 'absolute',
-      top: '16px',
-      left: '0',
-      right: '0',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: '6px',
-      zIndex: 9999,
-      padding: '0 16px',
-      flexWrap: 'wrap',
-    }}>
-      {images.map((_, i) => (
-        <div
-          key={i}
-          onClick={() => on.view({ index: i })}
-          style={{
-            width: '28px',
-            height: '4px',
-            borderRadius: '0',
-            background: i === currentIndex ? '#ffffff' : 'rgba(255,255,255,0.35)',
-            transition: 'background 0.2s',
-            flexShrink: 0,
-            cursor: 'pointer',
-          }}
-        />
-      ))}
-    </div>
-  );
-}
 
 
 interface HorizontalGalleryProps {
