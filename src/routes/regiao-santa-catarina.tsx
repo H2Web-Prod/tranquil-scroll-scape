@@ -28,8 +28,7 @@ export const Route = createFileRoute("/regiao-santa-catarina")({
       },
       {
         property: "og:image",
-        content:
-          "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/pexels-riccardo-307006.webp",
+        content: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/pexels-riccardo-307006.webp",
       },
       { property: "og:type", content: "article" },
     ],
@@ -90,6 +89,19 @@ function RegiaoPage() {
             backgroundPosition: "center",
           }}
         >
+          {/* Degradê sutil inferior */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: "50%",
+              background: "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 100%)",
+              pointerEvents: "none",
+              zIndex: 1,
+            }}
+          />
           <div
             className="absolute px-6 md:px-10 bottom-[60px] md:bottom-[100px]"
             style={{
@@ -138,10 +150,14 @@ function RegiaoPage() {
                   A História de Santa Catarina
                 </ScrollReveal>
                 <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
-                  A história de Santa Catarina é marcada pelo encontro de culturas. Povos indígenas, colonizadores europeus, especialmente açorianos, alemães e italianos, e fluxos migratórios posteriores moldaram a identidade do estado ao longo dos séculos.
+                  A história de Santa Catarina é marcada pelo encontro de culturas. Povos indígenas, colonizadores
+                  europeus, especialmente açorianos, alemães e italianos, e fluxos migratórios posteriores moldaram a
+                  identidade do estado ao longo dos séculos.
                 </p>
                 <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                  Essa diversidade se reflete na arquitetura, nos costumes, na gastronomia e na forma como as cidades se organizam. Muitas regiões preservam traços históricos em diálogo com uma vida contemporânea ativa, criando um ambiente onde tradição e modernidade coexistem de maneira natural.
+                  Essa diversidade se reflete na arquitetura, nos costumes, na gastronomia e na forma como as cidades se
+                  organizam. Muitas regiões preservam traços históricos em diálogo com uma vida contemporânea ativa,
+                  criando um ambiente onde tradição e modernidade coexistem de maneira natural.
                 </p>
               </StaggerStack>
             </FadeInUp>
@@ -162,17 +178,19 @@ function RegiaoPage() {
               />
               <div>
                 <StaggerStack>
-                  <ScrollReveal
-                    as="h2"
-                    className="font-light text-black text-[clamp(36px,4.5vw,56px)] leading-[1.1]"
-                  >
+                  <ScrollReveal as="h2" className="font-light text-black text-[clamp(36px,4.5vw,56px)] leading-[1.1]">
                     Um estado que cresce com consistência
                   </ScrollReveal>
                   <p className="padrao-p-internas" style={{ marginTop: "32px" }}>
-                    Santa Catarina é o segundo estado que mais cresceu no Brasil nos últimos anos, reflexo de uma economia diversificada, gestão eficiente e forte presença de setores como indústria, tecnologia, logística, turismo e serviços.
+                    Santa Catarina é o segundo estado que mais cresceu no Brasil nos últimos anos, reflexo de uma
+                    economia diversificada, gestão eficiente e forte presença de setores como indústria, tecnologia,
+                    logística, turismo e serviços.
                   </p>
                   <p className="padrao-p-internas" style={{ marginTop: "20px" }}>
-                    O estado também figura entre os mais bem posicionados no Índice de Desenvolvimento Humano (IDH), com média de 0,792, ocupando o terceiro lugar no ranking nacional. Esse indicador reflete avanços consistentes em educação, renda e expectativa de vida, tornando a região atrativa para diferentes perfis de moradores.
+                    O estado também figura entre os mais bem posicionados no Índice de Desenvolvimento Humano (IDH), com
+                    média de 0,792, ocupando o terceiro lugar no ranking nacional. Esse indicador reflete avanços
+                    consistentes em educação, renda e expectativa de vida, tornando a região atrativa para diferentes
+                    perfis de moradores.
                   </p>
                 </StaggerStack>
               </div>
@@ -186,20 +204,23 @@ function RegiaoPage() {
             <div className="max-w-[1300px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
               <div className="md:order-1 order-2">
                 <StaggerStack>
-                  <ScrollReveal
-                    as="h2"
-                    className="font-light text-black text-[clamp(36px,4.5vw,56px)] leading-[1.1]"
-                  >
+                  <ScrollReveal as="h2" className="font-light text-black text-[clamp(36px,4.5vw,56px)] leading-[1.1]">
                     Curiosidades sobre Santa Catarina
                   </ScrollReveal>
                   <p className="padrao-p-internas" style={{ marginTop: "32px" }}>
-                    Santa Catarina reúne cinco das cidades consideradas mais promissoras para investimentos no país, entre elas Balneário Camboriú, Itajaí, Itapema, São José e Blumenau. Esse movimento é impulsionado pela combinação entre infraestrutura urbana, qualidade ambiental e crescimento planejado.
+                    Santa Catarina reúne cinco das cidades consideradas mais promissoras para investimentos no país,
+                    entre elas Balneário Camboriú, Itajaí, Itapema, São José e Blumenau. Esse movimento é impulsionado
+                    pela combinação entre infraestrutura urbana, qualidade ambiental e crescimento planejado.
                   </p>
                   <p className="padrao-p-internas" style={{ marginTop: "20px" }}>
-                    Outro destaque é a diversidade de estilos de vida concentrados em um único estado. É possível viver próximo ao mar, em regiões serranas ou em polos urbanos bem conectados, sem abrir mão de segurança, serviços e contato com a natureza.
+                    Outro destaque é a diversidade de estilos de vida concentrados em um único estado. É possível viver
+                    próximo ao mar, em regiões serranas ou em polos urbanos bem conectados, sem abrir mão de segurança,
+                    serviços e contato com a natureza.
                   </p>
                   <p className="padrao-p-internas" style={{ marginTop: "20px" }}>
-                    O estado também se destaca pela forte presença de áreas preservadas da Mata Atlântica, um dos biomas mais ricos e importantes do Brasil, o que contribui diretamente para a qualidade ambiental e o bem-estar de quem vive na região.
+                    O estado também se destaca pela forte presença de áreas preservadas da Mata Atlântica, um dos biomas
+                    mais ricos e importantes do Brasil, o que contribui diretamente para a qualidade ambiental e o
+                    bem-estar de quem vive na região.
                   </p>
                 </StaggerStack>
               </div>
@@ -226,10 +247,15 @@ function RegiaoPage() {
                   As praias de Santa Catarina
                 </ScrollReveal>
                 <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
-                  O litoral catarinense é um dos mais variados do país. Com mais de 500 quilômetros de costa, Santa Catarina abriga praias com características muito distintas entre si: desde faixas de areia extensas e abertas até enseadas mais reservadas, cercadas por vegetação nativa.
+                  O litoral catarinense é um dos mais variados do país. Com mais de 500 quilômetros de costa, Santa
+                  Catarina abriga praias com características muito distintas entre si: desde faixas de areia extensas e
+                  abertas até enseadas mais reservadas, cercadas por vegetação nativa.
                 </p>
                 <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                  Essa diversidade permite diferentes formas de viver o litoral, seja de maneira mais urbana, próxima a centros movimentados, ou em regiões onde a natureza permanece como protagonista. Em comum, as praias do estado oferecem paisagens preservadas, águas limpas e uma forte relação com o cotidiano de quem escolhe viver próximo ao mar.
+                  Essa diversidade permite diferentes formas de viver o litoral, seja de maneira mais urbana, próxima a
+                  centros movimentados, ou em regiões onde a natureza permanece como protagonista. Em comum, as praias
+                  do estado oferecem paisagens preservadas, águas limpas e uma forte relação com o cotidiano de quem
+                  escolhe viver próximo ao mar.
                 </p>
               </StaggerStack>
             </FadeInUp>
@@ -254,10 +280,13 @@ function RegiaoPage() {
                   Santa Catarina como escolha de vida
                 </ScrollReveal>
                 <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
-                  Mais do que um destino turístico, Santa Catarina se consolidou como um território de permanência. Um lugar onde é possível construir uma rotina equilibrada, com acesso à natureza, infraestrutura de qualidade e cidades que oferecem oportunidades sem perder a escala humana.
+                  Mais do que um destino turístico, Santa Catarina se consolidou como um território de permanência. Um
+                  lugar onde é possível construir uma rotina equilibrada, com acesso à natureza, infraestrutura de
+                  qualidade e cidades que oferecem oportunidades sem perder a escala humana.
                 </p>
                 <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                  É essa combinação, história, paisagem, desenvolvimento e qualidade de vida, que faz de Santa Catarina um estado escolhido por quem busca viver com mais consciência, estabilidade e conexão com o lugar.
+                  É essa combinação, história, paisagem, desenvolvimento e qualidade de vida, que faz de Santa Catarina
+                  um estado escolhido por quem busca viver com mais consciência, estabilidade e conexão com o lugar.
                 </p>
                 <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
                   Santa Catarina não é apenas onde se vive.
