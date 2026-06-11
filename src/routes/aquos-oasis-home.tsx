@@ -210,7 +210,6 @@ function AquosOasisHome() {
                 color: "#FFFFFF",
                 letterSpacing: "-0.02em",
                 margin: 0,
-                
               }}
             >
               Aquos Oasis Home
@@ -237,7 +236,7 @@ function AquosOasisHome() {
               <ScrollReveal as="h2" className="font-light text-black">
                 Explore o exclusivo, viva o incomparável
               </ScrollReveal>
-              <style>{`section h2 { font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
+              <style>{`section h2 { font-size: clamp(40px, 5vw, 56px); font-weight: 300; color: #000; line-height: 1.15; }`}</style>
               <p
                 style={{
                   fontFamily: "'Public Sans', sans-serif",
