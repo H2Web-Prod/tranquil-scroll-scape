@@ -158,6 +158,7 @@ const AQUOS_GALLERY_IMAGES = [
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-7.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-8a.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-8.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/04/projetos-voltados-experiencias-humanas.jpg",
 ];
 
 function AquosOasisHome() {
