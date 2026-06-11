@@ -179,6 +179,19 @@ function AquosOasisHome() {
             backgroundPosition: "center",
           }}
         >
+          {/* Degradê sutil inferior */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: "50%",
+              background: "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 100%)",
+              pointerEvents: "none",
+              zIndex: 1,
+            }}
+          />
           <div
             className="absolute px-6 md:px-10 bottom-[60px] md:bottom-[100px]"
             style={{
@@ -197,6 +210,7 @@ function AquosOasisHome() {
                 color: "#FFFFFF",
                 letterSpacing: "-0.02em",
                 margin: 0,
+                whiteSpace: "nowrap",
               }}
             >
               Aquos Oasis Home
