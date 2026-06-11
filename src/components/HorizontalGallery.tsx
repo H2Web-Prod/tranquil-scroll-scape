@@ -250,28 +250,11 @@ function LightboxOverlay({ images, index, onClose, onNavigate }: LightboxOverlay
       onTouchEnd={handleTouchEnd}
     >
       {/* Faixa de indicadores — área exclusiva no topo, nunca sobrepõe a imagem */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          height: "56px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "6px",
-          flexWrap: "nowrap",
-          zIndex: 2,
-        }}
-      >
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "56px", display: "flex", alignItems: "center", justifyContent: "center", gap: "4px", flexWrap: "nowrap", zIndex: 2, padding: "0 16px" }}>
         {images.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => onNavigate(i)}
-            aria-label={`Ir para imagem ${i + 1}`}
+          <button key={i} onClick={() => onNavigate(i)} aria-label={`Ir para imagem ${i + 1}`}
             style={{
-              width: "28px",
+              width: "clamp(14px, 4vw, 28px)",
               height: "4px",
               padding: 0,
               border: "none",
@@ -279,11 +262,12 @@ function LightboxOverlay({ images, index, onClose, onNavigate }: LightboxOverlay
               background: i === index ? "#ffffff" : "rgba(255,255,255,0.35)",
               cursor: "pointer",
               transition: "background 0.2s",
-              flexShrink: 0,
+              flexShrink: 0
             }}
           />
         ))}
       </div>
+
 
       {/* Botão fechar */}
       <button
