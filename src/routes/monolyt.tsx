@@ -355,7 +355,7 @@ function MonolytPage() {
         />
 
         {/* GALERIA HORIZONTAL */}
-        <HorizontalGallery images={MONOLYT_GALLERY_IMAGES} />
+        <HorizontalGallery images={MONOLYT_GALLERY_IMAGES} displayCount={8} />
 
         {/* 6. Architects Office + Imagem Scroll Centralizada */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
