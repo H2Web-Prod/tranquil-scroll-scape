@@ -156,9 +156,9 @@ function RegiaoPage() {
                     identidade do estado ao longo dos séculos.
                   </p>
                   <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                    Essa diversidade se reflete na arquitetura, nos costumes, na gastronomia e na forma como as cidades se
-                    organizam. Muitas regiões preservam traços históricos em diálogo com uma vida contemporânea ativa,
-                    criando um ambiente onde tradição e modernidade coexistem de maneira natural.
+                    Essa diversidade se reflete na arquitetura, nos costumes, na gastronomia e na forma como as cidades
+                    se organizam. Muitas regiões preservam traços históricos em diálogo com uma vida contemporânea
+                    ativa, criando um ambiente onde tradição e modernidade coexistem de maneira natural.
                   </p>
                 </StaggerStack>
               </FadeInUp>
@@ -167,7 +167,7 @@ function RegiaoPage() {
         </section>
 
         {/* 3. IMAGEM SCROLL 100% */}
-        <ImageGrowSection src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/empreendimento-infinita-treehouse.jpg" />
+        <ImageGrowSection src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/praia-01.jpg" />
 
         {/* 4. UM ESTADO QUE CRESCE — Colunas Efeito (img esq / txt dir) */}
         <FadeInUp>
@@ -251,14 +251,14 @@ function RegiaoPage() {
                   </ScrollReveal>
                   <p className="padrao-p-internas" style={{ marginTop: "32px", maxWidth: "1100px" }}>
                     O litoral catarinense é um dos mais variados do país. Com mais de 500 quilômetros de costa, Santa
-                    Catarina abriga praias com características muito distintas entre si: desde faixas de areia extensas e
-                    abertas até enseadas mais reservadas, cercadas por vegetação nativa.
+                    Catarina abriga praias com características muito distintas entre si: desde faixas de areia extensas
+                    e abertas até enseadas mais reservadas, cercadas por vegetação nativa.
                   </p>
                   <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                    Essa diversidade permite diferentes formas de viver o litoral, seja de maneira mais urbana, próxima a
-                    centros movimentados, ou em regiões onde a natureza permanece como protagonista. Em comum, as praias
-                    do estado oferecem paisagens preservadas, águas limpas e uma forte relação com o cotidiano de quem
-                    escolhe viver próximo ao mar.
+                    Essa diversidade permite diferentes formas de viver o litoral, seja de maneira mais urbana, próxima
+                    a centros movimentados, ou em regiões onde a natureza permanece como protagonista. Em comum, as
+                    praias do estado oferecem paisagens preservadas, águas limpas e uma forte relação com o cotidiano de
+                    quem escolhe viver próximo ao mar.
                   </p>
                 </StaggerStack>
               </FadeInUp>
@@ -290,8 +290,9 @@ function RegiaoPage() {
                     qualidade e cidades que oferecem oportunidades sem perder a escala humana.
                   </p>
                   <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
-                    É essa combinação, história, paisagem, desenvolvimento e qualidade de vida, que faz de Santa Catarina
-                    um estado escolhido por quem busca viver com mais consciência, estabilidade e conexão com o lugar.
+                    É essa combinação, história, paisagem, desenvolvimento e qualidade de vida, que faz de Santa
+                    Catarina um estado escolhido por quem busca viver com mais consciência, estabilidade e conexão com o
+                    lugar.
                   </p>
                   <p className="padrao-p-internas" style={{ marginTop: "20px", maxWidth: "1100px" }}>
                     Santa Catarina não é apenas onde se vive.
