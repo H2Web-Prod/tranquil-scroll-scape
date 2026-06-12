@@ -540,11 +540,15 @@ function InfinitaTreehouse() {
           image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/renata-1.jpg"
           alt="Renata Tilli"
           videoSrc={VIDEO_RENATA}
+          title={
+            <>
+              <span style={eyebrowStyle}>PAISAGISMO</span>
+              <ScrollReveal as="h2" className="font-light text-black">
+                Paisagismo como extensão da arquitetura
+              </ScrollReveal>
+            </>
+          }
         >
-          <span style={eyebrowStyle}>PAISAGISMO</span>
-          <ScrollReveal as="h2" className="font-light text-black">
-            Paisagismo como extensão da arquitetura
-          </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
               O projeto paisagístico, assinado por Renata Tilli, reforça a proposta de integração com a natureza. A
@@ -564,11 +568,15 @@ function InfinitaTreehouse() {
           alt="Greg Bousquet"
           reverse
           videoSrc={VIDEO_GREG}
+          title={
+            <>
+              <span style={eyebrowStyle}>ARQUITETURA</span>
+              <ScrollReveal as="h2" className="font-light text-black">
+                Assinatura internacional Architects Office
+              </ScrollReveal>
+            </>
+          }
         >
-          <span style={eyebrowStyle}>ARQUITETURA</span>
-          <ScrollReveal as="h2" className="font-light text-black">
-            Assinatura internacional Architects Office
-          </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <blockquote style={quoteStyle}>
               "Encontramos em Itajaí a beleza brasileira que fez parte da equação total ao prédio com essas vistas, o
@@ -584,11 +592,15 @@ function InfinitaTreehouse() {
         <PersonBlock
           image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/rafael.jpg"
           alt="Raphaell Valença"
+          title={
+            <>
+              <span style={eyebrowStyle}>DESIGN DE INTERIORES</span>
+              <ScrollReveal as="h2" className="font-light text-black">
+                Design que dialoga com o entorno
+              </ScrollReveal>
+            </>
+          }
         >
-          <span style={eyebrowStyle}>DESIGN DE INTERIORES</span>
-          <ScrollReveal as="h2" className="font-light text-black">
-            Design que dialoga com o entorno
-          </ScrollReveal>
           <div style={{ marginTop: "32px" }}>
             <blockquote style={quoteStyle}>
               "O prédio está localizado entre águas, a mata e as montanhas e perto de uma das principais marinas do
