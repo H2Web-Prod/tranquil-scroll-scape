@@ -29,7 +29,7 @@ export const Route = createFileRoute("/blue-heaven")({
       },
       {
         property: "og:image",
-        content: "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/bg-quem-somos-1.jpg",
+        content: "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/bg-quem-somos-1.webp",
       },
       { property: "og:type", content: "article" },
     ],
