@@ -9,7 +9,7 @@ const empreendimentos = [
 ];
 
 const navLinks = [
-  { name: "A Região", href: "/regiao-santa-catarina" },
+  { name: "Região", href: "/regiao-santa-catarina" },
   { name: "Blog", href: "https://projetos.h2web.com.br/blueheaven/blog/" },
   { name: "Imprensa", href: "https://projetos.h2web.com.br/blueheaven/blog/imprensa/" },
   { name: "Contato", href: "/contato" },
