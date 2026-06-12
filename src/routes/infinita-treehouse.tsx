@@ -507,7 +507,6 @@ function InfinitaTreehouse() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-praia-1.jpg"
                 alt="Bairro Fazenda — Itajaí"
-                aspectRatio="4/5"
               />
             </div>
           </section>
