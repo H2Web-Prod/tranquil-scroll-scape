@@ -166,6 +166,9 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
                   )}
                 </div>
               </div>
+              <Link to="/regiao-santa-catarina" onClick={() => setMobileOpen(false)}>
+                A Região
+              </Link>
               {navLinks.slice(1).map((l) => {
                 const href = isDark && l.href.startsWith("#") ? `/${l.href}` : l.href;
                 return (
