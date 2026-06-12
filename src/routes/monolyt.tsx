@@ -122,15 +122,19 @@ const diferenciais = [
 ];
 
 const MONOLYT_GALLERY_IMAGES = [
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-7.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mon-1.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-1.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-2.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-3.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-4.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-5.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-6.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-7.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-8.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/04/extraordinario-reside-nos-detalhes.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mon-2.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mon-3.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mon-4.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mon-5.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/mon-6.jpg",
 ];
 
 function MonolytPage() {
