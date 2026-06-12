@@ -31,10 +31,12 @@ export default function Empreendimentos() {
     <>
       <section className="bg-white py-[100px] md:py-[180px] px-6">
         <div className="max-w-[1200px] mx-auto">
-          <ScrollReveal as="h2" className="font-light text-black">
-            Nossos Empreendimentos
-          </ScrollReveal>
-          <p className="padrao-p mt-6">Obras esculpidas para serem vividas.</p>
+          <div className="bloco-direita">
+            <ScrollReveal as="h2" className="font-light text-black">
+              Nossos Empreendimentos
+            </ScrollReveal>
+            <p className="padrao-p mt-6">Obras esculpidas para serem vividas.</p>
+          </div>
           <style>{`
             section h2 { font-size: clamp(48px, 6vw, 72px); font-weight: 300; color: #000; }
           `}</style>
