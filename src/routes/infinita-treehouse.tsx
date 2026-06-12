@@ -174,12 +174,14 @@ function PersonBlock({
   alt,
   reverse = false,
   videoSrc,
+  title,
   children,
 }: {
   image: string;
   alt: string;
   reverse?: boolean;
   videoSrc?: string;
+  title?: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
@@ -191,12 +193,13 @@ function PersonBlock({
           </div>
           <div className={reverse ? "md:order-1" : ""}>
             <StaggerStack>
-              {children}
+              {title}
               {videoSrc && (
-                <div style={{ marginTop: "24px" }}>
+                <div style={{ margin: "24px 0" }}>
                   <VideoTriggerCard videoSrc={videoSrc} />
                 </div>
               )}
+              {children}
             </StaggerStack>
           </div>
         </div>
