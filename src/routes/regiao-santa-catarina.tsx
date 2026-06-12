@@ -130,7 +130,8 @@ function RegiaoPage() {
                 fontSize: "clamp(16px, 1.4vw, 22px)",
                 color: "#FFFFFF",
                 lineHeight: 1.4,
-                marginTop: "16px",
+                marginTop: "12px",
+                marginLeft: "10px",
               }}
             >
               Um território onde história, natureza e qualidade de vida coexistem
