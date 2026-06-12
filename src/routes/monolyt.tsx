@@ -70,7 +70,7 @@ function ZigZagBlock({
   image,
   alt,
   reverse = false,
-  aspectRatio = "4/5",
+  aspectRatio,
   children,
 }: {
   image: string;
@@ -344,7 +344,6 @@ function MonolytPage() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-praia.jpg"
                 alt="Estaleiro — Balneário Camboriú"
-                aspectRatio="4/5"
               />
             </div>
           </section>
@@ -468,7 +467,6 @@ function MonolytPage() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/gruta-1.jpg"
                 alt="Arquitetura em sintonia com o meio ambiente"
-                aspectRatio="4/5"
               />
               <div>
                 <StaggerStack>
@@ -524,7 +522,6 @@ function MonolytPage() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/greg-02.jpg"
                 alt="Greg Bousquet — Architects Office"
-                aspectRatio="3/4"
               />
             </div>
           </section>
@@ -538,7 +535,6 @@ function MonolytPage() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Aquos-12-728x1024-1.webp"
                 alt="Rodrigo Oliveira — paisagismo"
-                aspectRatio="3/4"
               />
               <div>
                 <StaggerStack>
