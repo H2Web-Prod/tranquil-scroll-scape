@@ -460,108 +460,110 @@ function MonolytPage() {
           </div>
         </ZigZagBlock>
 
-{/* 10. Arquitetura em sintonia */}
+        {/* 10. Arquitetura em sintonia */}
 
-<FadeInUp>
-  <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
-    <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-      <ParallaxImage
-        src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/monolyt-1.jpg"
-        alt="Arquitetura em sintonia com o meio ambiente"
-        aspectRatio="4/5"
-      />
-      <div>
-        <StaggerStack>
-          <ScrollReveal as="h2" className="font-light text-black">
-            Arquitetura em sintonia com o meio ambiente
-          </ScrollReveal>
-          <div style={{ marginTop: "32px" }}>
-            <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-              As "grutas" entre as torres são a entrada das áreas internas, representando verdadeiros espaços zen
-              contemporâneos.
-            </p>
-            <p className="padrao-p-internas">
-              Pedras brutas desafiam sua função estrutural e emergem como colunas de sustentação dos andares, contando
-              uma história visual única e representando o ápice do design arquitetônico.
-            </p>
-          </div>
-        </StaggerStack>
-      </div>
-    </div>
-  </section>
-</FadeInUp>
+        <FadeInUp>
+          <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
+            <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+              <ParallaxImage
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/gruta-1.jpg"
+                alt="Arquitetura em sintonia com o meio ambiente"
+                aspectRatio="4/5"
+              />
+              <div>
+                <StaggerStack>
+                  <ScrollReveal as="h2" className="font-light text-black">
+                    Arquitetura em sintonia com o meio ambiente
+                  </ScrollReveal>
+                  <div style={{ marginTop: "32px" }}>
+                    <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                      As "grutas" entre as torres são a entrada das áreas internas, representando verdadeiros espaços
+                      zen contemporâneos.
+                    </p>
+                    <p className="padrao-p-internas">
+                      Pedras brutas desafiam sua função estrutural e emergem como colunas de sustentação dos andares,
+                      contando uma história visual única e representando o ápice do design arquitetônico.
+                    </p>
+                  </div>
+                </StaggerStack>
+              </div>
+            </div>
+          </section>
+        </FadeInUp>
 
-{/* 11. Greg Bousquet */}
+        {/* 11. Greg Bousquet */}
 
-<FadeInUp>
-  <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
-    <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-      <div>
-        <StaggerStack>
-          <span style={eyebrowStyle}>ARQUITETURA</span>
-          <span style={{ ...eyebrowStyle, marginTop: "-12px" }}>UM PROJETO ARCHITECTS OFFICE.</span>
-          <ScrollReveal as="h2" className="font-light text-black">
-            Greg Bousquet
-          </ScrollReveal>
-          <div style={{ marginTop: "32px" }}>
-            <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
-              Greg Bousquet, fundador da Architects Office, consolidou ao longo de 21 anos uma trajetória marcada por
-              projetos e premiações por todo o globo. Nos últimos anos, o arquiteto se tornou referência por sua
-              experiência global, repertório multicultural e olhar estratégico para a eficiência de projetos.
-            </p>
-            <p className="padrao-p-internas">
-              Hoje, lidera o ARCHITECTS OFFICE, a agência que articula o urbanismo virtuoso e a arquitetura ética, dando
-              seguimento a sua independência criativa com uma nova identidade.
-            </p>
-            <blockquote style={blockquoteStyle}>
-              "O propósito é integrar a natureza no vocabulário da arquitetura não mais como um enfeite ou um
-              paisagismo. Tentamos sempre traduzir como o mineral e o vegetal podem conviver em harmonia."
-            </blockquote>
-          </div>
-        </StaggerStack>
-      </div>
-      <ParallaxImage
-        src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/greg-02.jpg"
-        alt="Greg Bousquet — Architects Office"
-        aspectRatio="3/4"
-      />
-    </div>
-  </section>
-</FadeInUp>
+        <FadeInUp>
+          <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
+            <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+              <div>
+                <StaggerStack>
+                  <span style={eyebrowStyle}>ARQUITETURA</span>
+                  <span style={{ ...eyebrowStyle, marginTop: "-12px" }}>UM PROJETO ARCHITECTS OFFICE.</span>
+                  <ScrollReveal as="h2" className="font-light text-black">
+                    Greg Bousquet
+                  </ScrollReveal>
+                  <div style={{ marginTop: "32px" }}>
+                    <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
+                      Greg Bousquet, fundador da Architects Office, consolidou ao longo de 21 anos uma trajetória
+                      marcada por projetos e premiações por todo o globo. Nos últimos anos, o arquiteto se tornou
+                      referência por sua experiência global, repertório multicultural e olhar estratégico para a
+                      eficiência de projetos.
+                    </p>
+                    <p className="padrao-p-internas">
+                      Hoje, lidera o ARCHITECTS OFFICE, a agência que articula o urbanismo virtuoso e a arquitetura
+                      ética, dando seguimento a sua independência criativa com uma nova identidade.
+                    </p>
+                    <blockquote style={blockquoteStyle}>
+                      "O propósito é integrar a natureza no vocabulário da arquitetura não mais como um enfeite ou um
+                      paisagismo. Tentamos sempre traduzir como o mineral e o vegetal podem conviver em harmonia."
+                    </blockquote>
+                  </div>
+                </StaggerStack>
+              </div>
+              <ParallaxImage
+                src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/greg-02.jpg"
+                alt="Greg Bousquet — Architects Office"
+                aspectRatio="3/4"
+              />
+            </div>
+          </section>
+        </FadeInUp>
 
-{/* 12. Rodrigo Oliveira */}
+        {/* 12. Rodrigo Oliveira */}
 
-<FadeInUp>
-  <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
-    <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-      <ParallaxImage
-        src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Aquos-12-728x1024-1.webp"
-        alt="Rodrigo Oliveira — paisagismo"
-        aspectRatio="3/4"
-      />
-      <div>
-        <StaggerStack>
-          <span style={eyebrowStyle}>PAISAGISMO</span>
-          <span style={{ ...eyebrowStyle, marginTop: "-12px" }}>A ARTE AUTORAL QUE REALÇA A NATUREZA.</span>
-          <ScrollReveal as="h2" className="font-light text-black">
-            Rodrigo Oliveira
-          </ScrollReveal>
-          <div style={{ marginTop: "32px" }}>
-            <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
-              Formado em engenharia agronômica e com especialização em Arborist, na Flórida, o paisagista traz consigo
-              referências de diversas escolas – da assimetria japonesa aos clássicos italianos.
-            </p>
-            <p className="padrao-p-internas">
-              As texturas e volumes verdes ganham vida e criam cenários incríveis com as composições de Rodrigo
-              Oliveira. É pôr a mão na terra, contar com um olhar experimentado, exalar empatia e revelar a sabedoria da
-              intuição. O paisagismo de Rodrigo Oliveira é de beleza tão genuína quanto livre, como a natureza.
-            </p>
-          </div>
-        </StaggerStack>
-      </div>
-    </div>
-  </section>
-</FadeInUp>
+        <FadeInUp>
+          <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
+            <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+              <ParallaxImage
+                src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Aquos-12-728x1024-1.webp"
+                alt="Rodrigo Oliveira — paisagismo"
+                aspectRatio="3/4"
+              />
+              <div>
+                <StaggerStack>
+                  <span style={eyebrowStyle}>PAISAGISMO</span>
+                  <span style={{ ...eyebrowStyle, marginTop: "-12px" }}>A ARTE AUTORAL QUE REALÇA A NATUREZA.</span>
+                  <ScrollReveal as="h2" className="font-light text-black">
+                    Rodrigo Oliveira
+                  </ScrollReveal>
+                  <div style={{ marginTop: "32px" }}>
+                    <p className="padrao-p-internas" style={{ marginBottom: "20px" }}>
+                      Formado em engenharia agronômica e com especialização em Arborist, na Flórida, o paisagista traz
+                      consigo referências de diversas escolas – da assimetria japonesa aos clássicos italianos.
+                    </p>
+                    <p className="padrao-p-internas">
+                      As texturas e volumes verdes ganham vida e criam cenários incríveis com as composições de Rodrigo
+                      Oliveira. É pôr a mão na terra, contar com um olhar experimentado, exalar empatia e revelar a
+                      sabedoria da intuição. O paisagismo de Rodrigo Oliveira é de beleza tão genuína quanto livre, como
+                      a natureza.
+                    </p>
+                  </div>
+                </StaggerStack>
+              </div>
+            </div>
+          </section>
+        </FadeInUp>
 
         {/* 13. Diferenciais */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
