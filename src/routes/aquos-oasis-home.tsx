@@ -149,6 +149,8 @@ const diferenciais = [
 ];
 
 const AQUOS_GALLERY_IMAGES = [
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aq-1.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aq-2.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-1.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-2.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-3.jpg",
@@ -157,8 +159,13 @@ const AQUOS_GALLERY_IMAGES = [
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-6a.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-7.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aquos-8a.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-8.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/04/projetos-voltados-experiencias-humanas.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aq-3.jpg",
+  ,
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aq-4.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aq-5.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aq-6.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aq-7.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aq-8.jpg",
 ];
 
 function AquosOasisHome() {
@@ -457,8 +464,8 @@ function AquosOasisHome() {
                   ambiental.
                 </p>
                 <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                  A região preserva características raras em Balneário Camboriú, unindo paisagem natural, mar, vegetação e
-                  uma ocupação urbana mais controlada, que valoriza o silêncio e o tempo.
+                  A região preserva características raras em Balneário Camboriú, unindo paisagem natural, mar, vegetação
+                  e uma ocupação urbana mais controlada, que valoriza o silêncio e o tempo.
                 </p>
                 <p className="padrao-p-internas">
                   O Aquos Oasis Home nasce desse contexto, ampliando a experiência de viver na região sem
