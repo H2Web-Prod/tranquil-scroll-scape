@@ -82,7 +82,8 @@ export default function EmpreendimentoBlock({ image, eyebrow, title, subtitle, b
 
       <section className="bg-white px-6 pt-[160px] pb-[200px] md:pt-[280px] md:pb-[380px]">
         <div className="max-w-[1200px] mx-auto">
-          {subtitle && (
+          <div className="bloco-direita">
+            {subtitle && (
             <p
               style={{
                 fontFamily: "'Public Sans', sans-serif",
@@ -109,6 +110,7 @@ export default function EmpreendimentoBlock({ image, eyebrow, title, subtitle, b
             >
               Saiba Mais
             </a>
+          </div>
           </div>
         </div>
       </section>
