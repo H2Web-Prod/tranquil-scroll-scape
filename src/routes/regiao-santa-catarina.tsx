@@ -176,7 +176,6 @@ function RegiaoPage() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/santa-catarina-02.jpg"
                 alt="Santa Catarina"
-                aspectRatio="4/5"
               />
               <div>
                 <StaggerStack>
@@ -230,7 +229,6 @@ function RegiaoPage() {
                 <ParallaxImage
                   src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/santa-catarina-03.jpg"
                   alt="Curiosidades Santa Catarina"
-                  aspectRatio="4/5"
                 />
               </div>
             </div>
