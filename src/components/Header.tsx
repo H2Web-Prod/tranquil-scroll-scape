@@ -9,7 +9,7 @@ const empreendimentos = [
 ];
 
 const navLinks = [
-  { name: "Blue Heaven", href: "/blue-heaven" },
+  { name: "A Região", href: "/regiao-santa-catarina" },
   { name: "Blog", href: "https://projetos.h2web.com.br/blueheaven/blog/" },
   { name: "Imprensa", href: "https://projetos.h2web.com.br/blueheaven/blog/imprensa/" },
   { name: "Contato", href: "/contato" },
@@ -64,7 +64,7 @@ export default function Header({ theme = "light" }: { theme?: "light" | "dark" }
             <div ref={empRef} className="flex items-center py-5 -my-5" onMouseEnter={openEmpreendimentos}>
               <button className={navClass}>Empreendimentos</button>
             </div>
-            {navLinks.slice(1).map((l) => {
+            {navLinks.map((l) => {
               const href = isDark && l.href.startsWith("#") ? `/${l.href}` : l.href;
               return (
                 <a key={l.name} href={href} className={navClass}>
