@@ -11,6 +11,8 @@ import HorizontalGallery from "@/components/HorizontalGallery";
 
 const INFINITA_GALLERY_IMAGES = [
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-1.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/inf-1.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/inf-2.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-2.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-3.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-4.jpg",
@@ -18,14 +20,14 @@ const INFINITA_GALLERY_IMAGES = [
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-6.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-7.jpg",
   "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-8.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-1.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-2.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-3.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-4.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-5.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-6.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-7.jpg",
-  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-8.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/inf-3.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/inf-4.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/inf-5.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/inf-6.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/inf-7.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/inf-8.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/inf-9.jpg",
+  "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/inf-10.jpg",
 ];
 import StaggerStack from "@/components/StaggerStack";
 import VideoTriggerCard from "@/components/VideoTriggerCard";
