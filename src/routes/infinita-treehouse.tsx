@@ -43,7 +43,7 @@ export const Route = createFileRoute("/infinita-treehouse")({
       {
         property: "og:image",
         content:
-          "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/alex-bertha-Jyg7xHRmXiU-unsplash-scaled.jpg",
+          "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/alex-bertha-Jyg7xHRmXiU-unsplash-scaled-1.webp",
       },
       { property: "og:type", content: "article" },
     ],
