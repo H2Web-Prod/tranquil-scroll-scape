@@ -61,8 +61,7 @@ const tabs = [
   {
     label: "Edificação",
     title: "Edificação",
-    image:
-      "https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/edificacao-blue-heaven2-543x1024-1.jpeg",
+    image: "https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/aba-3.webp",
     paragraphs: [
       "Seguimos padrões elevados, utilizamos materiais premium e técnicas avançadas para criar projetos que refletem sofisticação, durabilidade e rigor construtivo.",
       "Os empreendimentos Blue Heaven apresentam soluções complexas que exigem planejamento criativo, inovação e elevada habilidade técnica, resultando em obras que se destacam pela engenhosidade de sua construção.",
