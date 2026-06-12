@@ -522,7 +522,6 @@ function MonolytPage() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/greg-02.jpg"
                 alt="Greg Bousquet — Architects Office"
-                aspectRatio="3/4"
               />
             </div>
           </section>
@@ -536,7 +535,6 @@ function MonolytPage() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Aquos-12-728x1024-1.webp"
                 alt="Rodrigo Oliveira — paisagismo"
-                aspectRatio="3/4"
               />
               <div>
                 <StaggerStack>
