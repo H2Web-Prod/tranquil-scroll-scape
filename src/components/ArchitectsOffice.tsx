@@ -36,7 +36,7 @@ export function ConnectingSection() {
           humana e ao meio ambiente, trazendo abordagens únicas para cada projeto.
         </p>
 
-        <div className="relative mt-[120px] md:mt-[160px] grid md:grid-cols-[42%_1fr] gap-12 md:gap-20 items-center">
+<div className="mt-[120px] md:mt-[160px] grid md:grid-cols-[42%_1fr] gap-12 md:gap-20 items-center">
           <FadeInUp>
             <ParallaxImage
               src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/greg-1.jpg"
@@ -49,21 +49,15 @@ export function ConnectingSection() {
               <h3 className="mb-6 text-black" style={{ fontWeight: 400, fontSize: "32px" }}>
                 Greg Bousquet
               </h3>
+              <div style={{ margin: "16px 0 24px" }}>
+                <MinimalAudioPlayer src={GREG_AUDIO} />
+              </div>
               <p className="padrao-p">
                 Fundador do Architects Office e Triptyque Architecture. Sócio fundador do Architects Office LX.
               </p>
             </StaggerStack>
           </div>
 
-          {/* Player sobreposto — desktop */}
-          <div className="hidden md:block absolute z-10" style={{ top: 80, left: "30%" }}>
-            <MinimalAudioPlayer src={GREG_AUDIO} />
-          </div>
-
-          {/* Player abaixo da imagem — mobile */}
-          <div className="block md:hidden -mt-6">
-            <MinimalAudioPlayer src={GREG_AUDIO} />
-          </div>
         </div>
       </div>
     </section>
