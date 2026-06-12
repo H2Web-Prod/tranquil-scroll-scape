@@ -477,38 +477,57 @@ function InfinitaTreehouse() {
           </div>
         </section>
 
-        {/* SEÇÃO 3 — texto puro */}
-        <section className="bg-white py-[140px] md:py-[240px] px-6">
+        {/* 3. Fazenda — 2 colunas */}
+
+        <FadeInUp>
+          <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
+            <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+              <div>
+                <StaggerStack>
+                  <ScrollReveal as="h2" className="font-light text-black">
+                    Fazenda, um dos bairros mais promissores de Itajaí
+                  </ScrollReveal>
+                  <div style={{ marginTop: "32px" }}>
+                    <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                      A localização estratégica do bairro, entre o Centro da cidade e a orla, oferece fácil acesso a Balneário
+                      Camboriú e às principais praias da região, como a Praia Brava e a Praia de Cabeçudas. Em seu território,
+                      a Avenida Beira-Rio se destaca como um polo gastronômico e de lazer, com ciclovia, calçadão e uma orla
+                      arborizada que convida ao descanso e contemplação.
+                    </p>
+                    <p className="padrao-p-internas">
+                      A infraestrutura do bairro é outro de seus grandes atrativos, com comércio variado, serviços de
+                      excelência e fácil acesso a escolas, hospitais e áreas de lazer. Esse conjunto de atributos tem gerado
+                      uma expressiva valorização imobiliária na região. Nos últimos anos, o valor do metro quadrado no Fazenda
+                      saltou, representando um dos maiores índices de crescimento do país, o que o torna também uma escolha
+                      estratégica para investidores que buscam segurança e retorno sólido.
+                    </p>
+                  </div>
+                </StaggerStack>
+              </div>
+              <ParallaxImage
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/paisagem-monolyt.jpg"
+                alt="Bairro Fazenda — Itajaí"
+                aspectRatio="4/5"
+              />
+            </div>
+          </section>
+        </FadeInUp>
+
+        {/* 3b. Fazenda — continuação bloco-direita */}
+
+        <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
           <div className="max-w-[1300px] mx-auto">
             <div className="bloco-direita">
-              <ScrollReveal as="h2" className="font-light text-black">
-                Fazenda, um dos bairros mais promissores de Itajaí
-              </ScrollReveal>
-              <div style={{ marginTop: "40px" }}>
-                <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                  A localização estratégica do bairro, entre o Centro da cidade e a orla, oferece fácil acesso a Balneário
-                  Camboriú e às principais praias da região, como a Praia Brava e a Praia de Cabeçudas. Em seu território,
-                  a Avenida Beira-Rio se destaca como um polo gastronômico e de lazer, com ciclovia, calçadão e uma orla
-                  arborizada que convida ao descanso e contemplação.
-                </p>
-                <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                  A infraestrutura do bairro é outro de seus grandes atrativos, com comércio variado, serviços de
-                  excelência e fácil acesso a escolas, hospitais e áreas de lazer. Esse conjunto de atributos tem gerado
-                  uma expressiva valorização imobiliária na região. Nos últimos anos, o valor do metro quadrado no Fazenda
-                  saltou, representando um dos maiores índices de crescimento do país, o que o torna também uma escolha
-                  estratégica para investidores que buscam segurança e retorno sólido.
-                </p>
-                <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                  O cenário de desenvolvimento do bairro se completa com projetos de grande porte que estão em andamento.
-                  O futuro Boulevard Marina Itajaí, um shopping integrado à marina, promete adicionar um novo marco de
-                  sofisticação e lazer à região, enquanto a criação de um parque ecológico e náutico de mais de 23 mil
-                  metros quadrados amplia as opções de convívio com a natureza para moradores e visitantes.
-                </p>
-                <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                  Tudo isso faz do bairro Fazenda um dos mais nobres e promissores de Itajaí. Um lugar onde tradição,
-                  natureza e modernidade coexistem em harmonia.
-                </p>
-              </div>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                O cenário de desenvolvimento do bairro se completa com projetos de grande porte que estão em andamento.
+                O futuro Boulevard Marina Itajaí, um shopping integrado à marina, promete adicionar um novo marco de
+                sofisticação e lazer à região, enquanto a criação de um parque ecológico e náutico de mais de 23 mil
+                metros quadrados amplia as opções de convívio com a natureza para moradores e visitantes.
+              </p>
+              <p className="padrao-p-internas">
+                Tudo isso faz do bairro Fazenda um dos mais nobres e promissores de Itajaí, um lugar onde tradição,
+                natureza e modernidade coexistem em harmonia.
+              </p>
             </div>
           </div>
         </section>
