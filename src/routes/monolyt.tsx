@@ -325,24 +325,24 @@ function MonolytPage() {
                   </ScrollReveal>
                   <div style={{ marginTop: "32px" }}>
                     <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                      Diferente dos centros urbanos adensados que marcam a paisagem de Balneário Camboriú, o bairro Estaleiro
-                      é um refúgio de quietude e beleza natural. Sua atmosfera exclusiva é definida por uma combinação rara:
-                      praias de águas cristalinas, vegetação da Mata Atlântica preservada e uma ocupação de baixa densidade
-                      que privilegia a privacidade.
+                      Diferente dos centros urbanos adensados que marcam a paisagem de Balneário Camboriú, o bairro
+                      Estaleiro é um refúgio de quietude e beleza natural. Sua atmosfera exclusiva é definida por uma
+                      combinação rara: praias de águas cristalinas, vegetação da Mata Atlântica preservada e uma
+                      ocupação de baixa densidade que privilegia a privacidade.
                     </p>
                     <p className="padrao-p-internas">
-                      A Praia do Estaleiro, com cerca de 1,7 quilômetros de extensão, é a maior entre as praias da Rodovia
-                      Interpraias. Suas águas limpas e de coloração azul-esverdeada, somadas à restinga preservada, renderam
-                      à região certificações de prestígio internacional, como o selo Bandeira Azul, atestando qualidade
-                      ambiental, gestão sustentável e segurança. A orla, de perfil predominantemente residencial, é composta
-                      por mansões e condomínios fechados de alto padrão, consolidando o Estaleiro como um dos endereços mais
-                      exclusivos da cidade.
+                      A Praia do Estaleiro, com cerca de 1,7 quilômetros de extensão, é a maior entre as praias da
+                      Rodovia Interpraias. Suas águas limpas e de coloração azul-esverdeada, somadas à restinga
+                      preservada, renderam à região certificações de prestígio internacional, como o selo Bandeira Azul,
+                      atestando qualidade ambiental, gestão sustentável e segurança. A orla, de perfil predominantemente
+                      residencial, é composta por mansões e condomínios fechados de alto padrão, consolidando o
+                      Estaleiro como um dos endereços mais exclusivos da cidade.
                     </p>
                   </div>
                 </StaggerStack>
               </div>
               <ParallaxImage
-                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/paisagem-monolyt.jpg"
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-praia.jpg"
                 alt="Estaleiro — Balneário Camboriú"
                 aspectRatio="4/5"
               />
@@ -363,8 +363,8 @@ function MonolytPage() {
                 entorno natural seja uma constante.
               </p>
               <p className="padrao-p-internas">
-                O Estaleiro é o lugar ideal para quem busca um estilo de vida ancorado na beleza, privacidade e
-                respeito ao meio ambiente.
+                O Estaleiro é o lugar ideal para quem busca um estilo de vida ancorado na beleza, privacidade e respeito
+                ao meio ambiente.
               </p>
             </div>
           </div>
@@ -473,8 +473,8 @@ function MonolytPage() {
                   contemporâneos.
                 </p>
                 <p className="padrao-p-internas">
-                  Pedras brutas desafiam sua função estrutural e emergem como colunas de sustentação dos andares, contando
-                  uma história visual única e representando o ápice do design arquitetônico.
+                  Pedras brutas desafiam sua função estrutural e emergem como colunas de sustentação dos andares,
+                  contando uma história visual única e representando o ápice do design arquitetônico.
                 </p>
               </div>
             </div>
