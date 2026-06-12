@@ -268,7 +268,7 @@ function RegiaoPage() {
 
         {/* 7. ZOOM EMPREENDIMENTO */}
         <ZoomImage
-          src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/santa-catarina-04.jpg"
+          src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/praia-02.jpg"
           alt="Santa Catarina"
         />
 
@@ -307,7 +307,7 @@ function RegiaoPage() {
         </section>
 
         {/* 9. IMAGEM SCROLL 100% */}
-        <ImageGrowSection src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/santa-catarina-05.jpg" />
+        <ImageGrowSection src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/praia-03.jpg" />
 
         {/* 10. CTA */}
         <FinalCTA />
