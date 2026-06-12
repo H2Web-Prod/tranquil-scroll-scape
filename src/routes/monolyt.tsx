@@ -70,7 +70,7 @@ function ZigZagBlock({
   image,
   alt,
   reverse = false,
-  aspectRatio = "4/5",
+  aspectRatio,
   children,
 }: {
   image: string;
@@ -344,7 +344,6 @@ function MonolytPage() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/monolyt-praia.jpg"
                 alt="Estaleiro — Balneário Camboriú"
-                aspectRatio="4/5"
               />
             </div>
           </section>
@@ -468,7 +467,6 @@ function MonolytPage() {
               <ParallaxImage
                 src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/gruta-1.jpg"
                 alt="Arquitetura em sintonia com o meio ambiente"
-                aspectRatio="4/5"
               />
               <div>
                 <StaggerStack>
