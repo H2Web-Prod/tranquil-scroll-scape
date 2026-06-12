@@ -220,7 +220,6 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
           </motion.div>
         </div>
       </section>
-      </section>
       <div style={{ display: "flex", justifyContent: "center", padding: "48px 0", background: "#ffffff" }}>
         <button
           onClick={() => openLightbox(0)}
