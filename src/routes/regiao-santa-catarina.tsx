@@ -175,7 +175,7 @@ function RegiaoPage() {
           <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
             <div className="max-w-[1300px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
               <ParallaxImage
-                src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/santa-catarina-02.jpg"
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/praia-6.jpg"
                 alt="Santa Catarina"
               />
               <div>
@@ -228,7 +228,7 @@ function RegiaoPage() {
               </div>
               <div className="md:order-2 order-1">
                 <ParallaxImage
-                  src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/santa-catarina-03.jpg"
+                  src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/praia-5.jpg"
                   alt="Curiosidades Santa Catarina"
                 />
               </div>
@@ -267,7 +267,7 @@ function RegiaoPage() {
 
         {/* 7. ZOOM EMPREENDIMENTO */}
         <ZoomImage
-          src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/praia-02.jpg"
+          src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/praia-4.jpg"
           alt="Santa Catarina"
         />
 
