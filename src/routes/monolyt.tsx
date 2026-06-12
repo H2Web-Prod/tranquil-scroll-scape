@@ -313,40 +313,59 @@ function MonolytPage() {
           </div>
         </section>
 
-        {/* SEÇÃO 6 — texto puro */}
-        <section className="bg-white py-[140px] md:py-[240px] px-6">
+        {/* 6. Estaleiro — 2 colunas */}
+
+        <FadeInUp>
+          <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
+            <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+              <div>
+                <StaggerStack>
+                  <ScrollReveal as="h2" className="font-light text-black">
+                    Estaleiro – Um refúgio exclusivo em Balneário Camboriú
+                  </ScrollReveal>
+                  <div style={{ marginTop: "32px" }}>
+                    <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                      Diferente dos centros urbanos adensados que marcam a paisagem de Balneário Camboriú, o bairro Estaleiro
+                      é um refúgio de quietude e beleza natural. Sua atmosfera exclusiva é definida por uma combinação rara:
+                      praias de águas cristalinas, vegetação da Mata Atlântica preservada e uma ocupação de baixa densidade
+                      que privilegia a privacidade.
+                    </p>
+                    <p className="padrao-p-internas">
+                      A Praia do Estaleiro, com cerca de 1,7 quilômetros de extensão, é a maior entre as praias da Rodovia
+                      Interpraias. Suas águas limpas e de coloração azul-esverdeada, somadas à restinga preservada, renderam
+                      à região certificações de prestígio internacional, como o selo Bandeira Azul, atestando qualidade
+                      ambiental, gestão sustentável e segurança. A orla, de perfil predominantemente residencial, é composta
+                      por mansões e condomínios fechados de alto padrão, consolidando o Estaleiro como um dos endereços mais
+                      exclusivos da cidade.
+                    </p>
+                  </div>
+                </StaggerStack>
+              </div>
+              <ParallaxImage
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/paisagem-monolyt.jpg"
+                alt="Estaleiro — Balneário Camboriú"
+                aspectRatio="4/5"
+              />
+            </div>
+          </section>
+        </FadeInUp>
+
+        {/* 6b. Estaleiro — continuação bloco-direita */}
+
+        <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
           <div className="max-w-[1300px] mx-auto">
             <div className="bloco-direita">
-              <ScrollReveal as="h2" className="font-light text-black">
-                Estaleiro – Um refúgio exclusivo em Balneário Camboriú
-              </ScrollReveal>
-              <div style={{ marginTop: "40px" }}>
-                <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                  Diferente dos centros urbanos adensados que marcam a paisagem de Balneário Camboriú, o bairro Estaleiro
-                  é um refúgio de quietude e beleza natural. Sua atmosfera exclusiva é definida por uma combinação rara:
-                  praias de águas cristalinas, vegetação da Mata Atlântica preservada e uma ocupação de baixa densidade
-                  que privilegia a privacidade.
-                </p>
-                <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                  A Praia do Estaleiro, com cerca de 1,7 quilômetros de extensão, é a maior entre as praias da Rodovia
-                  Interpraias.Suas águas limpas e de coloração azul-esverdeada, somadas à restinga preservada, renderam à
-                  região certificações de prestígio internacional, como o selo Bandeira Azul, atestando qualidade
-                  ambiental, gestão sustentável e segurança. A orla, de perfil predominantemente residencial, é composta
-                  por mansões e condomínios fechados de alto padrão, consolidando o Estaleiro como um dos endereços mais
-                  exclusivos da cidade.
-                </p>
-                <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                  Essa mesma exclusividade do Estaleiro é, em grande parte, fruto de restrições urbanísticas que se
-                  transformaram em seu maior diferencial. Apenas 40% da área é liberada para construção, enquanto os
-                  outros 60% permanecem como áreas de preservação permanente. Os limites de altura das edificações,
-                  restritas a poucos pavimentos, garantem que a paisagem não seja obstruída e que a integração com o
-                  entorno natural seja uma constante.
-                </p>
-                <p className="padrao-p-internas">
-                  O Estaleiro é o lugar ideal para quem busca um estilo de vida ancorado na beleza, privacidade e respeito
-                  ao meio ambiente.
-                </p>
-              </div>
+              <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+                Essa mesma exclusividade do Estaleiro é, em grande parte, fruto de restrições urbanísticas que se
+                transformaram em seu maior diferencial. Apenas 40% da área é liberada para construção, enquanto os
+                outros 60% permanecem como áreas de preservação permanente. Os limites de altura das edificações,
+                restritas a poucos pavimentos, garantem que a paisagem não seja obstruída e que a integração com o
+                entorno natural seja uma constante.
+              </p>
+              <p className="padrao-p-internas">
+                O Estaleiro é o lugar ideal para quem busca um estilo de vida ancorado na beleza, privacidade e
+                respeito ao meio ambiente.
+              </p>
             </div>
           </div>
         </section>
