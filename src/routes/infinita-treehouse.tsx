@@ -489,23 +489,23 @@ function InfinitaTreehouse() {
                   </ScrollReveal>
                   <div style={{ marginTop: "32px" }}>
                     <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                      A localização estratégica do bairro, entre o Centro da cidade e a orla, oferece fácil acesso a Balneário
-                      Camboriú e às principais praias da região, como a Praia Brava e a Praia de Cabeçudas. Em seu território,
-                      a Avenida Beira-Rio se destaca como um polo gastronômico e de lazer, com ciclovia, calçadão e uma orla
-                      arborizada que convida ao descanso e contemplação.
+                      A localização estratégica do bairro, entre o Centro da cidade e a orla, oferece fácil acesso a
+                      Balneário Camboriú e às principais praias da região, como a Praia Brava e a Praia de Cabeçudas. Em
+                      seu território, a Avenida Beira-Rio se destaca como um polo gastronômico e de lazer, com ciclovia,
+                      calçadão e uma orla arborizada que convida ao descanso e contemplação.
                     </p>
                     <p className="padrao-p-internas">
                       A infraestrutura do bairro é outro de seus grandes atrativos, com comércio variado, serviços de
-                      excelência e fácil acesso a escolas, hospitais e áreas de lazer. Esse conjunto de atributos tem gerado
-                      uma expressiva valorização imobiliária na região. Nos últimos anos, o valor do metro quadrado no Fazenda
-                      saltou, representando um dos maiores índices de crescimento do país, o que o torna também uma escolha
-                      estratégica para investidores que buscam segurança e retorno sólido.
+                      excelência e fácil acesso a escolas, hospitais e áreas de lazer. Esse conjunto de atributos tem
+                      gerado uma expressiva valorização imobiliária na região. Nos últimos anos, o valor do metro
+                      quadrado no Fazenda saltou, representando um dos maiores índices de crescimento do país, o que o
+                      torna também uma escolha estratégica para investidores que buscam segurança e retorno sólido.
                     </p>
                   </div>
                 </StaggerStack>
               </div>
               <ParallaxImage
-                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/paisagem-monolyt.jpg"
+                src="https://projetos.h2web.com.br/blueheaven/blog/wp-content/uploads/2026/06/infinita-praia-1.jpg"
                 alt="Bairro Fazenda — Itajaí"
                 aspectRatio="4/5"
               />
