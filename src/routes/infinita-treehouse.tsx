@@ -191,7 +191,7 @@ function PersonBlock({
       <section className="py-[100px] md:py-[160px] px-6 md:px-10 bg-white">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-start">
           <div className={reverse ? "md:order-2" : ""}>
-            <ParallaxImage src={image} alt={alt} aspectRatio="3/4" />
+            <ParallaxImage src={image} alt={alt} />
           </div>
           <div className={reverse ? "md:order-1" : ""}>
             <StaggerStack>
