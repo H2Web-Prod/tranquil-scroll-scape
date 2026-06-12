@@ -220,6 +220,28 @@ export default function HorizontalGallery({ images, displayCount }: HorizontalGa
           </motion.div>
         </div>
       </section>
+      </section>
+      <div style={{ display: "flex", justifyContent: "center", padding: "48px 0", background: "#ffffff" }}>
+        <button
+          onClick={() => openLightbox(0)}
+          style={{
+            fontFamily: "'Roboto', sans-serif",
+            fontWeight: 500,
+            fontSize: "16px",
+            color: "#000",
+            background: "#fff",
+            border: "1px solid #000",
+            borderRadius: "9999px",
+            padding: "12px 25px",
+            cursor: "pointer",
+            transition: "all 0.4s",
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.background = "#000"; e.currentTarget.style.color = "#fff"; }}
+          onMouseLeave={(e) => { e.currentTarget.style.background = "#fff"; e.currentTarget.style.color = "#000"; }}
+        >
+          Veja mais
+        </button>
+      </div>
       {lightboxOpen && (
         <LightboxOverlay
           images={images}
