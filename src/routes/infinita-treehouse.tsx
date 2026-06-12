@@ -186,26 +186,18 @@ function PersonBlock({
     <FadeInUp>
       <section className="py-[100px] md:py-[160px] px-6 md:px-10 bg-white">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-start">
-          <div className={`relative ${reverse ? "md:order-2" : ""}`}>
+          <div className={reverse ? "md:order-2" : ""}>
             <ParallaxImage src={image} alt={alt} aspectRatio="3/4" />
-            {videoSrc && (
-              <>
-                {/* Desktop overlay — bottom; side flips with reverse */}
-                <div
-                  className="hidden md:block absolute z-10"
-                  style={reverse ? { bottom: 80, left: "-110px" } : { bottom: 80, right: "-110px" }}
-                >
-                  <VideoTriggerCard videoSrc={videoSrc} />
-                </div>
-                {/* Mobile below */}
-                <div className="block md:hidden mt-6">
-                  <VideoTriggerCard videoSrc={videoSrc} />
-                </div>
-              </>
-            )}
           </div>
           <div className={reverse ? "md:order-1" : ""}>
-            <StaggerStack>{children}</StaggerStack>
+            <StaggerStack>
+              {children}
+              {videoSrc && (
+                <div style={{ marginTop: "24px" }}>
+                  <VideoTriggerCard videoSrc={videoSrc} />
+                </div>
+              )}
+            </StaggerStack>
           </div>
         </div>
       </section>
