@@ -460,33 +460,44 @@ function MonolytPage() {
           </div>
         </ZigZagBlock>
 
-        {/* 10. Arquitetura em sintonia */}
-        <section className="bg-white py-[140px] md:py-[240px] px-6">
-          <div className="max-w-[1300px] mx-auto">
-            <div className="bloco-direita">
-              <ScrollReveal as="h2" className="font-light text-black">
-                Arquitetura em sintonia com o meio ambiente
-              </ScrollReveal>
-              <div style={{ marginTop: "40px" }}>
-                <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
-                  As "grutas" entre as torres são a entrada das áreas internas, representando verdadeiros espaços zen
-                  contemporâneos.
-                </p>
-                <p className="padrao-p-internas">
-                  Pedras brutas desafiam sua função estrutural e emergem como colunas de sustentação dos andares,
-                  contando uma história visual única e representando o ápice do design arquitetônico.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+{/* 10. Arquitetura em sintonia */}
 
-        {/* 11. Greg Bousquet */}
-        <ZigZagBlock
-          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/greg-02.jpg"
-          alt="Greg Bousquet — Architects Office"
-          aspectRatio="3/4"
-        >
+<FadeInUp>
+  <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
+    <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+      <ParallaxImage
+        src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/monolyt-1.jpg"
+        alt="Arquitetura em sintonia com o meio ambiente"
+        aspectRatio="4/5"
+      />
+      <div>
+        <StaggerStack>
+          <ScrollReveal as="h2" className="font-light text-black">
+            Arquitetura em sintonia com o meio ambiente
+          </ScrollReveal>
+          <div style={{ marginTop: "32px" }}>
+            <p className="padrao-p-internas" style={{ marginBottom: "24px" }}>
+              As "grutas" entre as torres são a entrada das áreas internas, representando verdadeiros espaços zen
+              contemporâneos.
+            </p>
+            <p className="padrao-p-internas">
+              Pedras brutas desafiam sua função estrutural e emergem como colunas de sustentação dos andares, contando
+              uma história visual única e representando o ápice do design arquitetônico.
+            </p>
+          </div>
+        </StaggerStack>
+      </div>
+    </div>
+  </section>
+</FadeInUp>
+
+{/* 11. Greg Bousquet */}
+
+<FadeInUp>
+  <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
+    <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+      <div>
+        <StaggerStack>
           <span style={eyebrowStyle}>ARQUITETURA</span>
           <span style={{ ...eyebrowStyle, marginTop: "-12px" }}>UM PROJETO ARCHITECTS OFFICE.</span>
           <ScrollReveal as="h2" className="font-light text-black">
@@ -507,15 +518,29 @@ function MonolytPage() {
               paisagismo. Tentamos sempre traduzir como o mineral e o vegetal podem conviver em harmonia."
             </blockquote>
           </div>
-        </ZigZagBlock>
+        </StaggerStack>
+      </div>
+      <ParallaxImage
+        src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/05/greg-02.jpg"
+        alt="Greg Bousquet — Architects Office"
+        aspectRatio="3/4"
+      />
+    </div>
+  </section>
+</FadeInUp>
 
-        {/* 12. Rodrigo Oliveira */}
-        <ZigZagBlock
-          image="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Aquos-12-728x1024-1.webp"
-          alt="Rodrigo Oliveira — paisagismo"
-          reverse
-          aspectRatio="3/4"
-        >
+{/* 12. Rodrigo Oliveira */}
+
+<FadeInUp>
+  <section className="py-[140px] md:py-[240px] px-6 md:px-10 bg-white">
+    <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+      <ParallaxImage
+        src="https://projetos.h2web.com.br/blueheaven/wp-content/uploads/2026/04/Aquos-12-728x1024-1.webp"
+        alt="Rodrigo Oliveira — paisagismo"
+        aspectRatio="3/4"
+      />
+      <div>
+        <StaggerStack>
           <span style={eyebrowStyle}>PAISAGISMO</span>
           <span style={{ ...eyebrowStyle, marginTop: "-12px" }}>A ARTE AUTORAL QUE REALÇA A NATUREZA.</span>
           <ScrollReveal as="h2" className="font-light text-black">
@@ -532,7 +557,11 @@ function MonolytPage() {
               intuição. O paisagismo de Rodrigo Oliveira é de beleza tão genuína quanto livre, como a natureza.
             </p>
           </div>
-        </ZigZagBlock>
+        </StaggerStack>
+      </div>
+    </div>
+  </section>
+</FadeInUp>
 
         {/* 13. Diferenciais */}
         <section className="bg-white py-[140px] md:py-[240px] px-6">
