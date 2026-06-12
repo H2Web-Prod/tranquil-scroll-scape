@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 export default function ParallaxImage({
   src,
   alt,
-  aspectRatio = "4/5",
+  aspectRatio,
 }: {
   src: string;
   alt: string;
@@ -18,11 +18,11 @@ export default function ParallaxImage({
   const y = useTransform(scrollYProgress, [0, 1], [60, -60]);
 
   return (
-    <div ref={ref} style={{ aspectRatio, overflow: "hidden", width: "100%" }}>
+    <div ref={ref} style={{ aspectRatio, overflow: "hidden", width: "100%", height: aspectRatio ? undefined : "100%" }}>
       <motion.img
         src={src}
         alt={alt}
-        style={{ y, width: "100%", height: "115%", objectFit: "cover", display: "block" }}
+        style={{ y, width: "100%", height: aspectRatio ? "115%" : "100%", objectFit: "cover", display: "block" }}
       />
     </div>
   );
