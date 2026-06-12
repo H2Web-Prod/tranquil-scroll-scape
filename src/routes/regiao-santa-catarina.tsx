@@ -121,7 +121,9 @@ function RegiaoPage() {
                 margin: 0,
               }}
             >
-              Descubra a região de Santa Catarina
+              Descubra a região de
+              <br />
+              Santa Catarina
             </h1>
             <p
               style={{
